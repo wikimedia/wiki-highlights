@@ -1,14 +1,11 @@
 <script setup>
-    import { ref } from 'vue'
-    
-    const props = defineProps(['data'])
-    const card = ref(props.data)
+    const props = defineProps(['content'])
 </script>
 <template>
     <div class="wiki-highlight-card">
-        <img class="wiki-highlight-card-image" :src="card.img" alt="messi">
-        <div class="wiki-highlight-card-title">{{card.title}}</div>
-        <div>{{card.text}}</div>
+        <img class="wiki-highlight-card-image" :src="props.content.img" alt="messi">
+        <div class="wiki-highlight-card-title">{{props.content.title}}</div>
+        <div>{{props.content.text}}</div>
     </div>
 </template>
 

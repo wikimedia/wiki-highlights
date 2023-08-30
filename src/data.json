@@ -1,0 +1,61 @@
+{
+    "content": [
+        {
+            "img": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg",
+            "title": "Lionel Messi",
+            "text": "Lionel Andrés Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team.",
+            "highlights": [
+                {
+                    "img": "",
+                    "text": ""
+                },
+                {
+                    "img": "",
+                    "text": ""
+                },
+                {
+                    "img": "",
+                    "text": ""
+                }
+            ]
+        },
+        {
+            "img": "https://upload.wikimedia.org/wikipedia/commons/2/23/Rosetta_Stone.JPG",
+            "title": "Rosetta Stone",
+            "text": "The Rosetta Stone is a stele composed of granodiorite inscribed with three versions of a decree issued in Memphis, Egypt, in 196 BC during the Ptolemaic dynasty on behalf of King Ptolemy V Epiphanes.",
+            "highlights": [
+                {
+                    "img": "",
+                    "text": ""
+                },
+                {
+                    "img": "",
+                    "text": ""
+                },
+                {
+                    "img": "",
+                    "text": ""
+                }
+            ]
+        },
+        {
+            "img": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Miriam_makeba_01.jpg",
+            "title": "Miriam Makeba",
+            "text": "Zenzile Miriam Makeba (4 March 1932 – 9 November 2008), nicknamed Mama Africa, was a South African singer, songwriter, actress, and civil rights activist. Associated with musical genres including Afropop, jazz, and world music, she was an advocate against apartheid and white-minority government in South Africa",
+            "highlights": [
+                {
+                    "img": "",
+                    "text": ""
+                },
+                {
+                    "img": "",
+                    "text": ""
+                },
+                {
+                    "img": "",
+                    "text": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,17 +1,13 @@
 <script setup>
 import HighlightCard from '../components/HighlightCard.vue'
-
-const data = {
-    img: 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg',
-    title: 'Lionel Messi',
-    text: 'A football legend...'
-  }
-
+import data from '../data.json'
 </script>
 
 <template>
   <main>
     <h1>Wiki highlights</h1>
-    <HighlightCard :data="data" />
+    <div v-for="content in data.content">
+      <HighlightCard :content="content" />
+    </div>
   </main>
 </template>
