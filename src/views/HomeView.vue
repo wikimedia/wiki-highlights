@@ -6,7 +6,7 @@ import data from '../data.json'
 <template>
   <main>
     <h1>Wiki highlights</h1>
-    <div v-for="content in data.content">
+    <div v-for="content in data.content" :key="content.title" >
       <HighlightCard :content="content" />
     </div>
   </main>
