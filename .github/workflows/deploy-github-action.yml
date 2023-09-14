@@ -50,12 +50,12 @@ jobs:
           path: ./dist
       
       - name: Get branch name
-        id: branch-name
-        uses: tj-actions/branch-names@v7
+        id: branch
+        uses: echo "::set-output name=BRANCH_NAME::${GITHUB_REF##*/}"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          destination_dir: ${{ steps.branch-name.outputs.current_branch }}
+          destination_dir: ${( steps.branch.outputs.BRANCH_NAME }}
