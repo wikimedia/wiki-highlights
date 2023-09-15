@@ -21,18 +21,18 @@ defineProps( {
 </script>
 
 <style>
-    .wiki-highlight-card {
-        height: 600px;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-    }
+.wiki-highlight-card {
+    height: 600px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
 
-    .wiki-highlight-card-image {
-        border-radius: 20px;
-    }
+.wiki-highlight-card-image {
+    border-radius: 20px;
+}
 
-    .wiki-highlight-card-title {
-        font-weight: bold;
-    }
+.wiki-highlight-card-title {
+    font-weight: bold;
+}
 </style>
