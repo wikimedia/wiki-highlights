@@ -22,17 +22,17 @@ defineProps( {
 
 <style>
 .wiki-highlight-card {
-    height: 600px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
+	height: 600px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
 }
 
 .wiki-highlight-card-image {
-    border-radius: 20px;
+	border-radius: 20px;
 }
 
 .wiki-highlight-card-title {
-    font-weight: bold;
+	font-weight: bold;
 }
 </style>
