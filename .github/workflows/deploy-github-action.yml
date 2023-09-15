@@ -59,3 +59,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           destination_dir: ${{ steps.branch-name.outputs.current_branch }}
+          keep_files: true
