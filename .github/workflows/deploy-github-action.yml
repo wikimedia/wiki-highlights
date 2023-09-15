@@ -53,9 +53,9 @@ jobs:
         id: branch-name
         uses: tj-actions/branch-names@v7
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-            branch: gh-pages # The branch the action should deploy to.
-            folder: ./dist
-            target-folder: ${{ steps.branch-name.outputs.current_branch }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          destination_dir: ${{ steps.branch-name.outputs.current_branch }}
