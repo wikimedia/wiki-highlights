@@ -1,59 +1,662 @@
 {
-    "content": [
+    "articles": [
         {
-            "img": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg",
-            "title": "Lionel Messi",
-            "text": "Lionel Andrés Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team.",
-            "highlights": [
-                {
-                    "img": "",
-                    "text": ""
-                },
-                {
-                    "img": "",
-                    "text": ""
-                },
-                {
-                    "img": "",
-                    "text": ""
-                }
-            ]
-        },
-        {
-            "img": "https://upload.wikimedia.org/wikipedia/commons/2/23/Rosetta_Stone.JPG",
+            "category": "HISTORY",
             "title": "Rosetta Stone",
-            "text": "The Rosetta Stone is a stele composed of granodiorite inscribed with three versions of a decree issued in Memphis, Egypt, in 196 BC during the Ptolemaic dynasty on behalf of King Ptolemy V Epiphanes.",
             "highlights": [
                 {
-                    "img": "",
-                    "text": ""
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rosetta_Stone.JPG/320px-Rosetta_Stone.JPG",
+                    "text": "In 1799, Napoleon's team found the Rosetta Stone near Egypt's Rosetta port. This game-changing slab had inscriptions in hieroglyphs, demotic, and Greek. As battles raged, it was moved to Cairo and later besieged in Alexandria. Its discovery hinted at unlocking ancient Egyptian mysteries!"
                 },
                 {
-                    "img": "",
-                    "text": ""
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/RosettaStone-LeftAndRightSides-BritishMuseum-August21-08.jpg/320px-RosettaStone-LeftAndRightSides-BritishMuseum-August21-08.jpg",
+                    "text": "\"Discover the tale of the Rosetta Stone! In 1801, a tug-of-war began over French discoveries in Egypt. British forces, under General Hutchinson, sought the stone's possession. By 1802, it reached England and was placed in the British Museum, becoming its most-visited artifact and a key to decoding ancient scripts!\""
                 },
                 {
-                    "img": "",
-                    "text": ""
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Rosetta_Stone_International_Congress_of_Orientalists_ILN_1874.jpg/320px-Rosetta_Stone_International_Congress_of_Orientalists_ILN_1874.jpg",
+                    "text": "\"From ancient coins to modern tech, the term 'Rosetta Stone' signifies the key to unlocking mysteries. It's been used to decipher ancient scripts, understand the universe, and bridge tech gaps. Today, it's not just about a stone, but a symbol of discovery and understanding in diverse fields. Dive in and decode the world!\""
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Tourist_watching_Rosetta_Stone_at_British_Museum.JPG/320px-Tourist_watching_Rosetta_Stone_at_British_Museum.JPG",
+                    "text": "Before the Rosetta Stone's discovery in 1799, ancient Egyptian hieroglyphs were a mystery since the Roman Empire's fall. By the 4th century AD, few could read them, with the last inscription dated 24 August 394. Misleading works hindered understanding until Champollion cracked the code in the 19th century!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Porson_13_Jan_1803.jpg/320px-Porson_13_Jan_1803.jpg",
+                    "text": "The Rosetta Stone's Greek text baffled scholars in 1802. While Ancient Greek was known, its historical context was elusive. Stephen Weston unveiled an English translation in April 1802. By 1803, Ameilhon in Paris released Latin & French versions. Simultaneously, Heyne's precise Latin rendition surfaced, spotlighted in Archaeologia in 1811."
                 }
             ]
         },
         {
-            "img": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Miriam_makeba_01.jpg",
-            "title": "Miriam Makeba",
-            "text": "Zenzile Miriam Makeba (4 March 1932 – 9 November 2008), nicknamed Mama Africa, was a South African singer, songwriter, actress, and civil rights activist. Associated with musical genres including Afropop, jazz, and world music, she was an advocate against apartheid and white-minority government in South Africa",
+            "category": "HISTORY",
+            "title": "Statue of Liberty",
             "highlights": [
                 {
-                    "img": "",
-                    "text": ""
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Lady_Liberty_under_a_blue_sky_%28cropped%29.jpg/320px-Lady_Liberty_under_a_blue_sky_%28cropped%29.jpg",
+                    "text": "The Statue of Liberty, a gift from France, stands tall in NYC since 1886! Designed by Bartholdi with Eiffel's metalwork, it celebrates freedom, US independence (July 4, 1776), and the end of slavery. Born from an idea in 1865, funded by over 120,000 donors, it's a beacon for all!"
                 },
                 {
-                    "img": "",
-                    "text": ""
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Head_of_the_Statue_of_Liberty_on_display_in_a_park_in_Paris.jpg/320px-Head_of_the_Statue_of_Liberty_on_display_in_a_park_in_Paris.jpg",
+                    "text": "In 1865, Laboulaye proposed a Franco-American monument celebrating freedom & democracy. By 1875, the Statue of Liberty project began, with France funding the statue & the US, the pedestal. After fundraising struggles & immense public support, the iconic statue was dedicated in NYC on Oct 28, 1886. A symbol of hope, it's a testament to unity & liberty!"
                 },
                 {
-                    "img": "",
-                    "text": ""
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Nancy_Reagan_waves_while_visiting_the_Statue_of_Liberty_in_New_York_City.jpg/320px-Nancy_Reagan_waves_while_visiting_the_Statue_of_Liberty_in_New_York_City.jpg",
+                    "text": "The Statue of Liberty's torch once glowed faintly, likened to a glowworm! Over the years, from being under military watch to facing structural issues, Lady Liberty has seen it all. Closed post 9/11, it took till 2009 for limited access to her crown. A symbol of resilience & history!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Liberty_Island_photo_D_Ramey_Logan.jpg/320px-Liberty_Island_photo_D_Ramey_Logan.jpg",
+                    "text": "Explore the Statue of Liberty in NY Bay! Part of Manhattan, this free monument has a rich history. Take a ferry from Jersey City or Manhattan to visit. Climb to the crown with a special ticket. Did you know? It was a gift from France, symbolizing friendship. Dive into its tales & creators!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/La_statue_de_la_Libert%C3%A9_du_pont_de_Grenelle_%C3%A0_Paris.JPG/320px-La_statue_de_la_Libert%C3%A9_du_pont_de_Grenelle_%C3%A0_Paris.JPG",
+                    "text": "Statue of Liberty's influence is global! Paris has a quarter-sized version, and there's a 30ft replica in Brooklyn. The Boy Scouts gifted 200 mini-statues across the US. Oops moment: a 2010 stamp featured the Vegas replica! Lady Liberty shines in movies, music, and more."
+                }
+            ]
+        },
+        {
+            "category": "HISTORY",
+            "title": "Ancient Egypt",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ancient_Egypt_map-en.svg/320px-Ancient_Egypt_map-en.svg.png",
+                    "text": "\"Ancient Egypt, birthed around 3100 BC, thrived in the Nile Valley. From the unification under Menes to power peaks in the New Kingdom, it faced invasions but stood resilient. Thanks to the Nile's bounty, they advanced in agriculture, writing, and monumental architecture. From pyramids to peace treaties, their legacy still inspires today!\""
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CairoEgMuseumTaaMaskMostlyPhotographed.jpg/320px-CairoEgMuseumTaaMaskMostlyPhotographed.jpg",
+                    "text": "The Nile nurtured early humans 120,000 years ago. Egypt's lush past birthed the Giza pyramids. Dynasties rose and fell, facing invaders like the Hyksos. The New Kingdom expanded, but Libyans, Assyrians, and Persians took turns at the helm. By 30 BC, Rome's grip turned Egypt into its breadbasket."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Tomb_of_Nakht_%282%29.jpg/320px-Tomb_of_Nakht_%282%29.jpg",
+                    "text": "Pharaohs ruled ancient Egypt, aided by viziers and a vast bureaucracy. With 42 regions and temples as economic hubs, the Nile's bounty fueled their culture. From farmers to the elite \"white kilt\" scribes, status mattered. Rich in resources and trading far, they thrived on common-sense law."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colorful_Hieroglyphs_and_Starred_Ceiling_..._%2836473972566%29.jpg/320px-Colorful_Hieroglyphs_and_Starred_Ceiling_..._%2836473972566%29.jpg",
+                    "text": "\"Egyptian language, with roots from 3200 BC, boasts the longest history of any tongue! From hieroglyphs to Demotic script, it evolved alongside kings and scribes. Known for its 25 consonants and unique verb conjugations, it's more than just symbols—it's a journey through time!\""
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Artist%27s_Sketch_of_Pharaoh_Spearing_a_Lion_MET_1191R2_Sec501M.jpg/320px-Artist%27s_Sketch_of_Pharaoh_Spearing_a_Lion_MET_1191R2_Sec501M.jpg",
+                    "text": "Ancient Egyptians: Master builders with iconic pyramids, artists with timeless standards, and believers in the divine & afterlife. Their homes? Cool mudbrick with open-roof kitchens. Diet? Bread, beer, and occasional feasts. Their legacy? Still evident in modern Egypt's cuisine & culture!"
+                }
+            ]
+        },
+        {
+            "category": "HISTORY",
+            "title": "Buckingham Palace",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Buckingham_Palace_Victoria_Memorial_London_Morning_2020_03.jpg/320px-Buckingham_Palace_Victoria_Memorial_London_Morning_2020_03.jpg",
+                    "text": "\"Buckingham Palace spans 830,000 sq ft with 775 rooms! The Royals live in a private north wing suite. Inside, you'll find art by Rembrandt and Vermeer, ornate state rooms for dignitaries, and an oriental-themed east wing from the Brighton Pavilion. A blend of history, art, and grandeur!\""
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/P052411LJ-0751_%285835926297%29.jpg/320px-P052411LJ-0751_%285835926297%29.jpg",
+                    "text": "Buckingham Palace's grand Ballroom, built in 1854, is a hub of royal ceremonies! From investitures where honours are bestowed with a military band playing, to state banquets hosting 170 guests in dazzling attire. Once the stage for debutantes' grand entrance into society, today it sees massive garden parties with 8,000 guests. A blend of tradition and modernity!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Buckingham_Palace_west_facade_%28panoramic%29.jpg/320px-Buckingham_Palace_west_facade_%28panoramic%29.jpg",
+                    "text": "Discover London's largest private garden at the palace's rear, spanning 42 acres with a lake, tennis court, and helipad! Next door, the Royal Mews houses the iconic Gold State Coach, used in every coronation since 1762. Don't miss The Mall, a ceremonial route dating back to 1911, where royals and dignitaries parade in style!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Buckingham_Palace_%2829794489285%29.jpg/320px-Buckingham_Palace_%2829794489285%29.jpg",
+                    "text": "Did you know? Between 1838-1841, the boy Jones snuck into the palace thrice! Since 1914, 12 others have trespassed, including Michael Fagan, who in 1982 entered Queen Elizabeth II's bedroom. While rumors said they chatted, Fagan revealed in 2012 that wasn't true. Trespassing became a crime only in 2007!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Victoria_Memorial_from_within_Buckingham_Palace.jpg/320px-Victoria_Memorial_from_within_Buckingham_Palace.jpg",
+                    "text": "Buckingham Palace: A living history! Opened to the public since '93, it saw 580k visitors in 2017. Once racially segregated staff, now a symbol of British monarchy & home to 800+ workers. Facing a £369m renovation to last 50+ years, it's more than just a palace. Dive into its rich past & present!"
+                }
+            ]
+        },
+        {
+            "category": "NATURE",
+            "title": "Giraffe",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Giraffa_camelopardalis_head_%28Profil%29.jpg/320px-Giraffa_camelopardalis_head_%28Profil%29.jpg",
+                    "text": "Did you know? Giraffes, the tallest mammals on Earth, might actually be eight distinct species! Recent DNA studies and fossils are reshaping our understanding. With their iconic long necks, they dine on acacia trees, towering above other herbivores. But with only 97.5K left in the wild as of 2016, it's time to appreciate and protect these majestic creatures!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flickr_-_Rainbirder_-_High-rise_living.jpg/320px-Flickr_-_Rainbirder_-_High-rise_living.jpg",
+                    "text": "Giraffes tower at 14-19ft with unique coat patterns for camouflage. Their long necks, up to 2.4m, aren't just for reaching high leaves but might be for combat & vigilance. With a heart weighing 11kg, it pumps blood up their tall frame, and their 45cm tongue delicately picks leaves. Ever seen a sprinting giraffe? They can hit 60km/h!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004.JPG/320px-Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004.JPG",
+                    "text": "Giraffes roam savannahs, favoring Acacieae trees for calcium-rich twigs. They consume 75 lbs of plants daily and can go 3 days without water. Socially intricate, males \"neck\" for dominance. Often, male-to-male interactions are frequent. Their height aids in spotting predators, benefiting zebras too."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Giraffe_Oxpeckers_Lupande_Zambia_Jul23_A7R_06194.jpg/320px-Giraffe_Oxpeckers_Lupande_Zambia_Jul23_A7R_06194.jpg",
+                    "text": "From ancient rock art to modern zoos, giraffes have captivated us for over 8,000 years! They've inspired African folktales, been the muse for Salvador Dalí, and even influenced astronaut suits. Whether in history books, films, or the stars above, these gentle giants continue to fascinate and inspire. Dive into their rich legacy!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Giraffe_koure_niger_2006.jpg/320px-Giraffe_koure_niger_2006.jpg",
+                    "text": "Giraffes, once numbering 155,000 in 1985, have dwindled to just 97,500 by 2016! Habitat loss, bushmeat hunting, and droughts are major threats. Good news? National parks, community conservation, and international laws are stepping up to protect these gentle giants. Let's keep them tall and proud!"
+                }
+            ]
+        },
+        {
+            "category": "NATURE",
+            "title": "Colorado River",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Horseshoe_Bend_13_February_2023.jpg/320px-Horseshoe_Bend_13_February_2023.jpg",
+                    "text": "The Colorado River, a 1,450-mile wonder, powers cities, nourishes lands, and carves the Grand Canyon. From ancient Native American civilizations to the iconic Hoover Dam, its rich history is as vast as its waters. Today, amidst drought and demand, it stands as one of the world's most controlled rivers."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Colorado_River_Runners.jpg/320px-Colorado_River_Runners.jpg",
+                    "text": "\"Adventure awaits on the Colorado River! From the Grand Canyon's iconic rafting trips to the thrilling rapids of Gore Canyon, over 22K thrill-seekers dive in annually. With 11 national parks in its watershed, the river isn't just for rafting. From hiking to houseboating, it's a recreation hub that boosts the Southwest's economy by a whopping $26 billion!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Horseshoebend_smt.jpg/320px-Horseshoebend_smt.jpg",
+                    "text": "The Colorado River, vital to diverse ecosystems, faces threats from human interventions. Its rich biodiversity is at risk, with species like the vaquita in danger. Though dams have altered habitats, a U.S.-Mexico pact offers hope, aiming to rejuvenate parts of the river's once-thriving ecosystem."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Grand_Canyon_view_from_Pima_Point_2010.jpg/320px-Grand_Canyon_view_from_Pima_Point_2010.jpg",
+                    "text": "The vast Colorado River Basin spans 246,000 sq miles, with 97% in the US! From the Rocky Mountains to deserts, it's a diverse landscape. Home to canyons, forests, and a 14,321-ft peak, it supports 13M residents. Yet, 40M people rely on its water. Growth? Nevada's pop surged 66% in a decade! "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/San_juan_river_entrenched_meanders.jpg/320px-San_juan_river_entrenched_meanders.jpg",
+                    "text": "Rewind 100 million years: Western North America was part of the Pacific Ocean! Tectonic shifts raised the Rockies 50-75 million years ago. The Colorado River's journey shaped iconic landscapes like the Grand Canyon. Fun fact: Massive volcanic eruptions & ancient lava dams once changed its course, causing epic floods!"
+                }
+            ]
+        },
+        {
+            "category": "NATURE",
+            "title": "Australian Magpie",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cracticus_tibicen_hypoleuca_male_domain.jpg/320px-Cracticus_tibicen_hypoleuca_male_domain.jpg",
+                    "text": "Australian magpies: native to Australia and New Guinea, with nine subspecies. Known for their black and white look, complex songs, and ability to recognize 100+ humans. While mostly friendly, watch out in spring for protective swoops! Popular as sports mascots, but considered pests in NZ"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Big_Swoop_December_2022.jpg/320px-Big_Swoop_December_2022.jpg",
+                    "text": "Australian magpie: revered in aboriginal folklore, South Australia's emblem since 1901, and on their flag from 1904. A favorite for sports teams like Collingwood since 1892. Crowned 2017's Australian Bird of the Year and Australia's top animal sound in 2023. A true Aussie icon!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Magpie_inflight.jpg/320px-Magpie_inflight.jpg",
+                    "text": "During Australia's magpie breeding season (late Aug-Dec), a few get aggressive, especially towards youngsters & cyclists. Attacks peak as chicks grow but are rare (<9%). Tips: Keep magpies in sight, wear sunglasses backward, or use bike flags. They're protected, so handle with care. Stay alert!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Australian_Magpie_feeding.jpg/320px-Australian_Magpie_feeding.jpg",
+                    "text": "Australian magpies are walkers, not hoppers, thanks to their unique legs. They're territorial, have complex social displays, and are clever—evident from a 2022 study where they assisted each other in removing tracking devices. They've even figured out how to safely eat toxic cane toads. Nature's marvels!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gymnorhina_tibicen%2C_nesting.JPG/320px-Gymnorhina_tibicen%2C_nesting.JPG",
+                    "text": "Australian magpies, native to most of Australia and parts of New Guinea, were introduced to New Zealand in the 1860s to combat pests. While once protected, their impact on native NZ birds is debated. They thrive in open spaces, and land-clearing has boosted their numbers. Fun fact: They even made it to Fiji, but not Sri Lanka!\""
+                }
+            ]
+        },
+        {
+            "category": "NATURE",
+            "title": "Aposematism",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Korreldragende-gifkikker-3.jpg/320px-Korreldragende-gifkikker-3.jpg",
+                    "text": "Ever wonder why some animals sport bold colors or make loud noises? It's called Aposematism - a warning sign to predators that they're not a tasty snack! Coined in 1877, this tactic isn't just about genuine threats; some creatures bluff their way out of danger. Nature's way of saying, \"Think twice before you bite!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Skunk_about_to_spray.jpg/320px-Skunk_about_to_spray.jpg",
+                    "text": "Nature's Warning Signs! Aposematism is nature's way of saying \"stay away!\" From toxic pitohuis birds to vibrant poison dart frogs, many creatures use bright colors & sounds to warn predators. Even plants & marine life like the blue-ringed octopus use this tactic. Ever wondered why skunks have that bold pattern? It's all about survival! "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Lygeaus_kalmii_nymphs.jpg/320px-Lygeaus_kalmii_nymphs.jpg",
+                    "text": "Aposematism: Why do some animals have bright warning colors? Evidence shows predators often avoid vibrant prey. Birds recall foul-tasting, bright prey longer than camouflaged ones. Theories suggest clustering amplifies warnings, or brighter males are favored. It's an evolutionary dance between predator and prey!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Micrurus_tener.jpg/320px-Micrurus_tener.jpg",
+                    "text": "Aposematism shapes evolution! Non-aposematic species like the hornet moth mimic dangerous counterparts like wasps to avoid predators—a tactic called Batesian mimicry. Meanwhile, Müllerian mimicry sees species like bees and wasps share warning colors, teaching predators to steer clear. Dive into nature's clever survival strategies!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Hycleus_lugens%2C_Meloidae.jpg/320px-Hycleus_lugens%2C_Meloidae.jpg",
+                    "text": "In 1867, Darwin asked Wallace why caterpillars are so vibrantly colored when they aren't seeking mates. Wallace theorized it's a warning: \"I taste bad!\" This idea was tested by John Jenner Weir in 1869, proving the first evidence for warning coloration in animals. By 1890, it was named \"aposematism\". Cool, right?"
+                }
+            ]
+        },
+        {
+            "category": "LIFESTYLE",
+            "title": "Maraba Coffee",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Maraba.JPG/320px-Maraba.JPG",
+                    "text": "Maraba coffee, grown in Rwanda's high-altitude volcanic soils, is handpicked mainly from March-May. Quality-sorted beans are sold to top roasters like Union Coffee (UK) & Community Coffee (US). Brewed into beer & backed by 500k farmers, this coffee has soared in the specialty market since 1999 with support from NUR & PEARL."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Starr_070308-5472_Coffea_arabica.jpg/320px-Starr_070308-5472_Coffea_arabica.jpg",
+                    "text": "From unsellable coffee in 1999 to global recognition! Rwandan farmers in Maraba formed Abahuzamugambi, turning their coffee game around. With partnerships like PEARL & Fairtrade status, they went from earning $0.33/kg to $3/kg. Cheers to Maraba's journey to excellence!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/NP_Rwanda_Coffee6_%286283320845%29.jpg/320px-NP_Rwanda_Coffee6_%286283320845%29.jpg",
+                    "text": "Discover Maraba coffee! Grown in Rwanda's scenic highlands, 93 mi from Kigali, it thrives between 5,577–6,889 ft above sea level on rich volcanic terrains. With 45 inches of rain yearly, peak harvest is March-May. A cool 68°F average keeps it fresh. Dive into this unique brew! "
+                }
+            ]
+        },
+        {
+            "category": "LIFESTYLE",
+            "title": "Batik",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/COLLECTIE_TROPENMUSEUM_Katoenen_wikkelrok_met_geometrisch_patroon_TMnr_5713-2.jpg/320px-COLLECTIE_TROPENMUSEUM_Katoenen_wikkelrok_met_geometrisch_patroon_TMnr_5713-2.jpg",
+                    "text": "Batik, an ancient Indonesian art of wax-resistant dyeing, hails from Java. Using tools like 'canting' or copper stamps, artisans create vibrant designs. Recognized by UNESCO in 2009 as a heritage masterpiece, Indonesia celebrates National Batik Day every Oct 2. Wear it, honor tradition!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/320px-Women_Making_Batik%2C_Ketelan_crop.jpg",
+                    "text": "Batik, from Java, Indonesia, is an ancient fabric dyeing art with roots possibly back to the 6th century. By the 13th century, its intricate patterns were renowned. Europe discovered it in 1817, and it later evolved in Africa and Australia. A blend of tradition and global influence!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Printing_wax-resin_resist_for_Batik_with_a_Tjap%2C_Yogyakarta%2C_1996.jpg/320px-Printing_wax-resin_resist_for_Batik_with_a_Tjap%2C_Yogyakarta%2C_1996.jpg",
+                    "text": "From the intricate hand-drawn batik tulis taking 1-3 months to create, to the faster stamped batik cap, and the vibrant painted batik lukis, Indonesia's batik techniques are a testament to its rich heritage. Recognized by UNESCO, these methods, especially the traditional batik tulis, showcase the nation's artistry and history. Dive into the world of batik and discover its unique charm!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Batik_craftswomen_in_Java_handmarking_resist_on_batik_tulis_cloth_with_tjantings.jpg/320px-Batik_craftswomen_in_Java_handmarking_resist_on_batik_tulis_cloth_with_tjantings.jpg",
+                    "text": "Discover the intricate art of Indonesian batik! From washing the cloth to drawing with hot wax using a pen-like tool called 'canting', this process can take up to a YEAR for the finest patterns. The result? Stunning contrasts between dyed & undyed areas. Dive into tradition!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Batik_Garutan.jpg/320px-Batik_Garutan.jpg",
+                    "text": "Batik, Indonesia's ancient art, weaves culture, communication, and tradition. Central to Javanese rituals, each motif tells a tale—from social status to ceremonies. UNESCO honored it as a Masterpiece of Oral and Intangible Heritage in 2009. Celebrate its legacy on National Batik Day, October 2nd!"
+                }
+            ]
+        },
+        {
+            "category": "LIFESTYLE",
+            "title": "Bacon Icecream",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Nitro-Scrambled_Egg_and_Bacon_Ice_Cream.jpg/320px-Nitro-Scrambled_Egg_and_Bacon_Ice_Cream.jpg",
+                    "text": "Bacon ice cream? It started as a joke on a 1973 British comedy show! Fast forward to 1982, a NY parlor whipped up this quirky flavor for April Fools'. By the 2000s, chef Heston Blumenthal turned it into a signature dish. From Victorian savory scoops to today's wild flavors, ice cream's journey is full of surprises!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/French_toast_with_bacon_ice_cream.jpg/320px-French_toast_with_bacon_ice_cream.jpg",
+                    "text": "English chef Heston Blumenthal, famed for his molecular gastronomy magic at the 3-star Michelin restaurant, the Fat Duck, once overcooked egg custard and turned it into a bacon-and-egg ice cream sensation! Using \"flavour encapsulation\", he's on a quest for time-released flavours. Oh, and he's an OBE for his culinary genius!"
+                }
+            ]
+        },
+        {
+            "category": "LIFESTYLE",
+            "title": "Friends",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Friends_season_one_cast.jpg/320px-Friends_season_one_cast.jpg",
+                    "text": "Friends\" aired from 1994-2004, capturing hearts with its iconic cast: Aniston, Cox, Kudrow, LeBlanc, Perry & Schwimmer. Set in NYC, it became one of TV's greatest, with 62 Emmy nominations & a finale watched by 52.5M! Remember the magic? They reunited in 2021 on HBO Max"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Friends_%28letras_brancas%2C_fundo_preto%29.svg/320px-Friends_%28letras_brancas%2C_fundo_preto%29.svg.png",
+                    "text": "Dive into the world of 'Friends'! Rachel escapes her posh life to join Monica's quirky crew in NYC. From Ross & Rachel's on-off romance to Joey's acting dreams, this sitcom gives us 10 seasons of laughter, love, and Central Perk coffee. From weddings to breakups, it's a 90s classic! "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Friends_actors_montage.jpg/320px-Friends_actors_montage.jpg",
+                    "text": "Meet the FRIENDS: Jennifer Aniston's Rachel went from waitress to fashionista. Courteney Cox's Monica: chef to mom. Lisa Kudrow's Phoebe sang quirky songs. Matt LeBlanc's Joey charmed with \"How you doin'?\". Matthew Perry's Chandler joked, and David Schwimmer's Ross loved paleontology. From $22.5K to $1M per episode, their bond was iconic!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Friends_%286196877626%29.jpg/320px-Friends_%286196877626%29.jpg",
+                    "text": "Friends\" wasn't just a show—it reshaped language with phrases like \"How you doin'?\" and popularized \"so\" as an intensifier. Icons like Jürgen Klopp and BTS's RM credit it for English skills. Central Perk replicas span from LA to Lahore. The series celebrates chosen families and lasting bonds."
+                }
+            ]
+        },
+        {
+            "category": "PLACES",
+            "title": "Rwanda",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Rwanda.svg/320px-Flag_of_Rwanda.svg.png",
+                    "text": "Rwanda, known as the 'land of a thousand hills', is nestled in Central Africa's Great Rift Valley. With a history from Stone Age settlements to kingdoms and the 1994 genocide, it's now led by President Kagame. Kigali is its heart, and its economy thrives on coffee, tea, and booming tourism."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/RwandaGeoProvinces.png/320px-RwandaGeoProvinces.png",
+                    "text": "Rwanda's rich tapestry: From early settlements around 8000 BC, the rise & fall of kingdoms, to colonial rule by Germany & Belgium. The 20th century saw tensions, a tragic genocide, & a resilient comeback. Today, Rwanda shines with rapid economic growth & a surge in life expectancy!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mountain_gorilla_from_Susa_Group_in_Karisimbi_thicket_of_Volcanoes_National_Park_in_Rwanda._Emmanuel_Kwizera.jpg/320px-Mountain_gorilla_from_Susa_Group_in_Karisimbi_thicket_of_Volcanoes_National_Park_in_Rwanda._Emmanuel_Kwizera.jpg",
+                    "text": "Rwanda, the \"Land of a Thousand Hills\", boasts Lake Kivu, one of the world's deepest, and peaks up to 4,507m. Home to mountain gorillas, 670 bird species, and the \"bush tiger mantis\". With Kigali at its heart, it's reviving its lion and rhino populations despite climate challenges. Dive in"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Igiseke.jpg/320px-Igiseke.jpg",
+                    "text": "Rwanda's rich tapestry: From the rhythmic umushagiriro & intore dances to the beats of ingoma drums. Dive into the oral traditions, witness the legacy of Alexis Kagame, and feel the pulse of modern hip hop. Explore crafts like imigongo, savor local cuisines, and join in umuganda community service. Whether it's football, cycling, or the Olympics, Rwanda's spirit shines bright!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Paul_Kagame_2014.jpg/320px-Paul_Kagame_2014.jpg",
+                    "text": "Rwanda's President Kagame, in power since 2000, could remain until 2034 due to a 2015 referendum. Despite its constitution promoting democracy, critics cite political repression. Rwanda boasts a Parliament with a female majority, one of only three globally. While praised for low corruption, concerns over human rights persist."
+                }
+            ]
+        },
+        {
+            "category": "PLACES",
+            "title": "Isle of Skye",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Skye-Portree-arjecahn.jpg/320px-Skye-Portree-arjecahn.jpg",
+                    "text": "Discover the Isle of Skye! Scotland's largest Inner Hebrides island boasts dramatic Cuillin mountains, a history rich with Celts, Vikings, and powerful clans like MacLeod & MacDonald. Once home to 20k people, its Gaelic culture thrives. Visit Portree's picturesque harbour, explore its diverse wildlife, and immerse in tales that inspired novels & songs."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Scotland_relief_location_map.jpg/320px-Scotland_relief_location_map.jpg",
+                    "text": "Skye, Scotland's second-largest island, boasts a dramatic landscape with the Cuillin hills at its heart. Its coastline, resembling a lobster's claw, offers breathtaking views like the iconic Quiraing and Old Man of Storr. Dive into Skye's rich geology, from basaltic sands to agate stones. Portree, its largest settlement, is a must-visit hub for travelers."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Flag_of_the_Isle_of_Skye.svg/320px-Flag_of_the_Isle_of_Skye.svg.png",
+                    "text": "Skye Island's allure: A global hub for Gaelic learners at Sabhal Mòr Ostaig, birthplace of legendary Gaelic folk rock band Runrig, and backdrop for films like Stardust & Macbeth. In 2020, Skye unfurled its official flag, weaving Gaelic & Viking tales. Dive into Skye's rich tapestry"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/2018_07_15_Schottland_%2884%29.jpg/320px-2018_07_15_Schottland_%2884%29.jpg",
+                    "text": "Skye's economy thrived on tourism, with £211M added in 2019 & 650k visitors in 2018. But COVID-19 hit hard, raising unemployment to 5.7% in 2020 from 2.4% in 2019. Despite its beauty, spots like Dunvegan Castle & Talisker Distillery faced overcrowding pre-pandemic. Here's to a balanced recovery"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Skye_Road_Bridge.JPG/320px-Skye_Road_Bridge.JPG",
+                    "text": "Skye's rich transport history! Skye Bridge, opened in '95, once had high tolls till they were removed in '04. The island boasts the world's last turntable ferry, MV Glenachulish. Travel by bus to Inverness & Glasgow, or catch a train from Kyle of Lochalsh. Ashaig airfield serves private flights & emergencies. A87 road connects major spots, but watch for single-track sections"
+                }
+            ]
+        },
+        {
+            "category": "PLACES",
+            "title": "Japan",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Regions_and_Prefectures_of_Japan_2.svg/320px-Regions_and_Prefectures_of_Japan_2.svg.png",
+                    "text": "Discover Japan! An island nation in East Asia, home to 14,125 islands with Tokyo as its bustling capital. From its ancient history of emperors and samurai to its modern status as a tech & cultural giant, Japan boasts the world's highest life expectancy and a rich tapestry of art, cuisine, and pop culture. Dive into a world where tradition meets innovation!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/320px-Flag_of_Japan.svg.png",
+                    "text": "Dive into Japan's rich tapestry! From its first inhabitants 30,000 years ago, the rise of samurai warriors, to opening its doors to the West in the 1850s. Japan faced WWII devastation, rebuilt to become a global economic powerhouse, and recently welcomed the Reiwa era in 2019. Explore its journey"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Japan_topo_en.jpg/320px-Japan_topo_en.jpg",
+                    "text": "Japan: A land of 14,125 islands stretching 3,000 km! 67% forested, home to 111 active volcanoes, and prone to earthquakes & tsunamis. With climates ranging from snowy Hokkaido to tropical Ryukyu, it's a biodiversity hotspot with 90,000+ wildlife species. Record heat? 41.1°C in 2018 & 2020. Committed to a greener future, Japan aims for carbon-neutrality by 2050!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Diet_of_Japan_Kokkai_2009.jpg/320px-Diet_of_Japan_Kokkai_2009.jpg",
+                    "text": "Japan's Emperor Naruhito holds a ceremonial role, with PM Fumio Kishida and the Cabinet wielding power. The 1947 Constitution is the world's oldest unamended one. In 2023, 26-year-old Ryosuke Takashima became Japan's youngest mayor. Japan maintains strong US ties but faces regional disputes."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Japan_Airlines%2C_Boeing_787-9_JA861J_NRT_%2819455285040%29.jpg/320px-Japan_Airlines%2C_Boeing_787-9_JA861J_NRT_%2819455285040%29.jpg",
+                    "text": "Japan boasts 750K miles of roads, competitive railways, and punctual Shinkansen bullet trains. With 175 airports, Tokyo's Haneda stood as Asia's 2nd busiest in 2019. Post-2011, there's a shift from nuclear energy. Impressively, almost everyone in Japan has access to clean piped water!"
+                }
+            ]
+        },
+        {
+            "category": "PLACES",
+            "title": "Winnipeg",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UofW.JPG/320px-UofW.JPG",
+                    "text": "Winnipeg, Canada's 6th largest city with a pop. of 749,607, sits at the heart of North America! Named after \"muddy water\" in Cree, it's a historic hub for Indigenous trade & birthplace of the Métis Nation. From hosting the '67 Pan Am Games to vibrant festivals & pro sports teams, it's truly the Gateway to the West!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Esplanderiel.jpg/320px-Esplanderiel.jpg",
+                    "text": "Winnipeg, named after Lake Winnipeg 65km north, has roots in Cree & Ojibwe meaning 'murky water'. First eyed by explorer Henry Kelsey in 1690, it was later marked by fur trader La Vérendrye in the 1730s. The name graced The Nor'-Wester's masthead in 1866 & became official in 1873!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Canadian_Museum_for_Human_Rights%2C_Winnipeg%2C_Manitoba_%2829035323837%29.jpg/320px-Canadian_Museum_for_Human_Rights%2C_Winnipeg%2C_Manitoba_%2829035323837%29.jpg",
+                    "text": "Winnipeg: Canada's 2010 Cultural Capital with 26 Historic Sites! Dive into The Forks' 4M visits, Winnie-the-Pooh's roots, unique dishes, and the oldest art gallery in Western Canada. From the Royal Winnipeg Ballet to the NHL's Jets and the 12-time champion Blue Bombers, it's a city of wonders"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Winnipeg_International_Airport_arrivals_hall.jpg/320px-Winnipeg_International_Airport_arrivals_hall.jpg",
+                    "text": "Winnipeg's transit started in 1882 with horse-drawn streetcars, evolving to diesel buses. A key railway hub with US connections, it has a major airport, CentrePort Canada trade zone, and a unique biosafety level 4 lab. Yet, the city faces challenges with outsourced services like garbage collection."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/River_River_Curling.jpg/320px-River_River_Curling.jpg",
+                    "text": "Winnipeg, the \"Gateway to the West\", has North America's largest urban elm forest. Nestled in the Canadian Prairies, it's protected from floods by the Red River Floodway. With warm summers, cold winters, it's Canada's second sunniest city. Dive into its historic Exchange District downtown!"
+                }
+            ]
+        },
+        {
+            "category": "PERSONALITIES",
+            "title": "Lionel Messi",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg/320px-Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+                    "text": "From Argentina to global stardom! Lionel Messi, football legend, boasts 7 Ballon d'Ors, record goals in La Liga, and led Argentina to World Cup victory in 2022. Once Barcelona's gem, he now shines in Inter Miami. With over 800 career goals and a billion in earnings, Messi's legacy is unmatched! "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Leo_Messi_v_Granada_2014.jpg/320px-Leo_Messi_v_Granada_2014.jpg",
+                    "text": "Lionel Messi: A football legend & marketing powerhouse! From 2009-2014, he dominated as the highest-paid footballer, breaking the €100m mark in 2018.  Forbes crowned him the top-earning athlete in 2019. Beyond the pitch, he's a brand ambassador for giants like Adidas, Pepsi, & Gillette. From Pro Evolution Soccer to FIFA, Messi's face is iconic. With 114M+ Facebook followers & a record-breaking 70M likes on an IG post, his global influence is undeniable. Whether it's football, endorsements, or cultural impact, Messi's legacy shines bright!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Moment_of_the_Champions_League_final_FC_Barcelona_-_Juventus_2015.jpg/320px-Moment_of_the_Champions_League_final_FC_Barcelona_-_Juventus_2015.jpg",
+                    "text": "Messi's agility, stemming from his short stature, makes him a dribbling maestro, often outpacing defenders even with the ball! Pep Guardiola claims he's faster WITH the ball than without. A magician on the field, Messi's known for creating goals out of thin air. As of Aug 2023, he's 6th all-time with 64 direct free-kick goals. From winger to playmaker, Messi's versatility is unmatched. As he aged, he evolved into one of football's best passers, adapting his play & avoiding injuries. A legend in every sense!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Messi_Maradona.jpg/320px-Messi_Maradona.jpg",
+                    "text": "By 20, Messi was hailed as the world's best by legends like Maradona & Ronaldinho. His journey from being dubbed the \"New Maradona\" to surpassing the icon in many eyes is legendary. Once seen more as Catalan than Argentine, Messi's love for his homeland & 2021 Copa América win solidified his legacy. From Barça's trebles to World Cup glory, Messi's brilliance shines on and off the pitch. "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cristiano_Ronaldo_and_Lionel_Messi_-_Portugal_vs_Argentina%2C_9th_February_2011.jpg/320px-Cristiano_Ronaldo_and_Lionel_Messi_-_Portugal_vs_Argentina%2C_9th_February_2011.jpg",
+                    "text": "From Ali-Frazier to Federer-Nadal, sports rivalries have always captivated us. Enter Messi vs Ronaldo! Since 2008, Messi leads with 7 Ballons d'Or, 6 FIFA Best Player awards, and 6 Golden Shoes. Their epic face-offs in El Clásico and contrasting styles keep fans debating. But after Messi's 2022 World Cup win, many say he's settled the score!"
+                }
+            ]
+        },
+        {
+            "category": "PERSONALITIES",
+            "title": "Maya Angelou",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg/320px-Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg",
+                    "text": "Born in 1928, Maya Angelou rose from humble beginnings to become a renowned poet, memoirist, and civil rights activist. Her \"I Know Why the Caged Bird Sings\" earned global acclaim. From working with MLK Jr. to reciting poetry at Clinton's '93 inauguration, Angelou's legacy is a testament to resilience and brilliance."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Portrait_photograph_of_Maya_Angelou_by_Henry_Monroe_from_the_1969_first-edition_dust_jacket_of_I_Know_Why_the_Caged_Bird_Sings.png/320px-Portrait_photograph_of_Maya_Angelou_by_Henry_Monroe_from_the_1969_first-edition_dust_jacket_of_I_Know_Why_the_Caged_Bird_Sings.png",
+                    "text": "From dancing in San Francisco clubs to touring Europe, Maya Angelou's journey was nothing short of extraordinary. She changed her name, embraced calypso, and wrote iconic autobiographies. By 1993, she recited poetry at a presidential inauguration. A trailblazer, she defied norms and became a voice for many. "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Portrait_photograph_of_Maya_Angelou_by_Marlene_Callahan_Wallace_from_the_1978_first-edition_dust_jacket_of_And_Still_I_Rise.jpg/320px-Portrait_photograph_of_Maya_Angelou_by_Marlene_Callahan_Wallace_from_the_1978_first-edition_dust_jacket_of_And_Still_I_Rise.jpg",
+                    "text": "Maya Angelou's rich tapestry of life: DNA traces to West Africa's Mende people, with a history marked by resilience & courage. From her great-grandma's trials post-Civil War to Angelou's own journey, she embraced every facet of her story. A prolific writer, she found solace in solitude, writing rituals, and her love for cooking. Always authentic, Angelou's legacy is a testament to living one's truth."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Angelou_Obama.jpg/320px-Angelou_Obama.jpg",
+                    "text": "Maya Angelou, a literary giant, penned 7 autobiographies, journeying from Arkansas to Africa & pivotal moments like MLK Jr.'s assassination. Her 3rd book broke records, and by 85, she released 'Mom & Me & Mom'. From poetry to acting, she made history in film & was chosen by President Clinton for his '93 inauguration. A legacy unmatched!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Maya_Angelou_visits_YCP_Feb_2013.jpg/320px-Maya_Angelou_visits_YCP_Feb_2013.jpg",
+                    "text": "Maya Angelou revolutionized autobiographical writing, blending fiction techniques & challenging its structure. Drawing from African-American traditions, she spoke as 'I' but meant 'we', defending Black culture. While some critics found her style dated, Angelou's impact paved the way for future Black writers to be seen as individuals, not just race representatives."
+                }
+            ]
+        },
+        {
+            "category": "PERSONALITIES",
+            "title": "Nelson Mandela",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/320px-Nelson_Mandela_1994.jpg",
+                    "text": "Born into Thembu royalty, Nelson Mandela became South Africa's first black president in 1994 after 27 years in prison for fighting apartheid. Championing racial reconciliation, he won the Nobel Peace Prize and is globally hailed as an icon of democracy. Remembered as Madiba, he's South Africa's \"Father of the Nation\""
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Young_Mandela.jpg/320px-Young_Mandela.jpg",
+                    "text": "Born on 18 July 1918, Nelson Mandela, originally named \"troublemaker\" in Xhosa, later became known as Madiba. Descendant of royalty, his father was a chief, but both parents were illiterate. Growing up in Qunu, young Mandela herded cattle, but education beckoned. Baptized a Methodist, his English name \"Nelson\" was given by a teacher. His father's death left him feeling \"adrift\", inheriting a sense of fairness. Later, under the guardianship of Thembu regent, Chief Jongintaba, Mandela embraced Christianity, studied at a mission school, and underwent a rite of passage at 16, marking his journey to manhood."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Mandela_voting_in_1994.jpg/320px-Mandela_voting_in_1994.jpg",
+                    "text": "Nelson Mandela: A complex leader who blended African nationalism & socialism. Influenced by Gandhi, Nehru, & African-American activists, he navigated between non-violence & strategic violence. A believer in democracy, he valued inclusivity & freedom of speech. While inspired by Marxism & even associated with the Communist Party, he championed democracy & made pragmatic economic choices as president. Mandela's legacy? A blend of global influences & African traditions, always striving for justice."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Nelson_Mandela%2C_2000_%284%29.jpg/320px-Nelson_Mandela%2C_2000_%284%29.jpg",
+                    "text": "Mandela: A charismatic leader with a flair for style, known for iconic 'Madiba shirts'. A master of imagery, he wasn't just about appearances; he lived simply, made his own bed, and abstained from alcohol. A man of humor, loyalty, and British manners, he bridged divides, always seeking common ground. Raised Methodist, he leaned on Ubuntu philosophy. Married thrice, he fathered six children and was a doting granddad. A life rich in contrasts and commitment"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Nelson_Mandela_tributes_in_Parliament_Square_-_London_-_DSCF0404.jpg/320px-Nelson_Mandela_tributes_in_Parliament_Square_-_London_-_DSCF0404.jpg",
+                    "text": "Nelson Mandela: A beacon of hope, democracy, and social justice. From South Africa's father of democracy to a global icon, Mandela's journey from the world's most famous political prisoner in the 1980s to a symbol of human equality is unparalleled. Despite controversies, he amassed 250+ awards, including the Nobel Peace Prize. Remembered globally, the UN celebrates his legacy with \"Mandela Day\" on July 18."
+                }
+            ]
+        },
+        {
+            "category": "PERSONALITIES",
+            "title": "Nominative Determinism",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Usain_Bolt_after_4_%C3%97_100_m_Rio_2016.jpg/320px-Usain_Bolt_after_4_%C3%97_100_m_Rio_2016.jpg",
+                    "text": "Ever noticed people with names matching their jobs? It's \"nominative determinism\", suggesting names influence career paths. Coined by New Scientist in 1994 after spotting authors like Snowman on polar regions. From Lieutenant Kafka on Guantanamo to Cardinal Sin in Manila, names might guide us"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Official_portrait_of_Lord_Judge_crop_2%2C_2019.jpg/320px-Official_portrait_of_Lord_Judge_crop_2%2C_2019.jpg",
+                    "text": "Ever wonder about the history of names? In pre-urban times, people had single names like Beornheard. Surnames, linked to jobs or traits, emerged after the Norman conquest. By the 14th century, they became hereditary. In the 17th century, names were chosen for their deeper meanings. Fast forward, and by the 20th century, names like Smith and Taylor dominated, even if few were actual smiths or tailors. Fun fact: Names fitting a job or character are called aptronyms. Imagine a piano teacher named Patience Scales! "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amy_Freeze_at_Soldier_Field.jpg/320px-Amy_Freeze_at_Soldier_Field.jpg",
+                    "text": "Ever felt your name influenced your career? Some say yes, like Sue Yoo becoming a lawyer, while others deny it. Studies have mixed results: some found a link between names & professions, while others debunked it. For instance, more Dennises in dentistry? Maybe not! Dive into the debate on nominative determinism!\""
+                }
+            ]
+        },
+        {
+            "category": "SPORTS",
+            "title": "Aston Villa F.C.",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Aston_Villa_logo.svg/320px-Aston_Villa_logo.svg.png",
+                    "text": "Aston Villa, founded in 1874, is one of England's oldest & most decorated football clubs! With 7 Football League titles, 7 FA Cups, & a European Cup win, they've been a force since the 1880s. Did you know they helped pioneer football's move to professionalism & founded the world's first Football League in 1888? From Villa Park to the Premier League, their legacy is legendary. "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/AVilla1899.jpg/320px-AVilla1899.jpg",
+                    "text": "Founded in 1874, Aston Villa's rich history includes being a founding member of both the Football League (1888) & Premier League (1992). From winning the European Cup in 1982 to facing relegations, the club's journey has been a rollercoaster. Key figures like George Ramsay, Ron Saunders, and Dean Smith have shaped its legacy. Recently, after a few managerial changes, Unai Emery took the reins, securing a 7th place finish in 2022-23. Here's to more chapters in Villa's storied history! "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Aston_Villa_F.C._logo.svg/320px-Aston_Villa_F.C._logo.svg.png",
+                    "text": "Aston Villa's iconic claret & sky blue colors have a rich history, evolving from royal blue & scarlet in the 1870s. The club's badge has seen changes too, with the latest in 2022 for on-field kits. From local manufacturers to global brands like Umbro & Nike, Villa's kits have showcased various sponsors, even pioneering charity partnerships with Acorns Children's Hospice. This season? Castore crafts the kit, with BK8 & Trade Nation as sponsors."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/VillaPark_PanoramaFromTrinityRoadStand.jpg/320px-VillaPark_PanoramaFromTrinityRoadStand.jpg",
+                    "text": "Aston Villa's iconic Villa Park, hosting football since the 1800s, is set to expand over 50k capacity! From being the 1st English ground with international matches in 3 centuries to its record 55 FA Cup semi-finals, its legacy is unmatched. Plus, did you know? Since FIFA 15, you can play in Villa Park in the FIFA video game!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/12th_Man.jpg/320px-12th_Man.jpg",
+                    "text": "Aston Villa, with global fan clubs, has been proactive in engaging its diverse fanbase. From the Aston Pride initiative to the Villa in the Community programme, they're fostering inclusivity. While they've faced challenges, like hooliganism in the past, the focus now is on unity and fan involvement. Remember the Second City Derby? It's a historic rivalry with Birmingham City, but Villa's ties with West Brom are deep-rooted too"
+                }
+            ]
+        },
+        {
+            "category": "SPORTS",
+            "title": "Baseball",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mookie_Betts_hitting_the_ball_%2836478781664%29.jpg/320px-Mookie_Betts_hitting_the_ball_%2836478781664%29.jpg",
+                    "text": "Baseball: A thrilling bat-and-ball game where two teams of nine aim to score by hitting the ball and running bases. Originating from 18th-century England, it's now \"America's Pastime\" and a global sensation. From the MLB's World Series in the US to the Olympics, it's a timeless sport loved by many!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Baseball_positions.svg/320px-Baseball_positions.svg.png",
+                    "text": "Did you know? An MLB team has a 26-player roster, including 8 regular position players, 5 starting pitchers, 7 relief pitchers, and utility players. While most baseball leagues use the DH rule, some like Japan's Central League don't. Managers, assisted by coaches, strategize the game, and umpires ensure fair play. In MLB playoffs, six umpires are on the field!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Baseball_pick-off_attempt.jpg/320px-Baseball_pick-off_attempt.jpg",
+                    "text": "Baseball's beauty lies in its strategy! From the pitcher's grip determining the ball's movement to the catcher's signals guiding the play. With runners on base, tactics shift – from pickoffs to bunts, and from hit-and-runs to squeeze plays. Every move is a calculated dance between offense and defense, aiming for that home run moment!"
+                }
+            ]
+        },
+        {
+            "category": "SPORTS",
+            "title": "Yoga",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Patanjali_Statue.jpg/320px-Patanjali_Statue.jpg",
+                    "text": "Yoga, meaning 'union', began in ancient India, blending physical, mental, and spiritual disciplines. First mentioned in the Rigveda, its evolution spans from the 5th century BCE to modern times. While traditional yoga emphasizes meditation and detachment, the West often sees it as a fitness and relaxation method. Thanks to gurus like Swami Vivekananda, yoga's ancient wisdom now resonates globally!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bikram_Yoga_sequence_of_asanas.jpg/320px-Bikram_Yoga_sequence_of_asanas.jpg",
+                    "text": "Yoga's rich history spans millennia, aiming to still the mind, unite with the divine, and achieve pure awareness. With roots in the 5th century CE, its core principles include finding inner peace, expanding consciousness, and understanding reality. From body control to philosophical schools, yoga's depth is vast and transformative. Dive in and discover its timeless wisdom!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/The_Yoga_Institute.jpg/320px-The_Yoga_Institute.jpg",
+                    "text": "Yoga's rich tapestry spans Indian religions, from Hinduism's diverse practices like jnana & hatha yoga to Jainism's liberation-focused teachings. Buddhism offers methods for awakening, while classical yoga emphasizes self-awareness. Vedanta dives into spiritual knowledge, and Tantra explores deity visualizations. Hatha strengthens body & mind, and kundalini awakens cosmic energy. Dive deep into this ancient wisdom!"
+                }
+            ]
+        },
+        {
+            "category": "SPORTS",
+            "title": "Scuba Diving",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/ScubaDiver.jpg/320px-ScubaDiver.jpg",
+                    "text": "Dive into the world of scuba! Originating in 1952, scuba (Self-Contained Underwater Breathing Apparatus) lets divers explore underwater with their own air supply. From compressed air to nitrox blends, divers can stay submerged longer and deeper. Choose between open-circuit systems that release exhaled gas or rebreathers for stealth and longer dives. Whether for fun, science, or covert ops, scuba offers a unique underwater adventure. Just strap on fins, a mask, and get trained for a deep dive!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Scuba_Diver_-_Ahmad_Faiz_Mustafa.jpg/320px-Scuba_Diver_-_Ahmad_Faiz_Mustafa.jpg",
+                    "text": "Dive into the deep with scuba gear! Equip yourself with breathing apparatus, diving suits, and fins to explore the underwater world. Remember, as you go deeper, pressure increases - every 10m adds 14.7 psi! Masks help correct vision distortions, while dive computers track depth & time. Always monitor your gas supply and have an emergency backup. Dive safely and marvel at the ocean's wonders!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Gustavo_Gerdel_Fotografiando_Tiburones.jpg/320px-Gustavo_Gerdel_Fotografiando_Tiburones.jpg",
+                    "text": "Dive into the world of scuba! From exploring underwater caves and wrecks for fun to military and police operations, scuba diving isn't just a hobby. Professionals inspect ship hulls, capture underwater photography, and even conduct scientific research. Whether you're seeking adventure or a career, the deep blue awaits!"
+                }
+            ]
+        },
+        {
+            "category": "TOPICAL",
+            "title": "Climate change",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Bobcat_Fire%2C_Los_Angeles%2C_San_Gabriel_Mountains.jpg/320px-Bobcat_Fire%2C_Los_Angeles%2C_San_Gabriel_Mountains.jpg",
+                    "text": "Climate change, driven by human activities like burning fossil fuels, is causing rapid global warming. Its effects? Melting ice, intense storms, species extinction & more. We're already at 1.2°C warming. To stay below 2°C, we must halve emissions by 2030 & hit net-zero by 2050. The future? Swap fossil fuels for renewables & embrace carbon-capturing methods"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Change_in_Average_Temperature_With_Fahrenheit.svg/320px-Change_in_Average_Temperature_With_Fahrenheit.svg.png",
+                    "text": "From 2011-2020, Earth warmed by an avg. of 1.09°C compared to 1850-1900 levels. 2020 was 1.2°C hotter than pre-industrial times. Arctic regions are heating up twice as fast, impacting ocean currents. Human actions, especially burning fossil fuels, have surged greenhouse gas levels. CO2 concentrations are now the highest in 2 million years. Thankfully, forests and oceans absorb nearly half of our CO2 emissions. Let's safeguard them and act for a sustainable future!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/US_Navy_071120-M-8966H-005_An_aerial_view_over_southern_Bangladesh_reveals_extensive_flooding_as_a_result_of_Cyclone_Sidr.jpg/320px-US_Navy_071120-M-8966H-005_An_aerial_view_over_southern_Bangladesh_reveals_extensive_flooding_as_a_result_of_Cyclone_Sidr.jpg",
+                    "text": "Climate change is reshaping our world: oceans acidifying, sea levels rising 3.3mm/year, Arctic ice melting, and extreme weather events intensifying. By 2100, extreme heat could threaten up to 75% of the global population. The WHO warns of 250,000 additional deaths/year by 2050. Our actions now will shape the future. Let's act before it's too late!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/20080708_Chicago_City_Hall_Green_Roof_Edit1.jpg/320px-20080708_Chicago_City_Hall_Green_Roof_Edit1.jpg",
+                    "text": "Climate change impacts nations differently, often hitting those least responsible the hardest. While policies & global agreements like the Paris Agreement aim to address this, we're lagging in our goals. By 2021, we've only reduced emissions by 0.5% since 2010, far from the needed 45% to limit warming to 1.5°C. It's a complex issue, but the call for justice, fairness, and sustainable development is clear. Let's act now! "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/20220629_Public_estimates_of_scientific_consensus_on_climate_change_-_horizontal_bar_chart.svg/320px-20220629_Public_estimates_of_scientific_consensus_on_climate_change_-_horizontal_bar_chart.svg.png",
+                    "text": "Climate change denial, fueled by fossil fuel interests, has spread misinformation globally. From casting doubt like the tobacco industry to creating echo chambers, these tactics aim to delay action. Yet, since the '80s, awareness has grown, with movies like 'An Inconvenient Truth' and youth-led protests like Greta Thunberg's School Strike. As of 2021, many see it as a global emergency, pushing for stronger policies and even using litigation to demand action. "
+                }
+            ]
+        },
+        {
+            "category": "TOPICAL",
+            "title": "Sustainable energy",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Darling_Wind_Farm.jpg/320px-Darling_Wind_Farm.jpg",
+                    "text": "Sustainable energy is key for our future! Renewable sources like wind & solar are on the rise, making up 8.5% of global electricity in 2019. Yet, 85% of energy still comes from fossil fuels, causing 76% of global emissions. To combat climate change & ensure everyone's access to clean energy, we need a major shift in how we produce & consume energy. Let's invest in a greener tomorrow! "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Andasol_Guadix_4.jpg/320px-Andasol_Guadix_4.jpg",
+                    "text": "Sustainable energy: crucial for our future! The UN's 1987 report highlighted the need to use energy without harming future generations. Today, 85% of our energy comes from fossil fuels, causing climate change & air pollution. Shockingly, 790M people still lack electricity in 2020. Let's aim for clean, accessible energy for all by 2030! "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Renewable_Energy_Development_in_the_California_Desert_006.jpg/320px-Renewable_Energy_Development_in_the_California_Desert_006.jpg",
+                    "text": "Renewable energy is on the rise!  Solar & wind are now the cheapest power sources in many countries. By 2030, solar mini-grids could be the most affordable way to power 770M people. Hydropower still leads, but solar is expected to dominate by 2027. Biomass & geothermal play roles too, but come with challenges. Nuclear, a low-carbon source, sparks debate. The future? A mix of these, aiming for a greener planet."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/1_MW_4_MWh_Turner_Energy_Storage_Project_in_Pullman%2C_WA.jpg/320px-1_MW_4_MWh_Turner_Energy_Storage_Project_in_Pullman%2C_WA.jpg",
+                    "text": "Transforming our energy system is crucial to combat climate change! Switching from oil to solar means revamping our grid, adopting electric cars, and building EV infrastructure. By 2050, we aim for net-zero emissions with innovations in battery tech & carbon-neutral fuels. Plus, cleaner energy = healthier lives. Let's leapfrog fossil fuels and embrace renewables for a brighter future! "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/MicrocityCarSharingHangzhou.jpg/320px-MicrocityCarSharingHangzhou.jpg",
+                    "text": "Transformative energy policies can reduce emissions, boost air quality, and save money! Since the 1970s, governments have pushed for sustainable energy. By 2050, we could see a net-zero emission energy system with the right public funding. Carbon pricing can motivate industries to go green, but it's not enough alone. And guess what? Transitioning to sustainable energy could create 24M new jobs by 2030! Let's champion a cleaner, job-rich future. "
+                }
+            ]
+        },
+        {
+            "category": "TOPICAL",
+            "title": "African Humid Period",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sahara_satellite_hires.jpg/320px-Sahara_satellite_hires.jpg",
+                    "text": "14,600-14,500 years ago, Africa's climate shifted, turning the vast Sahara desert into a lush landscape with lakes & rivers! This African Humid Period, influenced by Earth's tilt & greenhouse gases, birthed ancient civilizations like Egypt. But by 6,000 years ago, as the climate dried up, humans migrated to places like the Nile Valley, shaping early societies."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Africa_Climate_14000bp.png/320px-Africa_Climate_14000bp.png",
+                    "text": "Did you know? The Sahara Desert was once green! Ancient scholars like Herodotus hinted at a lush Sahara, but it wasn't until petroglyph discoveries in the 1800s & 1900s that the idea of a 'Green Sahara' took root. Recent studies even suggest Earth's orbit impacts our climate. Dive into the mysteries of the past and discover how our world has transformed over millennia!"
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tarangire-Natpark800600.jpg/320px-Tarangire-Natpark800600.jpg",
+                    "text": "Between 15,000-5,000 years ago, the African humid period turned the Sahara green! Why? A mix of increased solar radiation, Earth's orbit tweaks, and feedback from vegetation and large lakes like Megachad. This led to stronger monsoons, more rain, and a lush landscape. But climate models show it wasn't just one factor - from sea temperatures to wind patterns, our planet's intricate systems all played a part."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Dust_Storms_from_Africa%27s_Bodele_Depression%2C_Natural_Hazards_DVIDS848674.jpg/320px-Dust_Storms_from_Africa%27s_Bodele_Depression%2C_Natural_Hazards_DVIDS848674.jpg",
+                    "text": "Ancient climate clues reveal: A greener Sahara during the African Humid Period (AHP) shifted global weather patterns! It intensified monsoons, altered atmospheric circulation, and might've boosted tropical cyclones. This lush Sahara even influenced early settlements in Mesopotamia!"
+                }
+            ]
+        },
+        {
+            "category": "TOPICAL",
+            "title": "Sleep Hygiene",
+            "highlights": [
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Koh_Kut%2C_Thailand%2C_The_Broadcast.jpg/320px-Koh_Kut%2C_Thailand%2C_The_Broadcast.jpg",
+                    "text": "Did you know? Sleep hygiene, developed in the 1970s, offers tips like a regular sleep schedule & limiting light exposure before bed to combat insomnia. But by 2021, evidence of its effectiveness remains inconclusive. Experts now lean towards therapies like CBT-i for better results. "
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Sleeping-girl.jpg/320px-Sleeping-girl.jpg",
+                    "text": "Did you know? The term 'sleep hygiene' dates back to 1939, but it was popularized in 1977 by psychologist Peter Hauri. While sleep advice has evolved (like views on sleeping pills), the goal remains: better sleep! Note: Sleep hygiene was once a diagnostic category but was removed in 2014 for clinical reasons."
+                },
+                {
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/COLLECTIE_TROPENMUSEUM_Kitty_Westerman_in_bed_met_haar_pasgeboren_dochter_Antoinette_TMnr_60027450.jpg/320px-COLLECTIE_TROPENMUSEUM_Kitty_Westerman_in_bed_met_haar_pasgeboren_dochter_Antoinette_TMnr_60027450.jpg",
+                    "text": "Want better sleep? Clinicians advise 7-8 hours nightly, cautioning against long naps. Regular sleep schedules, daytime exercise, and avoiding bright lights before bed help. Skip caffeine, nicotine, and big meals pre-sleep. Create a dark, quiet, cool room. And fun fact: medium-firm mattresses in 2015 were found best for spinal health! "
                 }
             ]
         }
