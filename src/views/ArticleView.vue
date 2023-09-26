@@ -3,6 +3,24 @@
 		<div class="content">
 			<!-- content insertion here -->
 		</div>
+		<div class="footer">
+			<ul id="footer-info" class="footer-info hlist">
+				<li id="footer-info-copyright">
+					Content is available under <a
+						class="external"
+						rel="nofollow"
+						href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a> unless otherwise noted.
+				</li>
+				<ul id="footer-places" class="footer-places hlist hlist-separated">
+					<li id="footer-places-privacy">
+						<a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a>
+					</li>
+					<li id="footer-places-terms-use">
+						<a href="https://mobile.test/wiki/Terms_of_Use">Terms of use</a>
+					</li>
+				</ul>
+			</ul>
+		</div>
 	</div>
 </template>
 
@@ -18,13 +36,13 @@ const transforms = {
 	},
 	'remove stuff': ( doc ) => {
 		const selector = [
-			'script',
-			'figure',
-			'table',
+			// 'script',
+			// 'figure',
+			// 'table',
 			'sup',
 			'.pcs-collapse-table-container',
-			'.thumb',
-			'.hatnote',
+			// '.thumb',
+			// '.hatnote',
 			"[ role='navigation' ]"
 		].join( ',' );
 		for ( const n of doc.querySelectorAll( selector ) ) {
@@ -41,8 +59,19 @@ const transforms = {
 		for ( const section of doc.querySelectorAll( '.pcs-fold-hr ~ section' ) ) {
 			section.remove();
 		}
-		if ( foldHr ) {
-			foldHr.remove();
+		// if ( foldHr ) {
+		// 	foldHr.remove();
+		// }
+	},
+	'turn sections into collapsable section': ( doc ) => {
+		for ( const section of doc.querySelectorAll( 'section' ) ) {
+			section.style.display = 'unset';
+			// @todo collapsable
+		}
+	},
+	'turn figure into an image': ( doc ) => {
+		for ( const figure of doc.querySelectorAll( 'figure' ) ) {
+			// @todo includes the caption
 		}
 	}
 };
@@ -70,3 +99,9 @@ const fetchArticle = function ( title ) {
 fetchArticle( route.params.title );
 
 </script>
+
+<style scoped>
+	.footer {
+		margin: 0 auto;
+	}
+</style>
