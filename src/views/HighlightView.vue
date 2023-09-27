@@ -48,7 +48,7 @@ const article = data.articles.find( ( a ) => a.title === props.title );
 .wiki-highlight-view-progressbar {
 	position: fixed;
 	width: 50%;
-	background-color: blue;
+	background-color: #00f;
 	bottom: 0;
 }
 </style>
