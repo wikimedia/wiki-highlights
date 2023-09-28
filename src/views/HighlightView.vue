@@ -14,6 +14,12 @@
 				:title="index === 0 ? article.title : ''"
 				:text="highlight.text"
 			/>
+			<div
+				v-if="index === 0"
+				class="wiki-highlight-view-swipe"
+			>
+				Swipe up for more
+			</div>
 		</div>
 		<ProgressBar
 			:progress="progress"
@@ -59,6 +65,11 @@ onMounted( updateProgress );
 	padding-bottom: 50px;
 	scroll-snap-stop: always;
 	scroll-snap-align: start;
+}
+
+.wiki-highlight-view-swipe {
+	text-align: center;
+	margin-bottom: 300px;
 }
 
 .wiki-highlight-view-progressbar {
