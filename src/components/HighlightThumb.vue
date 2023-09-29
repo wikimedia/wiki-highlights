@@ -54,10 +54,10 @@ function goToHighlight() {
 
 .wiki-highlight-thumb-text h2 {
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 
 .wiki-highlight-thumb-text p {
-	font-size: 0.9em;
+	font-size: 1.1em;
 }
 </style>
