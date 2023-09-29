@@ -66,14 +66,15 @@ const transforms = {
 		for ( const figure of doc.querySelectorAll( 'figure' ) ) {
 			const newSpanElement = document.createElement( 'span' );
 			const imgElement = document.createElement( 'img' );
+			imgElement.className = 'figure';
 			newSpanElement.innerHTML = figure.innerText;
 
 			// Set the src attribute of the <img> element to the data-src attribute.
 			if ( newSpanElement.firstChild.dataset ) {
-				imgElement.src = newSpanElement.firstChild && newSpanElement.firstChild.dataset.src;
-				figure.appendChild( imgElement );
+				imgElement.src = newSpanElement.firstChild.dataset.src;
+				figure.firstChild.remove();
+				figure.insertBefore( imgElement, figure.firstChild );
 			}
-			// @todo includes the caption
 		}
 	}
 };
@@ -102,8 +103,12 @@ fetchArticle( route.params.title );
 
 </script>
 
-<style scoped>
+<style>
 	.footer {
-		margin: 0 auto;
+		margin: 0 3.35em;
+	}
+
+	.figure {
+		max-width: 100%;
 	}
 </style>
