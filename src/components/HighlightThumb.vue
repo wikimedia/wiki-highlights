@@ -46,6 +46,7 @@ function goToHighlight() {
 	background-position: center;
 	background-size: cover;
 	height: 60%;
+	border-bottom: solid 1px #808080;
 }
 
 .wiki-highlight-thumb-text {
