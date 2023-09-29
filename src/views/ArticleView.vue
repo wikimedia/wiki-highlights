@@ -36,13 +36,10 @@ const transforms = {
 	},
 	'remove stuff': ( doc ) => {
 		const selector = [
-			// 'script',
-			// 'figure',
-			// 'table',
+			'script',
 			'sup',
 			'.pcs-collapse-table-container',
-			// '.thumb',
-			// '.hatnote',
+			'.hatnote',
 			"[ role='navigation' ]"
 		].join( ',' );
 		for ( const n of doc.querySelectorAll( selector ) ) {
@@ -54,14 +51,10 @@ const transforms = {
 			a.replaceWith( a.innerHTML );
 		}
 	},
-	'remove sections after fold and the fold itself': ( doc ) => {
-		const foldHr = doc.querySelector( '.pcs-fold-hr' );
+	'remove sections after fold': ( doc ) => {
 		for ( const section of doc.querySelectorAll( '.pcs-fold-hr ~ section' ) ) {
 			section.remove();
 		}
-		// if ( foldHr ) {
-		// 	foldHr.remove();
-		// }
 	},
 	'turn sections into collapsable section': ( doc ) => {
 		for ( const section of doc.querySelectorAll( 'section' ) ) {
@@ -71,6 +64,15 @@ const transforms = {
 	},
 	'turn figure into an image': ( doc ) => {
 		for ( const figure of doc.querySelectorAll( 'figure' ) ) {
+			const newSpanElement = document.createElement( 'span' );
+			const imgElement = document.createElement( 'img' );
+			newSpanElement.innerHTML = figure.innerText;
+
+			// Set the src attribute of the <img> element to the data-src attribute.
+			if ( newSpanElement.firstChild.dataset ) {
+				imgElement.src = newSpanElement.firstChild && newSpanElement.firstChild.dataset.src;
+				figure.appendChild( imgElement );
+			}
 			// @todo includes the caption
 		}
 	}
