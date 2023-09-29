@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import HighlightView from '../views/HighlightView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -8,6 +9,12 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/highlights/:title',
+      name: 'highlights',
+      props: true,
+      component: HighlightView
     },
     {
       path: '/about',

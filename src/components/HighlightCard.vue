@@ -1,38 +1,48 @@
 <template>
 	<div class="wiki-highlight-card">
-		<img
+		<div
 			class="wiki-highlight-card-image"
-			:src="content.img"
-			alt="messi">
-		<div class="wiki-highlight-card-title">
-			{{ content.title }}
+			:style="{ backgroundImage: 'url(' + image + ')' }"
+			:alt="title"
+		/>
+		<div class="wiki-highlight-card-text">
+			<h2>{{ title }}</h2>
+			<p>{{ text }}</p>
 		</div>
-		<div>{{ content.text }}</div>
 	</div>
 </template>
 
 <script setup>
 defineProps( {
-	content: {
-		type: Object,
-		default: null
-	}
+	image: { type: String, required: true },
+	title: { type: String, default: null },
+	text: { type: String, required: true }
 } );
 </script>
 
 <style>
 .wiki-highlight-card {
-	height: 600px;
-	width: 300px;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
 
 .wiki-highlight-card-image {
-	border-radius: 20px;
+	background-position: center;
+	background-size: cover;
+	flex-grow: 1;
 }
 
-.wiki-highlight-card-title {
+.wiki-highlight-card-text {
+	padding: 30px 30px 10px 30px;
+}
+
+.wiki-highlight-card-text h2 {
 	font-weight: bold;
+}
+
+.wiki-highlight-card-text p {
+	font-size: 1.3em;
 }
 </style>
