@@ -32,7 +32,7 @@
 import { ref, onMounted } from 'vue';
 import HighlightCard from '../components/HighlightCard.vue';
 import ProgressBar from '../components/ProgressBar.vue';
-import data from '../data.json';
+import { getArticle } from '../data.js';
 
 const props = defineProps( {
 	title: {
@@ -41,7 +41,7 @@ const props = defineProps( {
 	}
 } );
 
-const article = data.articles.find( ( a ) => a.title === props.title );
+const article = getArticle( props.title );
 
 const step = 100 / article.highlights.length;
 const progress = ref( 0 );

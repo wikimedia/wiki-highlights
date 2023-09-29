@@ -18,14 +18,7 @@
 
 <script setup>
 import HighlightThumb from '../components/HighlightThumb.vue';
-import data from '../data.json';
-const groupBy = function ( xs, key ) {
-	return xs.reduce( function ( rv, x ) {
-		( rv[ x[ key ] ] = rv[ x[ key ] ] || [] ).push( x );
-		return rv;
-	}, {} );
-};
-const categories = groupBy( data.articles, 'category' );
+import { categories } from '../data.js';
 </script>
 
 <style>
