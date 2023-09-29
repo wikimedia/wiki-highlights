@@ -1,28 +1,19 @@
 <template>
 	<main class="wiki-highlight-home">
-		<div
-			v-for="( articles, category ) in categories"
-			:key="category"
-		>
-			<h2>{{ category }}</h2>
-			<HighlightThumb
-				v-for="article in articles"
-				:key="article.title"
-				:image="article.highlights[0].image"
-				:title="article.title"
-				:text="article.highlights[0].text"
-			/>
-		</div>
+		<RouterLink to="/highlights">Highlights</RouterLink>
+		<br>
+		<RouterLink to="/articles">Articles</RouterLink>
 	</main>
 </template>
 
 <script setup>
-import HighlightThumb from '../components/HighlightThumb.vue';
-import { categories } from '../data.js';
+import { RouterLink } from 'vue-router';
 </script>
 
 <style>
-.wiki-highlight-home {
-	padding: 10px 0 10px 20px;
+.wiki-highlight-home a {
+	display: block;
+	font-size: 2em;
+	text-align: center;
 }
 </style>

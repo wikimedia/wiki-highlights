@@ -1,9 +1,11 @@
 {
-    "articles": [
+    "articles":
+    [
         {
             "category": "HISTORY",
             "title": "Rosetta Stone",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rosetta_Stone.JPG/320px-Rosetta_Stone.JPG",
                     "text": "In 1799, Napoleon's team found the Rosetta Stone near Egypt's Rosetta port. This game-changing slab had inscriptions in hieroglyphs, demotic, and Greek. As battles raged, it was moved to Cairo and later besieged in Alexandria. Its discovery hinted at unlocking ancient Egyptian mysteries!"
@@ -24,12 +26,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Porson_13_Jan_1803.jpg/320px-Porson_13_Jan_1803.jpg",
                     "text": "The Rosetta Stone's Greek text baffled scholars in 1802. While Ancient Greek was known, its historical context was elusive. Stephen Weston unveiled an English translation in April 1802. By 1803, Ameilhon in Paris released Latin & French versions. Simultaneously, Heyne's precise Latin rendition surfaced, spotlighted in Archaeologia in 1811."
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rosetta_Stone.JPG/320px-Rosetta_Stone.JPG",
+            "summary": "The Rosetta Stone is a stele of granodiorite inscribed with three versions of a decree issued in Memphis, Egypt, in 196 BC during the Ptolemaic dynasty on behalf of King Ptolemy V Epiphanes. The top and middle texts are in Ancient Egyptian using hieroglyphic and Demotic scripts, respectively, while the bottom is in Ancient Greek. The decree has only minor differences between the three versions, making the Rosetta Stone key to deciphering the Egyptian scripts."
         },
         {
             "category": "HISTORY",
             "title": "Statue of Liberty",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Lady_Liberty_under_a_blue_sky_%28cropped%29.jpg/320px-Lady_Liberty_under_a_blue_sky_%28cropped%29.jpg",
                     "text": "The Statue of Liberty, a gift from France, stands tall in NYC since 1886! Designed by Bartholdi with Eiffel's metalwork, it celebrates freedom, US independence (July 4, 1776), and the end of slavery. Born from an idea in 1865, funded by over 120,000 donors, it's a beacon for all!"
@@ -50,12 +55,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/La_statue_de_la_Libert%C3%A9_du_pont_de_Grenelle_%C3%A0_Paris.JPG/320px-La_statue_de_la_Libert%C3%A9_du_pont_de_Grenelle_%C3%A0_Paris.JPG",
                     "text": "Statue of Liberty's influence is global! Paris has a quarter-sized version, and there's a 30ft replica in Brooklyn. The Boy Scouts gifted 200 mini-statues across the US. Oops moment: a 2010 stamp featured the Vegas replica! Lady Liberty shines in movies, music, and more."
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Lady_Liberty_under_a_blue_sky_%28cropped%29.jpg/320px-Lady_Liberty_under_a_blue_sky_%28cropped%29.jpg",
+            "summary": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States. The copper statue, a gift from the people of France, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel. The statue was dedicated on October 28, 1886."
         },
         {
             "category": "HISTORY",
             "title": "Ancient Egypt",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ancient_Egypt_map-en.svg/320px-Ancient_Egypt_map-en.svg.png",
                     "text": "\"Ancient Egypt, birthed around 3100 BC, thrived in the Nile Valley. From the unification under Menes to power peaks in the New Kingdom, it faced invasions but stood resilient. Thanks to the Nile's bounty, they advanced in agriculture, writing, and monumental architecture. From pyramids to peace treaties, their legacy still inspires today!\""
@@ -76,12 +84,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Artist%27s_Sketch_of_Pharaoh_Spearing_a_Lion_MET_1191R2_Sec501M.jpg/320px-Artist%27s_Sketch_of_Pharaoh_Spearing_a_Lion_MET_1191R2_Sec501M.jpg",
                     "text": "Ancient Egyptians: Master builders with iconic pyramids, artists with timeless standards, and believers in the divine & afterlife. Their homes? Cool mudbrick with open-roof kitchens. Diet? Bread, beer, and occasional feasts. Their legacy? Still evident in modern Egypt's cuisine & culture!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Gizah_Pyramids.jpg/320px-All_Gizah_Pyramids.jpg",
+            "summary": "Ancient Egypt was a civilization in Northeast Africa situated in the Nile Valley. Ancient Egyptian civilization followed prehistoric Egypt and coalesced around 3100 BC with the political unification of Upper and Lower Egypt under Menes. The history of ancient Egypt occurred as a series of stable kingdoms, separated by periods of relative instability known as Intermediate Periods: the Old Kingdom of the Early Bronze Age, the Middle Kingdom of the Middle Bronze Age and the New Kingdom of the Late Bronze Age."
         },
         {
             "category": "HISTORY",
             "title": "Buckingham Palace",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Buckingham_Palace_Victoria_Memorial_London_Morning_2020_03.jpg/320px-Buckingham_Palace_Victoria_Memorial_London_Morning_2020_03.jpg",
                     "text": "\"Buckingham Palace spans 830,000 sq ft with 775 rooms! The Royals live in a private north wing suite. Inside, you'll find art by Rembrandt and Vermeer, ornate state rooms for dignitaries, and an oriental-themed east wing from the Brighton Pavilion. A blend of history, art, and grandeur!\""
@@ -102,12 +113,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Victoria_Memorial_from_within_Buckingham_Palace.jpg/320px-Victoria_Memorial_from_within_Buckingham_Palace.jpg",
                     "text": "Buckingham Palace: A living history! Opened to the public since '93, it saw 580k visitors in 2017. Once racially segregated staff, now a symbol of British monarchy & home to 800+ workers. Facing a £369m renovation to last 50+ years, it's more than just a palace. Dive into its rich past & present!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Buckingham_Palace_aerial_view_2016_%28cropped%29.jpg/320px-Buckingham_Palace_aerial_view_2016_%28cropped%29.jpg",
+            "summary": "Buckingham Palace is a royal residence in London and the administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning."
         },
         {
             "category": "NATURE",
             "title": "Giraffe",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Giraffa_camelopardalis_head_%28Profil%29.jpg/320px-Giraffa_camelopardalis_head_%28Profil%29.jpg",
                     "text": "Did you know? Giraffes, the tallest mammals on Earth, might actually be eight distinct species! Recent DNA studies and fossils are reshaping our understanding. With their iconic long necks, they dine on acacia trees, towering above other herbivores. But with only 97.5K left in the wild as of 2016, it's time to appreciate and protect these majestic creatures!"
@@ -128,12 +142,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Giraffe_koure_niger_2006.jpg/320px-Giraffe_koure_niger_2006.jpg",
                     "text": "Giraffes, once numbering 155,000 in 1985, have dwindled to just 97,500 by 2016! Habitat loss, bushmeat hunting, and droughts are major threats. Good news? National parks, community conservation, and international laws are stepping up to protect these gentle giants. Let's keep them tall and proud!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Giraffe_Mikumi_National_Park.jpg/320px-Giraffe_Mikumi_National_Park.jpg",
+            "summary": "The giraffe is a large African hoofed mammal belonging to the genus Giraffa. It is the tallest living terrestrial animal and the largest ruminant on Earth. Traditionally, giraffes were thought to be one species, Giraffa camelopardalis, with nine subspecies. Most recently, researchers proposed dividing them into up to eight extant species due to new research into their mitochondrial and nuclear DNA, as well as morphological measurements. Seven other extinct species of Giraffa are known from the fossil record."
         },
         {
             "category": "NATURE",
             "title": "Colorado River",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Horseshoe_Bend_13_February_2023.jpg/320px-Horseshoe_Bend_13_February_2023.jpg",
                     "text": "The Colorado River, a 1,450-mile wonder, powers cities, nourishes lands, and carves the Grand Canyon. From ancient Native American civilizations to the iconic Hoover Dam, its rich history is as vast as its waters. Today, amidst drought and demand, it stands as one of the world's most controlled rivers."
@@ -154,12 +171,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/San_juan_river_entrenched_meanders.jpg/320px-San_juan_river_entrenched_meanders.jpg",
                     "text": "Rewind 100 million years: Western North America was part of the Pacific Ocean! Tectonic shifts raised the Rockies 50-75 million years ago. The Colorado River's journey shaped iconic landscapes like the Grand Canyon. Fun fact: Massive volcanic eruptions & ancient lava dams once changed its course, causing epic floods!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Horseshoe_Bend_13_February_2023.jpg/320px-Horseshoe_Bend_13_February_2023.jpg",
+            "summary": "The Colorado River is one of the principal rivers in the Southwestern United States and in northern Mexico. The 1,450-mile-long (2,330 km) river drains an expansive, arid watershed that encompasses parts of seven U.S. states and two Mexican states. The name Colorado derives from the Spanish language for \"colored reddish\" due to its heavy silt load. Starting in the central Rocky Mountains of Colorado, it flows generally southwest across the Colorado Plateau and through the Grand Canyon before reaching Lake Mead on the Arizona–Nevada border, where it turns south toward the international border. After entering Mexico, the Colorado approaches the mostly dry Colorado River Delta at the tip of the Gulf of California between Baja California and Sonora."
         },
         {
             "category": "NATURE",
             "title": "Australian Magpie",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cracticus_tibicen_hypoleuca_male_domain.jpg/320px-Cracticus_tibicen_hypoleuca_male_domain.jpg",
                     "text": "Australian magpies: native to Australia and New Guinea, with nine subspecies. Known for their black and white look, complex songs, and ability to recognize 100+ humans. While mostly friendly, watch out in spring for protective swoops! Popular as sports mascots, but considered pests in NZ"
@@ -180,12 +200,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gymnorhina_tibicen%2C_nesting.JPG/320px-Gymnorhina_tibicen%2C_nesting.JPG",
                     "text": "Australian magpies, native to most of Australia and parts of New Guinea, were introduced to New Zealand in the 1860s to combat pests. While once protected, their impact on native NZ birds is debated. They thrive in open spaces, and land-clearing has boosted their numbers. Fun fact: They even made it to Fiji, but not Sri Lanka!\""
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cracticus_tibicen_hypoleuca_male_domain.jpg/320px-Cracticus_tibicen_hypoleuca_male_domain.jpg",
+            "summary": "The Australian magpie is a black and white passerine bird native to Australia and southern New Guinea, and introduced to New Zealand. Although once considered to be three separate species, it is now considered to be one, with nine recognised subspecies. A member of the Artamidae, the Australian magpie is placed in its own genus Gymnorhina and is most closely related to the black butcherbird. It is not closely related to the European magpie, which is a corvid."
         },
         {
             "category": "NATURE",
             "title": "Aposematism",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Korreldragende-gifkikker-3.jpg/320px-Korreldragende-gifkikker-3.jpg",
                     "text": "Ever wonder why some animals sport bold colors or make loud noises? It's called Aposematism - a warning sign to predators that they're not a tasty snack! Coined in 1877, this tactic isn't just about genuine threats; some creatures bluff their way out of danger. Nature's way of saying, \"Think twice before you bite!"
@@ -206,12 +229,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Hycleus_lugens%2C_Meloidae.jpg/320px-Hycleus_lugens%2C_Meloidae.jpg",
                     "text": "In 1867, Darwin asked Wallace why caterpillars are so vibrantly colored when they aren't seeking mates. Wallace theorized it's a warning: \"I taste bad!\" This idea was tested by John Jenner Weir in 1869, proving the first evidence for warning coloration in animals. By 1890, it was named \"aposematism\". Cool, right?"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Korreldragende-gifkikker-3.jpg/320px-Korreldragende-gifkikker-3.jpg",
+            "summary": "Aposematism is the advertising by an animal to potential predators that it is not worth attacking or eating. This unprofitability may consist of any defenses which make the prey difficult to kill and eat, such as toxicity, venom, foul taste or smell, sharp spines, or aggressive nature. These advertising signals may take the form of conspicuous coloration, sounds, odours, or other perceivable characteristics. Aposematic signals are beneficial for both predator and prey, since both avoid potential harm."
         },
         {
             "category": "LIFESTYLE",
             "title": "Maraba Coffee",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Maraba.JPG/320px-Maraba.JPG",
                     "text": "Maraba coffee, grown in Rwanda's high-altitude volcanic soils, is handpicked mainly from March-May. Quality-sorted beans are sold to top roasters like Union Coffee (UK) & Community Coffee (US). Brewed into beer & backed by 500k farmers, this coffee has soared in the specialty market since 1999 with support from NUR & PEARL."
@@ -224,12 +250,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/NP_Rwanda_Coffee6_%286283320845%29.jpg/320px-NP_Rwanda_Coffee6_%286283320845%29.jpg",
                     "text": "Discover Maraba coffee! Grown in Rwanda's scenic highlands, 93 mi from Kigali, it thrives between 5,577–6,889 ft above sea level on rich volcanic terrains. With 45 inches of rain yearly, peak harvest is March-May. A cool 68°F average keeps it fresh. Dive into this unique brew! "
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Starr_070308-5472_Coffea_arabica.jpg/320px-Starr_070308-5472_Coffea_arabica.jpg",
+            "summary": "Maraba coffee is grown in the Maraba area of southern Rwanda. Maraba's coffee plants are the Bourbon variety of the Coffea arabica species and are grown on fertile volcanic soils on high-altitude hills. The fruit is handpicked, mostly during the rainy season between March and May, and brought to a washing station in Maraba, where the coffee beans are extracted and dried. At several stages, the beans are sorted according to quality. The farmers receive credits based on the amount and quality of the beans they provide."
         },
         {
             "category": "LIFESTYLE",
             "title": "Batik",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/COLLECTIE_TROPENMUSEUM_Katoenen_wikkelrok_met_geometrisch_patroon_TMnr_5713-2.jpg/320px-COLLECTIE_TROPENMUSEUM_Katoenen_wikkelrok_met_geometrisch_patroon_TMnr_5713-2.jpg",
                     "text": "Batik, an ancient Indonesian art of wax-resistant dyeing, hails from Java. Using tools like 'canting' or copper stamps, artisans create vibrant designs. Recognized by UNESCO in 2009 as a heritage masterpiece, Indonesia celebrates National Batik Day every Oct 2. Wear it, honor tradition!"
@@ -250,12 +279,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Batik_Garutan.jpg/320px-Batik_Garutan.jpg",
                     "text": "Batik, Indonesia's ancient art, weaves culture, communication, and tradition. Central to Javanese rituals, each motif tells a tale—from social status to ceremonies. UNESCO honored it as a Masterpiece of Oral and Intangible Heritage in 2009. Celebrate its legacy on National Batik Day, October 2nd!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/COLLECTIE_TROPENMUSEUM_Katoenen_wikkelrok_met_geometrisch_patroon_TMnr_5713-2.jpg/320px-COLLECTIE_TROPENMUSEUM_Katoenen_wikkelrok_met_geometrisch_patroon_TMnr_5713-2.jpg",
+            "summary": "Batik is an Indonesian technique of wax-resist dyeing applied to the whole cloth. This technique originated from the island of Java, Indonesia. Batik is made either by drawing dots and lines of the resist with a spouted tool called a canting, or by printing the resist with a copper stamp called a cap. The applied wax resists dyes and therefore allows the artisan to colour selectively by soaking the cloth in one colour, removing the wax with boiling water, and repeating if multiple colours are desired."
         },
         {
             "category": "LIFESTYLE",
-            "title": "Bacon Icecream",
-            "highlights": [
+            "title": "Bacon ice cream",
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Nitro-Scrambled_Egg_and_Bacon_Ice_Cream.jpg/320px-Nitro-Scrambled_Egg_and_Bacon_Ice_Cream.jpg",
                     "text": "Bacon ice cream? It started as a joke on a 1973 British comedy show! Fast forward to 1982, a NY parlor whipped up this quirky flavor for April Fools'. By the 2000s, chef Heston Blumenthal turned it into a signature dish. From Victorian savory scoops to today's wild flavors, ice cream's journey is full of surprises!"
@@ -264,12 +296,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/French_toast_with_bacon_ice_cream.jpg/320px-French_toast_with_bacon_ice_cream.jpg",
                     "text": "English chef Heston Blumenthal, famed for his molecular gastronomy magic at the 3-star Michelin restaurant, the Fat Duck, once overcooked egg custard and turned it into a bacon-and-egg ice cream sensation! Using \"flavour encapsulation\", he's on a quest for time-released flavours. Oh, and he's an OBE for his culinary genius!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/French_toast_with_bacon_ice_cream.jpg/320px-French_toast_with_bacon_ice_cream.jpg",
+            "summary": "Bacon ice cream is an ice cream generally created by adding bacon to egg custard and freezing the mixture. The concept of bacon ice cream originated in a 1973 sketch on the British comedy series The Two Ronnies as a joke; it was eventually created for April Fools' Day by a New York ice cream parlour in 1982. In the 2000s, the English chef Heston Blumenthal experimented with ice cream, making a custard similar to scrambled eggs and adding bacon to create one of his signature dishes. It now appears on dessert menus in other restaurants."
         },
         {
             "category": "LIFESTYLE",
             "title": "Friends",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Friends_season_one_cast.jpg/320px-Friends_season_one_cast.jpg",
                     "text": "Friends\" aired from 1994-2004, capturing hearts with its iconic cast: Aniston, Cox, Kudrow, LeBlanc, Perry & Schwimmer. Set in NYC, it became one of TV's greatest, with 62 Emmy nominations & a finale watched by 52.5M! Remember the magic? They reunited in 2021 on HBO Max"
@@ -286,12 +321,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Friends_%286196877626%29.jpg/320px-Friends_%286196877626%29.jpg",
                     "text": "Friends\" wasn't just a show—it reshaped language with phrases like \"How you doin'?\" and popularized \"so\" as an intensifier. Icons like Jürgen Klopp and BTS's RM credit it for English skills. Central Perk replicas span from LA to Lahore. The series celebrates chosen families and lasting bonds."
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Friends_season_one_cast.jpg/320px-Friends_season_one_cast.jpg",
+            "summary": "Friends is an American television sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons. With an ensemble cast starring Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry and David Schwimmer, the show revolves around six friends in their 20s and 30s who live in Manhattan, New York City. The original executive producers were Kevin S. Bright, Kauffman, and Crane."
         },
         {
             "category": "PLACES",
             "title": "Rwanda",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Rwanda.svg/320px-Flag_of_Rwanda.svg.png",
                     "text": "Rwanda, known as the 'land of a thousand hills', is nestled in Central Africa's Great Rift Valley. With a history from Stone Age settlements to kingdoms and the 1994 genocide, it's now led by President Kagame. Kigali is its heart, and its economy thrives on coffee, tea, and booming tourism."
@@ -312,12 +350,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Paul_Kagame_2014.jpg/320px-Paul_Kagame_2014.jpg",
                     "text": "Rwanda's President Kagame, in power since 2000, could remain until 2034 due to a 2015 referendum. Despite its constitution promoting democracy, critics cite political repression. Rwanda boasts a Parliament with a female majority, one of only three globally. While praised for low corruption, concerns over human rights persist."
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Rwanda.svg/320px-Flag_of_Rwanda.svg.png",
+            "summary": "Rwanda, officially the Republic of Rwanda, is a landlocked country in the Great Rift Valley of Central Africa, where the African Great Lakes region and Southeast Africa converge. Located a few degrees south of the Equator, Rwanda is bordered by Uganda, Tanzania, Burundi, and the Democratic Republic of the Congo. It is highly elevated, giving it the soubriquet \"land of a thousand hills\", with its geography dominated by mountains in the west and savanna to the southeast, with numerous lakes throughout the country. The climate is temperate to subtropical, with two rainy seasons and two dry seasons each year. It is the most densely populated mainland African country; among countries larger than 10,000 km2, it is the fifth most densely populated country in the world. Its capital and largest city is Kigali."
         },
         {
             "category": "PLACES",
             "title": "Isle of Skye",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Skye-Portree-arjecahn.jpg/320px-Skye-Portree-arjecahn.jpg",
                     "text": "Discover the Isle of Skye! Scotland's largest Inner Hebrides island boasts dramatic Cuillin mountains, a history rich with Celts, Vikings, and powerful clans like MacLeod & MacDonald. Once home to 20k people, its Gaelic culture thrives. Visit Portree's picturesque harbour, explore its diverse wildlife, and immerse in tales that inspired novels & songs."
@@ -338,12 +379,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Skye_Road_Bridge.JPG/320px-Skye_Road_Bridge.JPG",
                     "text": "Skye's rich transport history! Skye Bridge, opened in '95, once had high tolls till they were removed in '04. The island boasts the world's last turntable ferry, MV Glenachulish. Travel by bus to Inverness & Glasgow, or catch a train from Kyle of Lochalsh. Ashaig airfield serves private flights & emergencies. A87 road connects major spots, but watch for single-track sections"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Flag_of_the_Isle_of_Skye.svg/320px-Flag_of_the_Isle_of_Skye.svg.png",
+            "summary": "The Isle of Skye, or simply Skye, is the largest and northernmost of the major islands in the Inner Hebrides of Scotland. The island's peninsulas radiate from a mountainous hub dominated by the Cuillin, the rocky slopes of which provide some of the most dramatic mountain scenery in the country. Although Sgitheanach has been suggested to describe a winged shape, no definitive agreement exists as to the name's origins."
         },
         {
             "category": "PLACES",
             "title": "Japan",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Regions_and_Prefectures_of_Japan_2.svg/320px-Regions_and_Prefectures_of_Japan_2.svg.png",
                     "text": "Discover Japan! An island nation in East Asia, home to 14,125 islands with Tokyo as its bustling capital. From its ancient history of emperors and samurai to its modern status as a tech & cultural giant, Japan boasts the world's highest life expectancy and a rich tapestry of art, cuisine, and pop culture. Dive into a world where tradition meets innovation!"
@@ -364,12 +408,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Japan_Airlines%2C_Boeing_787-9_JA861J_NRT_%2819455285040%29.jpg/320px-Japan_Airlines%2C_Boeing_787-9_JA861J_NRT_%2819455285040%29.jpg",
                     "text": "Japan boasts 750K miles of roads, competitive railways, and punctual Shinkansen bullet trains. With 175 airports, Tokyo's Haneda stood as Asia's 2nd busiest in 2019. Post-2011, there's a shift from nuclear energy. Impressively, almost everyone in Japan has access to clean piped water!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/320px-Flag_of_Japan.svg.png",
+            "summary": "Japan is an island country in East Asia. It is situated in the northwest Pacific Ocean and is bordered on the west by the Sea of Japan, extending from the Sea of Okhotsk in the north toward the East China Sea, Philippine Sea, and Taiwan in the south. Japan is a part of the Ring of Fire, and spans an archipelago of 14,125 islands, with the five main islands being Hokkaido, Honshu, Shikoku, Kyushu, and Okinawa. Tokyo is the nation's capital and largest city, followed by Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto."
         },
         {
             "category": "PLACES",
             "title": "Winnipeg",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UofW.JPG/320px-UofW.JPG",
                     "text": "Winnipeg, Canada's 6th largest city with a pop. of 749,607, sits at the heart of North America! Named after \"muddy water\" in Cree, it's a historic hub for Indigenous trade & birthplace of the Métis Nation. From hosting the '67 Pan Am Games to vibrant festivals & pro sports teams, it's truly the Gateway to the West!"
@@ -390,12 +437,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/River_River_Curling.jpg/320px-River_River_Curling.jpg",
                     "text": "Winnipeg, the \"Gateway to the West\", has North America's largest urban elm forest. Nestled in the Canadian Prairies, it's protected from floods by the Red River Floodway. With warm summers, cold winters, it's Canada's second sunniest city. Dive into its historic Exchange District downtown!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UofW.JPG/320px-UofW.JPG",
+            "summary": "Winnipeg is the capital and largest city of the province of Manitoba in Canada. It is centred on the confluence of the Red and Assiniboine rivers, near the longitudinal centre of North America. As of 2021, Winnipeg had a city population of 749,607 and a metropolitan population of 834,678, making it Canada's sixth-largest city and eighth-largest metropolitan area."
         },
         {
             "category": "PERSONALITIES",
             "title": "Lionel Messi",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg/320px-Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
                     "text": "From Argentina to global stardom! Lionel Messi, football legend, boasts 7 Ballon d'Ors, record goals in La Liga, and led Argentina to World Cup victory in 2022. Once Barcelona's gem, he now shines in Inter Miami. With over 800 career goals and a billion in earnings, Messi's legacy is unmatched! "
@@ -416,12 +466,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cristiano_Ronaldo_and_Lionel_Messi_-_Portugal_vs_Argentina%2C_9th_February_2011.jpg/320px-Cristiano_Ronaldo_and_Lionel_Messi_-_Portugal_vs_Argentina%2C_9th_February_2011.jpg",
                     "text": "From Ali-Frazier to Federer-Nadal, sports rivalries have always captivated us. Enter Messi vs Ronaldo! Since 2008, Messi leads with 7 Ballons d'Or, 6 FIFA Best Player awards, and 6 Golden Shoes. Their epic face-offs in El Clásico and contrasting styles keep fans debating. But after Messi's 2022 World Cup win, many say he's settled the score!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg/320px-Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+            "summary": "Lionel Andrés Messi, also known as Leo Messi, is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. Regarded as one of the greatest players of all time, Messi has won a record seven Ballon d'Or awards and a record six European Golden Shoes, and in 2020 he was named to the Ballon d'Or Dream Team. Until leaving the club in 2021, he had spent his entire professional career with Barcelona, where he won a club-record 34 trophies, including ten La Liga titles, seven Copa del Rey titles and the UEFA Champions League four times. With his country, he won the 2021 Copa América and the 2022 FIFA World Cup. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (474), most hat-tricks in La Liga (36) and the UEFA Champions League (eight), and most assists in La Liga (192) and the Copa América (17). He also has the most international goals by a South American male (104). Messi has scored over 800 senior career goals for club and country, and has the most goals by a player for a single club (672)."
         },
         {
             "category": "PERSONALITIES",
             "title": "Maya Angelou",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg/320px-Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg",
                     "text": "Born in 1928, Maya Angelou rose from humble beginnings to become a renowned poet, memoirist, and civil rights activist. Her \"I Know Why the Caged Bird Sings\" earned global acclaim. From working with MLK Jr. to reciting poetry at Clinton's '93 inauguration, Angelou's legacy is a testament to resilience and brilliance."
@@ -442,12 +495,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Maya_Angelou_visits_YCP_Feb_2013.jpg/320px-Maya_Angelou_visits_YCP_Feb_2013.jpg",
                     "text": "Maya Angelou revolutionized autobiographical writing, blending fiction techniques & challenging its structure. Drawing from African-American traditions, she spoke as 'I' but meant 'we', defending Black culture. While some critics found her style dated, Angelou's impact paved the way for future Black writers to be seen as individuals, not just race representatives."
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg/320px-Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg",
+            "summary": "Maya Angelou was an American memoirist, poet, and civil rights activist. She published seven autobiographies, three books of essays, several books of poetry, and is credited with a list of plays, movies, and television shows spanning over 50 years. She received dozens of awards and more than 50 honorary degrees. Angelou's series of seven autobiographies focus on her childhood and early adult experiences. The first, I Know Why the Caged Bird Sings (1969), tells of her life up to the age of 17 and brought her international recognition and acclaim."
         },
         {
             "category": "PERSONALITIES",
             "title": "Nelson Mandela",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/320px-Nelson_Mandela_1994.jpg",
                     "text": "Born into Thembu royalty, Nelson Mandela became South Africa's first black president in 1994 after 27 years in prison for fighting apartheid. Championing racial reconciliation, he won the Nobel Peace Prize and is globally hailed as an icon of democracy. Remembered as Madiba, he's South Africa's \"Father of the Nation\""
@@ -468,12 +524,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Nelson_Mandela_tributes_in_Parliament_Square_-_London_-_DSCF0404.jpg/320px-Nelson_Mandela_tributes_in_Parliament_Square_-_London_-_DSCF0404.jpg",
                     "text": "Nelson Mandela: A beacon of hope, democracy, and social justice. From South Africa's father of democracy to a global icon, Mandela's journey from the world's most famous political prisoner in the 1980s to a symbol of human equality is unparalleled. Despite controversies, he amassed 250+ awards, including the Nobel Peace Prize. Remembered globally, the UN celebrates his legacy with \"Mandela Day\" on July 18."
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/320px-Nelson_Mandela_1994.jpg",
+            "summary": "Nelson Rolihlahla Mandela was a South African anti-apartheid activist and politician who served as the first president of South Africa from 1994 to 1999. He was the country's first black head of state and the first elected in a fully representative democratic election. His government focused on dismantling the legacy of apartheid by fostering racial reconciliation. Ideologically an African nationalist and socialist, he served as the president of the African National Congress (ANC) party from 1991 to 1997."
         },
         {
             "category": "PERSONALITIES",
-            "title": "Nominative Determinism",
-            "highlights": [
+            "title": "Nominative determinism",
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Usain_Bolt_after_4_%C3%97_100_m_Rio_2016.jpg/320px-Usain_Bolt_after_4_%C3%97_100_m_Rio_2016.jpg",
                     "text": "Ever noticed people with names matching their jobs? It's \"nominative determinism\", suggesting names influence career paths. Coined by New Scientist in 1994 after spotting authors like Snowman on polar regions. From Lieutenant Kafka on Guantanamo to Cardinal Sin in Manila, names might guide us"
@@ -486,12 +545,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amy_Freeze_at_Soldier_Field.jpg/320px-Amy_Freeze_at_Soldier_Field.jpg",
                     "text": "Ever felt your name influenced your career? Some say yes, like Sue Yoo becoming a lawyer, while others deny it. Studies have mixed results: some found a link between names & professions, while others debunked it. For instance, more Dennises in dentistry? Maybe not! Dive into the debate on nominative determinism!\""
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Usain_Bolt_after_4_%C3%97_100_m_Rio_2016.jpg/320px-Usain_Bolt_after_4_%C3%97_100_m_Rio_2016.jpg",
+            "summary": "Nominative determinism is the hypothesis that people tend to gravitate towards areas of work that fit their names. The term was first used in the magazine New Scientist in 1994, after the magazine's humorous \"Feedback\" column noted several studies carried out by researchers with remarkably fitting surnames. These included a book on polar explorations by Daniel Snowman and an article on urology by researchers named Splatt and Weedon. These and other examples led to light-hearted speculation that some sort of psychological effect was at work. Since the term appeared, nominative determinism has been an irregularly recurring topic in New Scientist, as readers continue to submit examples. Nominative determinism differs from the related concept aptronym, and its synonyms 'aptonym', 'namephreak', and 'Perfect Fit Last Name', in that it focuses on causality. 'Aptronym' merely means the name is fitting, without saying anything about why it has come to fit."
         },
         {
             "category": "SPORTS",
             "title": "Aston Villa F.C.",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Aston_Villa_logo.svg/320px-Aston_Villa_logo.svg.png",
                     "text": "Aston Villa, founded in 1874, is one of England's oldest & most decorated football clubs! With 7 Football League titles, 7 FA Cups, & a European Cup win, they've been a force since the 1880s. Did you know they helped pioneer football's move to professionalism & founded the world's first Football League in 1888? From Villa Park to the Premier League, their legacy is legendary. "
@@ -512,12 +574,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/12th_Man.jpg/320px-12th_Man.jpg",
                     "text": "Aston Villa, with global fan clubs, has been proactive in engaging its diverse fanbase. From the Aston Pride initiative to the Villa in the Community programme, they're fostering inclusivity. While they've faced challenges, like hooliganism in the past, the focus now is on unity and fan involvement. Remember the Second City Derby? It's a historic rivalry with Birmingham City, but Villa's ties with West Brom are deep-rooted too"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Aston_Villa_logo.svg/320px-Aston_Villa_logo.svg.png",
+            "summary": "Aston Villa Football Club, commonly referred to as Villa, is a professional football club based in Aston, Birmingham, England. The club competes in the Premier League, the top tier of the English football league system. Founded in 1874, they have played at their home ground, Villa Park, since 1897. Aston Villa is one of the oldest and most successful clubs in England, having won the Football League First Division seven times, the FA Cup seven times, the League Cup five times, and the European Cup and European Super Cup once."
         },
         {
             "category": "SPORTS",
             "title": "Baseball",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mookie_Betts_hitting_the_ball_%2836478781664%29.jpg/320px-Mookie_Betts_hitting_the_ball_%2836478781664%29.jpg",
                     "text": "Baseball: A thrilling bat-and-ball game where two teams of nine aim to score by hitting the ball and running bases. Originating from 18th-century England, it's now \"America's Pastime\" and a global sensation. From the MLB's World Series in the US to the Olympics, it's a timeless sport loved by many!"
@@ -530,12 +595,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Baseball_pick-off_attempt.jpg/320px-Baseball_pick-off_attempt.jpg",
                     "text": "Baseball's beauty lies in its strategy! From the pitcher's grip determining the ball's movement to the catcher's signals guiding the play. With runners on base, tactics shift – from pickoffs to bunts, and from hit-and-runs to squeeze plays. Every move is a calculated dance between offense and defense, aiming for that home run moment!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mookie_Betts_hitting_the_ball_%2836478781664%29.jpg/320px-Mookie_Betts_hitting_the_ball_%2836478781664%29.jpg",
+            "summary": "Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher, throws a ball that a player on the batting team, called the batter, tries to hit with a bat. The objective of the offensive team is to hit the ball into the field of play, away from the other team's players, allowing its players to run the bases, having them advance counter-clockwise around four bases to score what are called \"runs\". The objective of the defensive team is to prevent batters from becoming runners, and to prevent runners' advance around the bases. A run is scored when a runner legally advances around the bases in order and touches home plate."
         },
         {
             "category": "SPORTS",
             "title": "Yoga",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Patanjali_Statue.jpg/320px-Patanjali_Statue.jpg",
                     "text": "Yoga, meaning 'union', began in ancient India, blending physical, mental, and spiritual disciplines. First mentioned in the Rigveda, its evolution spans from the 5th century BCE to modern times. While traditional yoga emphasizes meditation and detachment, the West often sees it as a fitness and relaxation method. Thanks to gurus like Swami Vivekananda, yoga's ancient wisdom now resonates globally!"
@@ -548,12 +616,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/The_Yoga_Institute.jpg/320px-The_Yoga_Institute.jpg",
                     "text": "Yoga's rich tapestry spans Indian religions, from Hinduism's diverse practices like jnana & hatha yoga to Jainism's liberation-focused teachings. Buddhism offers methods for awakening, while classical yoga emphasizes self-awareness. Vedanta dives into spiritual knowledge, and Tantra explores deity visualizations. Hatha strengthens body & mind, and kundalini awakens cosmic energy. Dive deep into this ancient wisdom!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Shiva_Bangalore.jpg/320px-Shiva_Bangalore.jpg",
+            "summary": "Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India and aim to control (yoke) and still the mind, recognizing a detached witness-consciousness untouched by the mind (Chitta) and mundane suffering (Duḥkha). There is a wide variety of schools of yoga, practices, and goals in Hinduism, Buddhism, and Jainism, and traditional and modern yoga is practiced worldwide."
         },
         {
             "category": "SPORTS",
             "title": "Scuba Diving",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/ScubaDiver.jpg/320px-ScubaDiver.jpg",
                     "text": "Dive into the world of scuba! Originating in 1952, scuba (Self-Contained Underwater Breathing Apparatus) lets divers explore underwater with their own air supply. From compressed air to nitrox blends, divers can stay submerged longer and deeper. Choose between open-circuit systems that release exhaled gas or rebreathers for stealth and longer dives. Whether for fun, science, or covert ops, scuba offers a unique underwater adventure. Just strap on fins, a mask, and get trained for a deep dive!"
@@ -566,12 +637,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Gustavo_Gerdel_Fotografiando_Tiburones.jpg/320px-Gustavo_Gerdel_Fotografiando_Tiburones.jpg",
                     "text": "Dive into the world of scuba! From exploring underwater caves and wrecks for fun to military and police operations, scuba diving isn't just a hobby. Professionals inspect ship hulls, capture underwater photography, and even conduct scientific research. Whether you're seeking adventure or a career, the deep blue awaits!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Buzo.jpg/320px-Buzo.jpg",
+            "summary": "Scuba diving is a mode of underwater diving whereby divers use breathing equipment that is completely independent of a surface air supply, and therefore has a limited but variable endurance. The name \"scuba\", an acronym for \"Self-Contained Underwater Breathing Apparatus\", was coined by Christian J. Lambertsen in a patent submitted in 1952. Scuba divers carry their own source of breathing gas, usually compressed air, affording them greater independence and movement than surface-supplied divers, and more time underwater than free divers. Although the use of compressed air is common, a gas blend with a higher oxygen content, known as enriched air or nitrox, has become popular due to the reduced nitrogen intake during long or repetitive dives. Also, breathing gas diluted with helium may be used to reduce the likelihood and effects of nitrogen narcosis during deeper dives."
         },
         {
             "category": "TOPICAL",
             "title": "Climate change",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Bobcat_Fire%2C_Los_Angeles%2C_San_Gabriel_Mountains.jpg/320px-Bobcat_Fire%2C_Los_Angeles%2C_San_Gabriel_Mountains.jpg",
                     "text": "Climate change, driven by human activities like burning fossil fuels, is causing rapid global warming. Its effects? Melting ice, intense storms, species extinction & more. We're already at 1.2°C warming. To stay below 2°C, we must halve emissions by 2030 & hit net-zero by 2050. The future? Swap fossil fuels for renewables & embrace carbon-capturing methods"
@@ -592,12 +666,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/20220629_Public_estimates_of_scientific_consensus_on_climate_change_-_horizontal_bar_chart.svg/320px-20220629_Public_estimates_of_scientific_consensus_on_climate_change_-_horizontal_bar_chart.svg.png",
                     "text": "Climate change denial, fueled by fossil fuel interests, has spread misinformation globally. From casting doubt like the tobacco industry to creating echo chambers, these tactics aim to delay action. Yet, since the '80s, awareness has grown, with movies like 'An Inconvenient Truth' and youth-led protests like Greta Thunberg's School Strike. As of 2021, many see it as a global emergency, pushing for stronger policies and even using litigation to demand action. "
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Change_in_Average_Temperature_With_Fahrenheit.svg/320px-Change_in_Average_Temperature_With_Fahrenheit.svg.png",
+            "summary": "In common usage, climate change describes global warming—the ongoing increase in global average temperature—and its effects on Earth's climate system. Climate change in a broader sense also includes previous long-term changes to Earth's climate. The current rise in global average temperature is more rapid than previous changes, and is primarily caused by humans burning fossil fuels. Fossil fuel use, deforestation, and some agricultural and industrial practices increase greenhouse gases, notably carbon dioxide and methane. Greenhouse gases absorb some of the heat that the Earth radiates after it warms from sunlight. Larger amounts of these gases trap more heat in Earth's lower atmosphere, causing global warming."
         },
         {
             "category": "TOPICAL",
             "title": "Sustainable energy",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Darling_Wind_Farm.jpg/320px-Darling_Wind_Farm.jpg",
                     "text": "Sustainable energy is key for our future! Renewable sources like wind & solar are on the rise, making up 8.5% of global electricity in 2019. Yet, 85% of energy still comes from fossil fuels, causing 76% of global emissions. To combat climate change & ensure everyone's access to clean energy, we need a major shift in how we produce & consume energy. Let's invest in a greener tomorrow! "
@@ -618,12 +695,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/MicrocityCarSharingHangzhou.jpg/320px-MicrocityCarSharingHangzhou.jpg",
                     "text": "Transformative energy policies can reduce emissions, boost air quality, and save money! Since the 1970s, governments have pushed for sustainable energy. By 2050, we could see a net-zero emission energy system with the right public funding. Carbon pricing can motivate industries to go green, but it's not enough alone. And guess what? Transitioning to sustainable energy could create 24M new jobs by 2030! Let's champion a cleaner, job-rich future. "
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Andasol_Guadix_4.jpg/320px-Andasol_Guadix_4.jpg",
+            "summary": "Energy is sustainable if it \"meets the needs of the present without compromising the ability of future generations to meet their own needs.\" Most definitions of sustainable energy include considerations of environmental aspects such as greenhouse gas emissions and social and economic aspects such as energy poverty. Renewable energy sources such as wind, hydroelectric power, solar, and geothermal energy are generally far more sustainable than fossil fuel sources. However, some renewable energy projects, such as the clearing of forests to produce biofuels, can cause severe environmental damage."
         },
         {
             "category": "TOPICAL",
             "title": "African Humid Period",
-            "highlights": [
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sahara_satellite_hires.jpg/320px-Sahara_satellite_hires.jpg",
                     "text": "14,600-14,500 years ago, Africa's climate shifted, turning the vast Sahara desert into a lush landscape with lakes & rivers! This African Humid Period, influenced by Earth's tilt & greenhouse gases, birthed ancient civilizations like Egypt. But by 6,000 years ago, as the climate dried up, humans migrated to places like the Nile Valley, shaping early societies."
@@ -640,12 +720,15 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Dust_Storms_from_Africa%27s_Bodele_Depression%2C_Natural_Hazards_DVIDS848674.jpg/320px-Dust_Storms_from_Africa%27s_Bodele_Depression%2C_Natural_Hazards_DVIDS848674.jpg",
                     "text": "Ancient climate clues reveal: A greener Sahara during the African Humid Period (AHP) shifted global weather patterns! It intensified monsoons, altered atmospheric circulation, and might've boosted tropical cyclones. This lush Sahara even influenced early settlements in Mesopotamia!"
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sahara_satellite_hires.jpg/320px-Sahara_satellite_hires.jpg",
+            "summary": "The African humid period is a climate period in Africa during the late Pleistocene and Holocene geologic epochs, when northern Africa was wetter than today. The covering of much of the Sahara desert by grasses, trees and lakes was caused by changes in the Earth’s axial tilt; changes in vegetation and dust in the Sahara which strengthened the African monsoon; and increased greenhouse gases.\nDuring the preceding Last Glacial Maximum, the Sahara contained extensive dune fields and was mostly uninhabited. It was much larger than today, and its lakes and rivers such as Lake Victoria and the White Nile were either dry or at low levels. The humid period began about 14,600–14,500 years ago at the end of Heinrich event 1, simultaneously to the Bølling–Allerød warming. Rivers and lakes such as Lake Chad formed or expanded, glaciers grew on Mount Kilimanjaro and the Sahara retreated. Two major dry fluctuations occurred; during the Younger Dryas and the short 8.2 kiloyear event. The African humid period ended 6,000–5,000 years ago during the Piora Oscillation cold period. While some evidence points to an end 5,500 years ago, in the Sahel, Arabia and East Africa, the end of the period appears to have taken place in several steps, such as the 4.2-kiloyear event."
         },
         {
             "category": "TOPICAL",
-            "title": "Sleep Hygiene",
-            "highlights": [
+            "title": "Sleep hygiene",
+            "highlights":
+            [
                 {
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Koh_Kut%2C_Thailand%2C_The_Broadcast.jpg/320px-Koh_Kut%2C_Thailand%2C_The_Broadcast.jpg",
                     "text": "Did you know? Sleep hygiene, developed in the 1970s, offers tips like a regular sleep schedule & limiting light exposure before bed to combat insomnia. But by 2021, evidence of its effectiveness remains inconclusive. Experts now lean towards therapies like CBT-i for better results. "
@@ -658,7 +741,9 @@
                     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/COLLECTIE_TROPENMUSEUM_Kitty_Westerman_in_bed_met_haar_pasgeboren_dochter_Antoinette_TMnr_60027450.jpg/320px-COLLECTIE_TROPENMUSEUM_Kitty_Westerman_in_bed_met_haar_pasgeboren_dochter_Antoinette_TMnr_60027450.jpg",
                     "text": "Want better sleep? Clinicians advise 7-8 hours nightly, cautioning against long naps. Regular sleep schedules, daytime exercise, and avoiding bright lights before bed help. Skip caffeine, nicotine, and big meals pre-sleep. Create a dark, quiet, cool room. And fun fact: medium-firm mattresses in 2015 were found best for spinal health! "
                 }
-            ]
+            ],
+            "leadImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Koh_Kut%2C_Thailand%2C_The_Broadcast.jpg/320px-Koh_Kut%2C_Thailand%2C_The_Broadcast.jpg",
+            "summary": "Sleep hygiene is a behavioral and environmental practice developed in the late 1970s as a method to help people with mild to moderate insomnia. Clinicians assess the sleep hygiene of people with insomnia and other conditions, such as depression, and offer recommendations based on the assessment. Sleep hygiene recommendations include: establishing a regular sleep schedule; using naps with care; not exercising physically or mentally too close to bedtime; limiting worry; limiting exposure to light in the hours before sleep; getting out of bed if sleep does not come; not using bed for anything but sleep and sex; avoiding alcohol as well as nicotine, caffeine, and other stimulants in the hours before bedtime; and having a peaceful, comfortable and dark sleep environment. However, as of 2021, the empirical evidence for the effectiveness of sleep hygiene is \"limited and inconclusive\" for the general population and for the treatment of insomnia, despite being the oldest treatment for insomnia. A systematic review by the AASM concluded that clinicians should not prescribe sleep hygiene for insomnia due to the evidence of absence of its efficacy and potential delaying of adequate treatment, recommending instead that effective therapies such as CBT-i should be preferred."
         }
     ]
 }
