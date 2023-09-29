@@ -38,7 +38,7 @@ function goToHighlight() {
 	width: calc( 50% - 20px );
 	overflow: hidden;
 	border-radius: 10px;
-	border: solid 1px grey;
+	border: solid 1px #808080;
 	padding-bottom: 20px;
 }
 
