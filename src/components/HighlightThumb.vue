@@ -20,11 +20,13 @@ import { useRouter } from 'vue-router';
 const props = defineProps( {
 	image: { type: String, required: true },
 	title: { type: String, required: true },
-	text: { type: String, required: true }
+	text: { type: String, required: true },
+	source: { type: String, required: true }
 } );
 const router = useRouter();
 function goToHighlight() {
-	router.push( 'highlights/' + props.title );
+	const url = props.source === 'highlights' ? 'highlights/' : 'article/';
+	router.push( url + props.title );
 }
 </script>
 

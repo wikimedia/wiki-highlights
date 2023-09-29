@@ -11,6 +11,7 @@
 				:image="source === 'highlights' ? article.highlights[0].image : article.leadImage"
 				:title="article.title"
 				:text="source === 'highlights' ? article.highlights[0].text : article.summary"
+				:source="source"
 			/>
 		</div>
 	</main>
@@ -19,7 +20,7 @@
 <script setup>
 import HighlightThumb from '../components/HighlightThumb.vue';
 import { categories } from '../data.js';
-const props = defineProps( {
+defineProps( {
 	source: { type: String, required: true }
 } );
 </script>

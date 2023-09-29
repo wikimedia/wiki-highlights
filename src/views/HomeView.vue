@@ -1,8 +1,11 @@
 <template>
 	<main class="wiki-highlight-home">
-		<RouterLink to="/highlights">Highlights</RouterLink>
-		<br>
-		<RouterLink to="/articles">Articles</RouterLink>
+		<RouterLink to="/highlights">
+			Highlights
+		</RouterLink>
+		<RouterLink to="/articles">
+			Articles
+		</RouterLink>
 	</main>
 </template>
 
@@ -13,7 +16,7 @@ import { RouterLink } from 'vue-router';
 <style>
 .wiki-highlight-home a {
 	display: block;
-	font-size: 2em;
+	font-size: 3em;
 	text-align: center;
 }
 </style>
