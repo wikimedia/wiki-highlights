@@ -8,7 +8,7 @@
 				<li id="footer-info-copyright">
 					Content is available under <a
 						rel="nofollow"
-						href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a> unless otherwise noted.
+						href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>, unless otherwise noted.
 				</li>
 				<ul id="footer-places" class="footer-places hlist hlist-separated">
 					<li id="footer-places-privacy">
@@ -53,6 +53,12 @@ const transforms = {
 	'remove sections after fold': ( doc ) => {
 		for ( const section of doc.querySelectorAll( '.pcs-fold-hr ~ section' ) ) {
 			section.remove();
+		}
+	},
+	'remove "See also" section': ( doc ) => {
+		const seeAlsoH2 = doc.querySelector( '#See_also' );
+		if ( seeAlsoH2 ) {
+			seeAlsoH2.parentElement.parentElement.remove();
 		}
 	},
 	'turn figure into an image': ( doc ) => {
