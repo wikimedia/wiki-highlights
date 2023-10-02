@@ -4,6 +4,35 @@
 			<!-- content insertion here -->
 		</div>
 		<div class="footer">
+			<div id="mw-data-after-content">
+				<div class="read-more-container">
+					<h2>Related articles</h2>
+					<ul class="ext-related-articles-card-list">
+						<li
+							v-for="article in relatedArticles"
+							:key="article.title"
+							:title="article.title"
+							class="ext-related-articles-card">
+							<a :href="'#/article/' + article.title" @click="goTo( article.title )">
+								<div
+									class="ext-related-articles-card-thumb"
+									:style="{
+										backgroundImage: 'url(' +
+											article.highlights[ 0 ].image +
+											')'
+									}"
+								/>
+								<div class="ext-related-articles-card-detail">
+									<h3>{{ article.title }}</h3>
+									<p class="ext-related-articles-card-extract">
+										{{ article.highlights[ 0 ].text }}
+									</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<ul id="footer-info" class="footer-info hlist">
 				<li id="footer-info-copyright">
 					Content is available under <a
@@ -25,6 +54,7 @@
 
 <script setup>
 import { useRoute } from 'vue-router';
+import data from '../data.json';
 const route = useRoute();
 
 const transforms = {
@@ -125,13 +155,66 @@ const fetchArticle = function ( title ) {
 
 };
 
+const fetchRelatedArticle = function ( title ) {
+	const articles = data.articles;
+	const articleObject = articles.find( ( article ) => article.title === title );
+
+	if ( articleObject ) {
+		const category = articleObject.category;
+
+		const groupArticles = articles.filter( ( article ) => article.category === category );
+
+		const shuffledArray = groupArticles.slice().sort( () => Math.random() - 0.5 );
+		return shuffledArray.slice( 0, 3 );
+	}
+};
+
 fetchArticle( route.params.title );
+let relatedArticles = fetchRelatedArticle( route.params.title );
+
+const goTo = function ( title ) {
+	document.querySelector( '.content' ).innerHTML = '';
+	fetchArticle( title );
+	relatedArticles = fetchRelatedArticle( title );
+};
 
 </script>
 
 <style>
 .article {
 	margin: 20px 0;
+}
+
+.figure {
+	max-width: 100%;
+}
+
+.content h2 {
+	cursor: pointer;
+}
+
+.content h2.pcs-edit-section-title {
+	border-bottom: 1px solid #eaecf0;
+	margin-bottom: 0.5em;
+}
+
+.content h2::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url( ../assets/collapse.svg );
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.content .collapsible *:not( :first-child ) {
+	display: none;
+}
+
+.content .collapsible h2::before {
+	transform: rotate( 180deg );
 }
 
 .footer {
@@ -144,30 +227,70 @@ fetchArticle( route.params.title );
 	}
 }
 
-.figure {
-	max-width: 100%;
+.footer .ext-related-articles-card-list {
+	display: flex;
+	flex-flow: row wrap;
+	font-size: 1em;
+	list-style: none;
+	overflow: hidden;
+	position: relative;
+	padding-left: 0;
 }
 
-h2 {
-	cursor: pointer;
+.footer .ext-related-articles-card-list .ext-related-articles-card {
+	background-color: #fff;
+	box-sizing: border-box;
+	margin: 0;
+	height: 80px;
+	position: relative;
+	width: 100%;
+	border: 1px solid rgba( 0, 0, 0, 0.2 );
 }
 
-h2::before {
-	content: '';
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background-image: url( ../assets/collapse.svg );
-	background-size: contain;
+.footer .ext-related-articles-card-list .ext-related-articles-card-thumb {
+	background-color: #eaecf0;
 	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	float: left;
+	height: 100%;
+	width: 80px;
 	margin-right: 10px;
 }
 
-.collapsible *:not( :first-child ) {
-	display: none;
+.footer .ext-related-articles-card-list .ext-related-articles-card > a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
 }
 
-.collapsible h2::before {
-	transform: rotate( 180deg );
+.footer .ext-related-articles-card-list .ext-related-articles-card-detail {
+	position: relative;
+	top: 50%;
+	transform: translateY( -50% );
+}
+
+.footer .ext-related-articles-card-list h3 {
+	font-family: inherit;
+	font-size: 1em;
+	max-height: 2.6em;
+	line-height: 1.3;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	font-weight: 500;
+}
+
+.footer .ext-related-articles-card-list .ext-related-articles-card-extract {
+	color: #54595d;
+	font-size: 0.8em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 2px;
 }
 </style>
