@@ -56,12 +56,6 @@ const transforms = {
 			section.remove();
 		}
 	},
-	'turn sections into collapsable section': ( doc ) => {
-		for ( const section of doc.querySelectorAll( 'section' ) ) {
-			section.style.display = 'unset';
-			// @todo collapsable
-		}
-	},
 	'turn figure into an image': ( doc ) => {
 		for ( const figure of doc.querySelectorAll( 'figure' ) ) {
 			const newSpanElement = document.createElement( 'span' );
@@ -70,12 +64,35 @@ const transforms = {
 			newSpanElement.innerHTML = figure.innerText;
 
 			// Set the src attribute of the <img> element to the data-src attribute.
-			if ( newSpanElement.firstChild.dataset ) {
+			if ( newSpanElement.firstChild && newSpanElement.firstChild.dataset ) {
 				imgElement.src = newSpanElement.firstChild.dataset.src;
 				figure.firstChild.remove();
 				figure.insertBefore( imgElement, figure.firstChild );
 			}
 		}
+	},
+	'turn sections into collapsible section': ( doc ) => {
+		const sections = doc.querySelectorAll( 'section[data-mw-section-id]' );
+
+		for ( let i = 1; i < sections.length; i++ ) {
+			const section = sections[ i ];
+			if ( section.parentElement.className.indexOf( 'collapsible' ) === -1 ) {
+				section.style.display = 'unset';
+				section.classList.add( 'collapsible' );
+			} else {
+				section.style.display = null;
+			}
+
+		}
+	}
+};
+
+const addEvents = function ( doc ) {
+	// add sections collapsible toggle events
+	for ( const section of doc.querySelectorAll( '.collapsible' ) ) {
+		section.firstChild.onclick = function () {
+			section.classList.toggle( 'collapsible' );
+		};
 	}
 };
 
@@ -95,6 +112,9 @@ const fetchArticle = function ( title ) {
 		} );
 
 		document.querySelector( '.content' ).innerHTML = doc.body.outerHTML;
+
+		// add events to document body
+		addEvents( document );
 	} );
 
 };
@@ -110,5 +130,13 @@ fetchArticle( route.params.title );
 
 	.figure {
 		max-width: 100%;
+	}
+
+	.collapsible *:not(:first-child) {
+		display: none;
+	}
+
+	h2 {
+		cursor: pointer;
 	}
 </style>
