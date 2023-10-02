@@ -7,7 +7,6 @@
 			<ul id="footer-info" class="footer-info hlist">
 				<li id="footer-info-copyright">
 					Content is available under <a
-						class="external"
 						rel="nofollow"
 						href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a> unless otherwise noted.
 				</li>
@@ -82,7 +81,6 @@ const transforms = {
 			} else {
 				section.style.display = null;
 			}
-
 		}
 	}
 };
@@ -106,6 +104,8 @@ const fetchArticle = function ( title ) {
 			throw new Error();
 		}
 	} ).then( ( html ) => {
+
+		// transform response html object
 		const doc = new DOMParser().parseFromString( html, 'text/html' );
 		Object.keys( transforms ).forEach( ( key ) => {
 			transforms[ key ]( doc );
@@ -124,19 +124,44 @@ fetchArticle( route.params.title );
 </script>
 
 <style>
+.article {
+	margin: 20px 0;
+}
+
+.footer {
+	margin: 0 3.35em;
+}
+
+@media screen and ( max-width: 720px ) {
 	.footer {
-		margin: 0 3.35em;
+		margin: 0 16px;
 	}
+}
 
-	.figure {
-		max-width: 100%;
-	}
+.figure {
+	max-width: 100%;
+}
 
-	.collapsible *:not(:first-child) {
-		display: none;
-	}
+h2 {
+	cursor: pointer;
+}
 
-	h2 {
-		cursor: pointer;
-	}
+h2::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url( ../assets/collapse.svg );
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.collapsible *:not( :first-child ) {
+	display: none;
+}
+
+.collapsible h2::before {
+	transform: rotate( 180deg );
+}
 </style>
