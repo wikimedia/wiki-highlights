@@ -69,13 +69,11 @@ onMounted( updateProgress );
 
 .wiki-highlight-view-swipe {
 	text-align: center;
-	margin-bottom: 300px;
 }
 
 .wiki-highlight-view-progressbar {
 	position: fixed;
 	bottom: 0;
-	width: calc( 100% - 20px );
-	margin: 10px;
+	width: 100%;
 }
 </style>
