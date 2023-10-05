@@ -35,7 +35,8 @@ defineProps( {
 }
 
 .wiki-highlight-card-text {
-	padding: 30px 30px 10px 30px;
+	padding: 20px 20px 40px 20px;
+	font-family: serif;
 }
 
 .wiki-highlight-card-text h2 {
