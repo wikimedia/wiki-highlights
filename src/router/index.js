@@ -22,6 +22,11 @@ const router = createRouter({
       component: HighlightView
     },
     {
+      path: '/articles',
+      component: CategoriesView,
+      props: { source: 'articles' }
+    },
+    {
       path: '/article/:title',
       name: 'article',
       component: ArticleView
