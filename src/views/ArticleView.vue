@@ -58,7 +58,7 @@
 
 <script setup>
 import { useRoute } from 'vue-router';
-import data from '../data.json';
+import { categories, getArticle } from '../data.js';
 const route = useRoute();
 
 const transforms = {
@@ -161,16 +161,14 @@ const fetchArticle = function ( title ) {
 };
 
 const fetchRelatedArticle = function ( title ) {
-	const articles = data.articles;
-	const articleObject = articles.find( ( article ) => article.title === title );
+	// const articles = data.articles;
+	const articleObject = getArticle( title );
 
 	if ( articleObject ) {
 		const category = articleObject.category;
+		const allRelatedArticles = categories[ category ].filter( ( c ) => c.title !== title );
+		return allRelatedArticles.slice( 0, 3 );
 
-		const groupArticles = articles.filter( ( article ) => article.category === category );
-
-		const shuffledArray = groupArticles.slice().sort( () => Math.random() - 0.5 );
-		return shuffledArray.slice( 0, 3 );
 	}
 };
 
