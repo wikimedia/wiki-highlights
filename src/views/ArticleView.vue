@@ -4,6 +4,10 @@
 			<!-- content insertion here -->
 		</div>
 		<div class="footer">
+			<!--
+				the footer element is copied from the wikipedia website
+				keeping the same classname and structure to maintain the same styling
+			-->
 			<div id="mw-data-after-content">
 				<div class="read-more-container">
 					<h2>Related articles</h2>
@@ -98,9 +102,10 @@ const transforms = {
 			imgElement.className = 'figure';
 			newSpanElement.innerHTML = figure.innerText;
 
-			// Set the src attribute of the <img> element to the data-src attribute.
+			// Set the source attribute of the <img>
 			if ( newSpanElement.firstChild && newSpanElement.firstChild.dataset ) {
-				imgElement.src = newSpanElement.firstChild.dataset.src;
+				imgElement.src = newSpanElement.firstChild.dataset.src ||
+					newSpanElement.firstChild.src;
 				figure.firstChild.remove();
 				figure.insertBefore( imgElement, figure.firstChild );
 			}
@@ -133,7 +138,7 @@ const addEvents = function ( doc ) {
 const fetchArticle = function ( title ) {
 	const url = `https://en.wikipedia.org/api/rest_v1/page/mobile-html/${title}`;
 
-	fetch( url ).then( ( resp ) => {
+	return fetch( url ).then( ( resp ) => {
 		if ( resp.ok ) {
 			return resp.text();
 		} else {
@@ -174,6 +179,8 @@ let relatedArticles = fetchRelatedArticle( route.params.title );
 
 const goTo = function ( title ) {
 	document.querySelector( '.content' ).innerHTML = '';
+	relatedArticles = [];
+
 	fetchArticle( title );
 	relatedArticles = fetchRelatedArticle( title );
 };
