@@ -15,12 +15,12 @@ defineProps( {
 
 <style>
 .wiki-highlight-progressbar-outer {
-	background-color: #808080;
-	height: 10px;
+	background-color: #eaecf0;
+	height: 8px;
 }
 
 .wiki-highlight-progressbar-inner {
-	background-color: #00f;
-	height: 10px;
+	background-color: #36c;
+	height: 8px;
 }
 </style>
