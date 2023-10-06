@@ -145,7 +145,6 @@ const fetchArticle = function ( title ) {
 			throw new Error();
 		}
 	} ).then( ( html ) => {
-
 		// transform response html object
 		const doc = new DOMParser().parseFromString( html, 'text/html' );
 		Object.keys( transforms ).forEach( ( key ) => {
@@ -161,7 +160,6 @@ const fetchArticle = function ( title ) {
 };
 
 const fetchRelatedArticle = function ( title ) {
-	// const articles = data.articles;
 	const articleObject = getArticle( title );
 
 	if ( articleObject ) {
@@ -229,6 +227,15 @@ const goTo = function ( title ) {
 @media screen and ( max-width: 720px ) {
 	.footer {
 		margin: 0 16px;
+	}
+}
+
+@media screen and ( min-width: 1000px ) {
+	.footer {
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+		max-width: 993.3px;
 	}
 }
 
