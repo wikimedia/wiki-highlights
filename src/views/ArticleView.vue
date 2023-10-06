@@ -327,4 +327,18 @@ onMounted( function () {
 	text-overflow: ellipsis;
 	margin-top: 2px;
 }
+
+.footer .read-more-container h2 {
+	color: #54595d;
+	border-bottom: 0;
+	padding-bottom: 0.5em;
+	font-size: 0.8em;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.footer .footer-info {
+	margin-top: 15px;
+}
 </style>
