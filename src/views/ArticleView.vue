@@ -81,7 +81,7 @@ const transforms = {
 	},
 	'turn links into plain text': ( doc ) => {
 		for ( const a of doc.querySelectorAll( 'a' ) ) {
-			a.replaceWith( a.innerHTML );
+			a.removeAttribute( 'href' );
 		}
 	},
 	'remove sections after fold': ( doc ) => {
@@ -96,19 +96,20 @@ const transforms = {
 		}
 	},
 	'turn figure into an image': ( doc ) => {
-		for ( const figure of doc.querySelectorAll( 'figure' ) ) {
-			const newSpanElement = document.createElement( 'span' );
-			const imgElement = document.createElement( 'img' );
-			imgElement.className = 'figure';
-			newSpanElement.innerHTML = figure.innerText;
+		// enable lazyload image
+		const imageSpanNodes = doc.querySelectorAll( 'span.pcs-lazy-load-placeholder' );
+		for ( const imageSpanNode of imageSpanNodes ) {
+			const source = imageSpanNode.getAttribute( 'data-src' );
+			const image = document.createElement( 'img' );
+			image.src = source;
+			image.height = imageSpanNode.getAttribute( 'data-height' );
+			imageSpanNode.parentNode.appendChild( image );
 
-			// Set the source attribute of the <img>
-			if ( newSpanElement.firstChild && newSpanElement.firstChild.dataset ) {
-				imgElement.src = newSpanElement.firstChild.dataset.src ||
-					newSpanElement.firstChild.src;
-				figure.firstChild.remove();
-				figure.insertBefore( imgElement, figure.firstChild );
+			if ( !imageSpanNode.parentNode.classList.contains( 'image' ) ) {
+				imageSpanNode.parentNode.classList += ' image';
 			}
+
+			imageSpanNode.remove();
 		}
 	},
 	'turn sections into collapsible section': ( doc ) => {
@@ -190,6 +191,16 @@ const goTo = function ( title ) {
 
 .figure {
 	max-width: 100%;
+}
+
+.content a:not( [ href ] ) {
+	color: unset;
+	cursor: unset;
+}
+
+.content a:not( [ href ] ):hover {
+	text-decoration: none;
+	background-color: unset;
 }
 
 .content h2 {
