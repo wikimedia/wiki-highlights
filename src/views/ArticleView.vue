@@ -95,10 +95,14 @@ const transforms = {
 			section.remove();
 		}
 	},
-	'remove "See also" section': ( doc ) => {
+	'remove "See also" "Notes" section': ( doc ) => {
 		const seeAlsoH2 = doc.querySelector( '#See_also' );
 		if ( seeAlsoH2 ) {
 			seeAlsoH2.parentElement.parentElement.remove();
+		}
+		const NotesH2 = doc.querySelector( '#Notes' );
+		if ( NotesH2 ) {
+			NotesH2.parentElement.parentElement.remove();
 		}
 	},
 	'turn figure into an image': ( doc ) => {
