@@ -1,14 +1,15 @@
 <template>
 	<div class="article">
-		<div class="content">
-			<!-- content insertion here -->
-		</div>
+		<div
+			ref="contentRef"
+			class="content"
+			v-html="contentHtml" />
 		<div class="footer">
 			<!--
 				the footer element is copied from the wikipedia website
 				keeping the same classname and structure to maintain the same styling
 			-->
-			<div id="mw-data-after-content">
+			<div v-if="relatedArticles" id="mw-data-after-content">
 				<div class="read-more-container">
 					<h2>Related articles</h2>
 					<ul class="ext-related-articles-card-list">
@@ -57,9 +58,13 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { categories, getArticle } from '../data.js';
 const route = useRoute();
+const contentHtml = ref();
+const relatedArticles = ref( [] );
+const contentRef = ref();
 
 const transforms = {
 	'put styles in body': ( doc ) => {
@@ -72,6 +77,7 @@ const transforms = {
 			'script',
 			'sup',
 			'.pcs-collapse-table-container',
+			'.pcs-edit-section-link-container',
 			'.hatnote',
 			"[ role='navigation' ]"
 		].join( ',' );
@@ -113,16 +119,16 @@ const transforms = {
 		}
 	},
 	'turn sections into collapsible section': ( doc ) => {
-		const sections = doc.querySelectorAll( 'section[data-mw-section-id]' );
-
+		const sections = doc.querySelectorAll( 'section' );
 		for ( let i = 1; i < sections.length; i++ ) {
-			const section = sections[ i ];
-			if ( section.parentElement.className.indexOf( 'collapsible' ) === -1 ) {
-				section.style.display = 'unset';
-				section.classList.add( 'collapsible' );
-			} else {
-				section.style.display = null;
-			}
+			sections[ i ].style.removeProperty( 'display' );
+		}
+
+		const sectionTitle = doc.querySelectorAll( 'h2' );
+		for ( let i = 0; i < sectionTitle.length; i++ ) {
+			const section = sectionTitle[ i ].parentElement.parentElement;
+			section.style.display = 'unset';
+			section.classList.add( 'collapsible' );
 		}
 	}
 };
@@ -152,10 +158,11 @@ const fetchArticle = function ( title ) {
 			transforms[ key ]( doc );
 		} );
 
-		document.querySelector( '.content' ).innerHTML = doc.body.outerHTML;
-
-		// add events to document body
-		addEvents( document );
+		return doc.body.outerHTML;
+	} ).then( ( html ) => {
+		contentHtml.value = html;
+	} ).then( () => {
+		addEvents( contentRef.value );
 	} );
 
 };
@@ -171,16 +178,16 @@ const fetchRelatedArticle = function ( title ) {
 	}
 };
 
-fetchArticle( route.params.title );
-let relatedArticles = fetchRelatedArticle( route.params.title );
-
 const goTo = function ( title ) {
-	document.querySelector( '.content' ).innerHTML = '';
-	relatedArticles = [];
-
-	fetchArticle( title );
-	relatedArticles = fetchRelatedArticle( title );
+	fetchArticle( title ).then( () => {
+		window.scrollTo( 0, 0 );
+		relatedArticles.value = fetchRelatedArticle( title );
+	} );
 };
+
+onMounted( function () {
+	goTo( route.params.title );
+} );
 
 </script>
 
