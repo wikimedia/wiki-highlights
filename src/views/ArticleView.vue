@@ -196,6 +196,10 @@ onMounted( function () {
 </script>
 
 <style>
+body {
+	all: unset; /* unset everything and use the css from mobile_html api */
+}
+
 .article {
 	margin: 20px 0;
 }
@@ -231,7 +235,7 @@ onMounted( function () {
 	background-image: url( ../assets/collapse.svg );
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 10px;
+	margin-right: 6px;
 	margin-top: 6px;
 }
 
@@ -245,7 +249,7 @@ onMounted( function () {
 
 .content hr.pcs-fold-hr {
 	margin: 12px 0 16px;
-    width: 60px;
+	width: 60px;
 }
 
 .footer {
