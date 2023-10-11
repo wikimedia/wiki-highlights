@@ -226,12 +226,13 @@ onMounted( function () {
 .content h2::before {
 	content: '';
 	display: inline-block;
-	width: 20px;
-	height: 20px;
+	width: 16px;
+	height: 16px;
 	background-image: url( ../assets/collapse.svg );
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 10px;
+	margin-top: 6px;
 }
 
 .content .collapsible *:not( :first-child ) {
@@ -240,6 +241,11 @@ onMounted( function () {
 
 .content .collapsible h2::before {
 	transform: rotate( 180deg );
+}
+
+.content hr.pcs-fold-hr {
+	margin: 12px 0 16px;
+    width: 60px;
 }
 
 .footer {
