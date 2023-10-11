@@ -33,6 +33,7 @@ import { ref, onMounted } from 'vue';
 import HighlightCard from '../components/HighlightCard.vue';
 import ProgressBar from '../components/ProgressBar.vue';
 import { getArticle } from '../data.js';
+import { setScrolledToTheEnd } from '../scrollStatusStore.js';
 
 const props = defineProps( {
 	title: {
@@ -49,6 +50,9 @@ const highlightViewRef = ref( null );
 function updateProgress() {
 	const element = highlightViewRef.value;
 	progress.value = step + Math.ceil( element.scrollTop / element.scrollHeight * 100 );
+	if ( progress.value === 100 ) {
+		setScrolledToTheEnd( true );
+	}
 }
 onMounted( updateProgress );
 </script>
