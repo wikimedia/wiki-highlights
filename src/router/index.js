@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ArticleView from '../views/ArticleView.vue'
 import CategoriesView from '../views/CategoriesView.vue'
 import HighlightView from '../views/HighlightView.vue'
 
@@ -25,6 +26,11 @@ const router = createRouter({
       component: CategoriesView,
       props: { source: 'articles' }
     },
+    {
+      path: '/article/:title',
+      name: 'article',
+      component: ArticleView
+    }
   ]
 })
 

@@ -2,5 +2,13 @@
 	"extends": [
 		"stylelint-config-html/vue",
 		"stylelint-config-wikimedia"
-	]
+	],
+	"rules": {
+		"selector-pseudo-class-no-unknown": [
+			true,
+			{
+				"ignorePseudoClasses": [ "deep" ]
+			}
+		]
+	}
 }
