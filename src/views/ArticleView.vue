@@ -1,20 +1,23 @@
 <template>
-	<div class="article">
+	<div
+		v-if="data.loaded"
+		class="article"
+	>
 		<div
 			ref="contentRef"
 			class="content"
-			v-html="contentHtml" />
+			v-html="data.articleHtml" />
 		<div class="footer">
 			<!--
 				the footer element is copied from the wikipedia website
 				keeping the same classname and structure to maintain the same styling
 			-->
-			<div v-if="relatedArticles" id="mw-data-after-content">
+			<div id="mw-data-after-content">
 				<div class="read-more-container">
 					<h2>Related articles</h2>
 					<ul class="ext-related-articles-card-list">
 						<li
-							v-for="article in relatedArticles"
+							v-for="article in data.relatedArticles"
 							:key="article.title"
 							:title="article.title"
 							class="ext-related-articles-card">
@@ -58,13 +61,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, nextTick } from 'vue';
 import { useRoute } from 'vue-router';
 import { categories, getArticle } from '../data.js';
 const route = useRoute();
-const contentHtml = ref();
-const relatedArticles = ref( [] );
 const contentRef = ref();
+const data = ref( { loaded: false } );
 
 const transforms = {
 	'put styles in body': ( doc ) => {
@@ -159,9 +161,7 @@ const fetchArticle = function ( title ) {
 
 		return doc.body.outerHTML;
 	} ).then( ( html ) => {
-		contentHtml.value = html;
-	} ).then( () => {
-		addEvents( contentRef.value );
+		data.value.articleHtml = html;
 	} );
 
 };
@@ -179,8 +179,11 @@ const fetchRelatedArticle = function ( title ) {
 
 const goTo = function ( title ) {
 	fetchArticle( title ).then( () => {
-		window.scrollTo( 0, 0 );
-		relatedArticles.value = fetchRelatedArticle( title );
+		data.value.relatedArticles = fetchRelatedArticle( title );
+		data.value.loaded = true;
+		nextTick( () => {
+			addEvents( contentRef.value );
+		} );
 	} );
 };
 
