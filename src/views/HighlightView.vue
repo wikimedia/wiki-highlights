@@ -4,6 +4,11 @@
 		class="wiki-highlight-view"
 		@scroll="updateProgress"
 	>
+		<div class="wiki-highlight-view-topbar">
+			<div class="wiki-highlight-view-topbar-icon">
+				&lt;-
+			</div>
+		</div>
 		<div
 			v-for="( highlight, index ) in article.highlights"
 			:key="highlight.image"
@@ -65,6 +70,19 @@ onMounted( updateProgress );
 	padding-bottom: 50px;
 	scroll-snap-stop: always;
 	scroll-snap-align: start;
+}
+
+.wiki-highlight-view-topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0.8 ), rgba( 0, 0, 0, 0 ) );
+}
+
+.wiki-highlight-view-topbar-icon {
+	margin: 10px;
 }
 
 .wiki-highlight-view-swipe {
