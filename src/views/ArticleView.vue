@@ -3,6 +3,8 @@
 		v-if="data.loaded"
 		class="article"
 	>
+		<header>{{ route.params.title }}</header>
+		<RouterLink to="/articles" class="navicon" />
 		<div
 			ref="contentRef"
 			class="content"
@@ -81,7 +83,8 @@ const transforms = {
 			'.pcs-collapse-table-container',
 			'.pcs-edit-section-link-container',
 			'.hatnote',
-			"[ role='navigation' ]"
+			"[ role='navigation' ]",
+			'header'
 		].join( ',' );
 		for ( const n of doc.querySelectorAll( selector ) ) {
 			n.remove();
@@ -198,8 +201,31 @@ onMounted( function () {
 </script>
 
 <style scoped>
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: 2em;
+	text-align: center;
+	background-color: var( --color-background );
+	border-bottom: solid 1px var( --color-border );
+}
+
+.navicon {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 45px;
+	width: 45px;
+	background-image: url( ../assets/back-arrow-white.svg );
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: 16px center;
+}
+
 .article {
-	margin: 2em 0;
+	margin: 3em 0;
 }
 
 .content :deep( a:not( [ href ] ) ) {
