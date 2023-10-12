@@ -10,6 +10,7 @@
 			class="wiki-highlight-view-card"
 		>
 			<HighlightCard
+				v-if="index < article.highlights.length - 1"
 				:image="highlight.image"
 				:title="index === 0 ? article.title : ''"
 				:text="highlight.text"
@@ -20,7 +21,21 @@
 			>
 				Swipe up for more
 			</div>
+			<div v-if="index === article.highlights.length - 1">
+				<HighlightThumb
+					v-for="relatedArticle in allRelatedArticles"
+					:key="relatedArticle.title"
+					:image="relatedArticle.highlights[0].image"
+					:title="relatedArticle.title"
+					:text="relatedArticle.highlights[0].text"
+					source="highlights"
+				/>
+				<div class="wiki-highlight-view-swipe">
+					See all Wikihighlights
+				</div>
+			</div>
 		</div>
+
 		<ProgressBar
 			:progress="progress"
 			class="wiki-highlight-view-progressbar"
@@ -31,8 +46,9 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import HighlightCard from '../components/HighlightCard.vue';
+import HighlightThumb from '../components/HighlightThumb.vue';
 import ProgressBar from '../components/ProgressBar.vue';
-import { getArticle } from '../data.js';
+import { getArticle, categories } from '../data.js';
 
 const props = defineProps( {
 	title: {
@@ -42,6 +58,14 @@ const props = defineProps( {
 } );
 
 const article = getArticle( props.title );
+const category = article.category;
+const allRelatedArticles = categories[ category ].filter( ( c ) => c.title !== props.title );
+
+// push an empty object for related articles
+article.highlights.push( {
+	image: '',
+	text: ''
+} );
 
 const step = 100 / article.highlights.length;
 const progress = ref( 0 );
