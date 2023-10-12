@@ -21,7 +21,7 @@
 							:key="article.title"
 							:title="article.title"
 							class="ext-related-articles-card">
-							<a :href="'#/article/' + article.title" @click="goTo( article.title )">
+							<RouterLink :to="'/article/' + article.title">
 								<div
 									class="ext-related-articles-card-thumb"
 									:style="{
@@ -36,7 +36,7 @@
 										{{ article.highlights[ 0 ].text }}
 									</p>
 								</div>
-							</a>
+							</RouterLink>
 						</li>
 					</ul>
 				</div>
@@ -62,7 +62,7 @@
 
 <script setup>
 import { ref, onMounted, nextTick } from 'vue';
-import { useRoute } from 'vue-router';
+import { useRoute, RouterLink } from 'vue-router';
 import { categories, getArticle } from '../data.js';
 const route = useRoute();
 const contentRef = ref();
