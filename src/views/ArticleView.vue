@@ -114,11 +114,6 @@ const transforms = {
 			image.src = source;
 			image.height = imageSpanNode.getAttribute( 'data-height' );
 			imageSpanNode.parentNode.appendChild( image );
-
-			if ( !imageSpanNode.parentNode.classList.contains( 'image' ) ) {
-				imageSpanNode.parentNode.classList += ' image';
-			}
-
 			imageSpanNode.remove();
 		}
 	},
@@ -190,44 +185,40 @@ const goTo = function ( title ) {
 };
 
 onMounted( function () {
+
+	// overwrite <body> styling from base.css
+	document.body.style.fontSize = 'unset';
+
 	goTo( route.params.title );
 } );
 
 </script>
 
-<style>
-body {
-	all: unset; /* unset everything and use the css from mobile_html api */
-}
-
+<style scoped>
 .article {
-	margin: 20px 0;
+	margin: 2em 0;
 }
 
-.figure {
-	max-width: 100%;
-}
-
-.content a:not( [ href ] ) {
+.content :deep( a:not( [ href ] ) ) {
 	color: unset;
 	cursor: unset;
 }
 
-.content a:not( [ href ] ):hover {
+.content :deep( a:not( [ href ] ):hover ) {
 	text-decoration: none;
 	background-color: unset;
 }
 
-.content h2 {
+.content :deep( h2 ) {
 	cursor: pointer;
 }
 
-.content h2.pcs-edit-section-title {
+.content :deep( h2.pcs-edit-section-title ) {
 	border-bottom: 1px solid #eaecf0;
 	margin-bottom: 0.5em;
 }
 
-.content h2::before {
+.content :deep( h2::before ) {
 	content: '';
 	display: inline-block;
 	width: 16px;
@@ -239,15 +230,21 @@ body {
 	margin-top: 6px;
 }
 
-.content .collapsible *:not( :first-child ) {
+@media ( prefers-color-scheme: dark ) {
+	.content :deep( h2::before ) {
+		background-image: url( ../assets/collapse-light.svg );
+	}
+}
+
+.content :deep( .collapsible *:not( :first-child  ) ) {
 	display: none;
 }
 
-.content .collapsible h2::before {
+.content :deep( .collapsible h2::before ) {
 	transform: rotate( 180deg );
 }
 
-.content hr.pcs-fold-hr {
+.content :deep( hr.pcs-fold-hr ) {
 	margin: 12px 0 16px;
 	width: 60px;
 }
