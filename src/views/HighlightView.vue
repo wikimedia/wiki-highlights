@@ -5,9 +5,9 @@
 		@scroll="updateProgress"
 	>
 		<div class="wiki-highlight-view-topbar">
-			<div class="wiki-highlight-view-topbar-icon">
-				&lt;-
-			</div>
+			<RouterLink to="/highlights">
+				<span class="wiki-highlight-view-topbar-icon" />
+			</RouterLink>
 		</div>
 		<div
 			v-for="( highlight, index ) in article.highlights"
@@ -35,6 +35,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { RouterLink } from 'vue-router';
 import HighlightCard from '../components/HighlightCard.vue';
 import ProgressBar from '../components/ProgressBar.vue';
 import { getArticle } from '../data.js';
@@ -82,7 +83,14 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-view-topbar-icon {
-	margin: 10px;
+	display: inline-block;
+	padding: 10px;
+	width: 45px;
+	height: 45px;
+	background-image: url( ../assets/back-arrow-white.svg );
+	background-size: 25px;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .wiki-highlight-view-swipe {
