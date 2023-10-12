@@ -44,6 +44,7 @@ const router = createRouter( {
   ]
 } )
 
+const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 const makeSessionId = () => crypto.randomUUID().replace( /-/g, '' )
 let sessionId = makeSessionId()
 let sessionHandle = null
@@ -67,7 +68,8 @@ router.afterEach( ( to, from ) => {
       experiment_group: from.meta.experiment_group,
       session_id: getSessionId(),
       total_length: now - time,
-      content_complete: hasScrolledToTheEnd()
+      content_complete: hasScrolledToTheEnd(),
+      geolocation: timezone
     } )
   }
 
@@ -76,7 +78,8 @@ router.afterEach( ( to, from ) => {
         event_type: 'pageLoad',
         page_name: to.params.title || to.name,
         experiment_group: to.meta.experiment_group,
-        session_id: getSessionId()
+        session_id: getSessionId(),
+        geolocation: timezone
     } )
   }
 
