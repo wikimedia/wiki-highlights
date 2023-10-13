@@ -219,7 +219,7 @@ header {
 	left: 0;
 	height: 45px;
 	width: 45px;
-	background-image: url( ../assets/back-arrow-dark.svg );
+	background-image: url( ../assets/back-arrow-black.svg );
 	background-repeat: no-repeat;
 	background-size: 25px;
 	background-position: 16px center;
