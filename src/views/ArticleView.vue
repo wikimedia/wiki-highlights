@@ -210,6 +210,7 @@ header {
 	text-align: center;
 	background-color: var( --color-background );
 	border-bottom: solid 1px var( --color-border );
+	z-index: 2;
 }
 
 .navicon {
@@ -222,6 +223,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: 25px;
 	background-position: 16px center;
+	z-index: 3;
 }
 
 .article {
