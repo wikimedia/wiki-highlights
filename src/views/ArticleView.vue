@@ -219,7 +219,7 @@ header {
 	left: 0;
 	height: 45px;
 	width: 45px;
-	background-image: url( ../assets/back-arrow-white.svg );
+	background-image: url( ../assets/back-arrow-dark.svg );
 	background-repeat: no-repeat;
 	background-size: 25px;
 	background-position: 16px center;
@@ -262,6 +262,10 @@ header {
 }
 
 @media ( prefers-color-scheme: dark ) {
+	.navicon {
+		background-image: url( ../assets/back-arrow-white.svg );
+	}
+
 	.content :deep( h2::before ) {
 		background-image: url( ../assets/collapse-light.svg );
 	}
