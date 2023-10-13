@@ -87,6 +87,12 @@ router.afterEach( ( to, from ) => {
   setScrolledToTheEnd( false )
 } )
 
-const send = ( event ) => console.log( event )
+const send = ( event ) => {
+  // const intakeUrl = 'https://intake-logging.wikimedia.org/v1/events?hasty=true'
+  // event.$schema = 'todo'
+  // event.meta = { stream: 'todo' }
+  // navigator.sendBeacon( intakeUrl, JSON.stringify( event ) )
+  console.log( event )
+}
 
 export default router
