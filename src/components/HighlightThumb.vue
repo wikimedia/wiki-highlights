@@ -32,12 +32,11 @@ function goToHighlight() {
 
 <style>
 .wiki-highlight-thumb {
+	flex: calc( 50% - 20px );
 	height: 280px;
 	min-width: 166px;
-	max-width: 266px;
 	display: inline-block;
 	margin: 10px 20px 10px 0;
-	width: calc( 50% - 20px );
 	overflow: hidden;
 	border-radius: 10px;
 	border: solid 1px #808080;
