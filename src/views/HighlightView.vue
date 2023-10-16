@@ -76,8 +76,8 @@ onMounted( updateProgress );
 .wiki-highlight-view-topbar {
 	position: fixed;
 	top: 0;
-	left: 0;
-	right: 0;
+	max-width: 550px;
+	width: 100%;
 	height: 60px;
 	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0.8 ), rgba( 0, 0, 0, 0 ) );
 }
