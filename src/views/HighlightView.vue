@@ -10,7 +10,6 @@
 			class="wiki-highlight-view-card"
 		>
 			<HighlightCard
-				v-if="index < article.highlights.length - 1"
 				:image="highlight.image"
 				:title="index === 0 ? article.title : ''"
 				:text="highlight.text"
@@ -21,21 +20,22 @@
 			>
 				Swipe up for more
 			</div>
-			<div v-if="index === article.highlights.length - 1">
+		</div>
+		<div class="wiki-highlight-view-card">
+			<div class="wiki-hightlight-thumb-container wiki-highlight-thumb-discover">
 				<HighlightThumb
 					v-for="relatedArticle in allRelatedArticles"
 					:key="relatedArticle.title"
 					:image="relatedArticle.highlights[0].image"
 					:title="relatedArticle.title"
 					:text="relatedArticle.highlights[0].text"
-					source="highlights"
+					source="self"
 				/>
-				<div class="wiki-highlight-view-swipe">
-					See all Wikihighlights
-				</div>
 			</div>
+			<RouterLink to="/highlights" class="wiki-highlight-view-more">
+				See all Wikihighlights
+			</RouterLink>
 		</div>
-
 		<ProgressBar
 			:progress="progress"
 			class="wiki-highlight-view-progressbar"
@@ -45,10 +45,11 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { RouterLink } from 'vue-router';
 import HighlightCard from '../components/HighlightCard.vue';
 import HighlightThumb from '../components/HighlightThumb.vue';
 import ProgressBar from '../components/ProgressBar.vue';
-import { getArticle, categories } from '../data.js';
+import { getArticle, categories, getArticlesExcept } from '../data.js';
 
 const props = defineProps( {
 	title: {
@@ -56,17 +57,12 @@ const props = defineProps( {
 		required: true
 	}
 } );
-
 const article = getArticle( props.title );
 const category = article.category;
-const allRelatedArticles = categories[ category ].filter( ( c ) => c.title !== props.title );
-
-// push an empty object for related articles
-article.highlights.push( {
-	image: '',
-	text: ''
-} );
-
+const otherSameCatArticles = categories[ category ].filter( ( c ) => c.title !== props.title );
+const allRelatedArticles = otherSameCatArticles.concat(
+	...getArticlesExcept( category, 4 - otherSameCatArticles.length )
+);
 const step = 100 / article.highlights.length;
 const progress = ref( 0 );
 const highlightViewRef = ref( null );
@@ -95,10 +91,29 @@ onMounted( updateProgress );
 	text-align: center;
 }
 
+.wiki-highlight-view-more {
+	display: block;
+	width: 100%;
+	color: #36c;
+	font-size: 1em;
+	text-align: center;
+}
+
 .wiki-highlight-view-progressbar {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	max-width: 550px;
+}
+
+.wiki-hightlight-thumb-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wiki-highlight-thumb-discover {
+	margin-left: 20px;
+	height: 100%;
+	place-content: start;
 }
 </style>

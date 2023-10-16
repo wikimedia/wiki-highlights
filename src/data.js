@@ -21,4 +21,18 @@ const getArticle = function ( title ) {
 	return data.articles.find( ( a ) => a.title === title );
 };
 
-export { categories, getArticle };
+const getArticlesExcept = function( category, total ) {
+	if ( total === 0 ) return [];
+
+	const articles = [];
+	let index = 0;
+	while( articles.length < total ) {
+		if ( data.articles[ index ].category !== category ) {
+			articles.push( data.articles[ index ] );
+		}
+		index++;
+	}
+
+	return articles;
+}
+export { categories, getArticle, getArticlesExcept };

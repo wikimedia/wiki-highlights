@@ -25,7 +25,18 @@ const props = defineProps( {
 } );
 const router = useRouter();
 function goToHighlight() {
-	const url = props.source === 'highlights' ? 'highlights/' : 'article/';
+	let url;
+	switch ( props.source ) {
+		case 'highlights':
+			url = 'highlights/';
+			break;
+		case 'self':
+			url = '';
+			break;
+		case 'article':
+		default:
+			url = 'articles/';
+	}
 	router.push( url + props.title );
 }
 </script>
