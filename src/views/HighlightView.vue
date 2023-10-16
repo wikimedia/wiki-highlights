@@ -4,6 +4,11 @@
 		class="wiki-highlight-view"
 		@scroll="updateProgress"
 	>
+		<div class="wiki-highlight-view-topbar">
+			<RouterLink to="/highlights">
+				<span class="wiki-highlight-view-topbar-icon" />
+			</RouterLink>
+		</div>
 		<div
 			v-for="( highlight, index ) in data.article.highlights"
 			:key="highlight.image"
@@ -93,6 +98,26 @@ onMounted( updateProgress );
 	padding-bottom: 50px;
 	scroll-snap-stop: always;
 	scroll-snap-align: start;
+}
+
+.wiki-highlight-view-topbar {
+	position: fixed;
+	top: 0;
+	max-width: 550px;
+	width: 100%;
+	height: 60px;
+	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0.8 ), rgba( 0, 0, 0, 0 ) );
+}
+
+.wiki-highlight-view-topbar-icon {
+	display: inline-block;
+	padding: 10px;
+	width: 45px;
+	height: 45px;
+	background-image: url( ../assets/back-arrow-white.svg );
+	background-size: 25px;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .wiki-highlight-view-swipe {
