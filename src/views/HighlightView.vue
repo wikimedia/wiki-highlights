@@ -5,13 +5,13 @@
 		@scroll="updateProgress"
 	>
 		<div
-			v-for="( highlight, index ) in article.highlights"
+			v-for="( highlight, index ) in data.article.highlights"
 			:key="highlight.image"
 			class="wiki-highlight-view-card"
 		>
 			<HighlightCard
 				:image="highlight.image"
-				:title="index === 0 ? article.title : ''"
+				:title="index === 0 ? data.article.title : ''"
 				:text="highlight.text"
 			/>
 			<div
@@ -24,7 +24,7 @@
 		<div class="wiki-highlight-view-card">
 			<div class="wiki-hightlight-thumb-container wiki-highlight-thumb-discover">
 				<HighlightThumb
-					v-for="relatedArticle in allRelatedArticles"
+					v-for="relatedArticle in data.allRelatedArticles"
 					:key="relatedArticle.title"
 					:image="relatedArticle.highlights[0].image"
 					:title="relatedArticle.title"
@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { RouterLink } from 'vue-router';
 import HighlightCard from '../components/HighlightCard.vue';
 import HighlightThumb from '../components/HighlightThumb.vue';
@@ -57,18 +57,26 @@ const props = defineProps( {
 		required: true
 	}
 } );
-const article = getArticle( props.title );
-const category = article.category;
-const otherSameCatArticles = categories[ category ].filter( ( c ) => c.title !== props.title );
-const allRelatedArticles = otherSameCatArticles.concat(
-	...getArticlesExcept( category, 4 - otherSameCatArticles.length )
-);
-const step = 100 / article.highlights.length;
+
+const data = computed( () => {
+	const article = getArticle( props.title );
+	const category = article.category;
+	const otherSameCatArticles = categories[ category ].filter( ( c ) =>
+		c.title !== props.title && !c.read
+	);
+	const allRelatedArticles = otherSameCatArticles.concat(
+		...getArticlesExcept( category, 4 - otherSameCatArticles.length )
+	);
+	const step = 100 / article.highlights.length;
+
+	return { article, allRelatedArticles, step };
+} );
+
 const progress = ref( 0 );
 const highlightViewRef = ref( null );
 function updateProgress() {
 	const element = highlightViewRef.value;
-	progress.value = step + Math.ceil( element.scrollTop / element.scrollHeight * 100 );
+	progress.value = data.value.step + Math.ceil( element.scrollTop / element.scrollHeight * 100 );
 }
 onMounted( updateProgress );
 </script>
