@@ -27,6 +27,7 @@
 			</div>
 		</div>
 		<div class="wiki-highlight-view-card">
+			<div class="wiki-highlight-view-card-discover-header">Discover more</div>
 			<div class="wiki-hightlight-thumb-container wiki-highlight-thumb-discover">
 				<HighlightThumb
 					v-for="relatedArticle in data.allRelatedArticles"
@@ -148,5 +149,13 @@ onMounted( updateProgress );
 	margin-left: 20px;
 	height: 100%;
 	place-content: start;
+}
+
+.wiki-highlight-view-card-discover-header {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #202122;
+	text-align: center;
+	padding: 20px;
 }
 </style>
