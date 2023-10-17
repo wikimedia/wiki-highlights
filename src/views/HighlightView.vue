@@ -4,7 +4,9 @@
 		class="wiki-highlight-view"
 		@scroll="updateProgress"
 	>
-		<div class="wiki-highlight-view-topbar">
+		<div
+			class="wiki-highlight-view-topbar"
+			:class="progress >= 100 ? 'wiki-highlight-view-topbar-dark' : ''">
 			<RouterLink to="/highlights">
 				<span class="wiki-highlight-view-topbar-icon" />
 			</RouterLink>
@@ -27,7 +29,9 @@
 			</div>
 		</div>
 		<div class="wiki-highlight-view-card">
-			<div class="wiki-highlight-view-card-discover-header">Discover more</div>
+			<div class="wiki-highlight-view-card-discover-header">
+				Discover more
+			</div>
 			<div class="wiki-hightlight-thumb-container wiki-highlight-thumb-discover">
 				<HighlightThumb
 					v-for="relatedArticle in data.allRelatedArticles"
@@ -110,6 +114,11 @@ onMounted( updateProgress );
 	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0.8 ), rgba( 0, 0, 0, 0 ) );
 }
 
+.wiki-highlight-view-topbar-dark {
+	padding: 18px;
+	background-image: unset;
+}
+
 .wiki-highlight-view-topbar-icon {
 	display: inline-block;
 	padding: 10px;
@@ -119,6 +128,10 @@ onMounted( updateProgress );
 	background-size: 25px;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.wiki-highlight-view-topbar-dark .wiki-highlight-view-topbar-icon {
+	background-image: url( ../assets/back-arrow-black.svg );
 }
 
 .wiki-highlight-view-swipe {
@@ -147,7 +160,7 @@ onMounted( updateProgress );
 
 .wiki-highlight-thumb-discover {
 	margin-left: 20px;
-	height: 100%;
+	height: 90%;
 	place-content: start;
 }
 
