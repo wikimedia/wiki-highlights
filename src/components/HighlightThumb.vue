@@ -45,7 +45,7 @@ function goToHighlight() {
 .wiki-highlight-thumb {
 	flex: calc( 50% - 20px );
 	height: 280px;
-	min-width: 166px;
+	min-width: 150px;
 	display: inline-block;
 	margin: 10px 20px 10px 0;
 	overflow: hidden;
