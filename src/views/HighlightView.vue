@@ -130,8 +130,10 @@ onMounted( updateProgress );
 	background-repeat: no-repeat;
 }
 
-.wiki-highlight-view-topbar-dark .wiki-highlight-view-topbar-icon {
-	background-image: url( ../assets/back-arrow-black.svg );
+@media ( prefers-color-scheme: light ) {
+	.wiki-highlight-view-topbar-dark .wiki-highlight-view-topbar-icon {
+		background-image: url( ../assets/back-arrow-black.svg );
+	}
 }
 
 .wiki-highlight-view-swipe {
@@ -170,5 +172,11 @@ onMounted( updateProgress );
 	color: #202122;
 	text-align: center;
 	padding: 20px;
+}
+
+@media ( prefers-color-scheme: dark ) {
+	.wiki-highlight-view-card-discover-header {
+		color: #fff;
+	}
 }
 </style>
