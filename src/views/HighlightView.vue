@@ -115,7 +115,6 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-view-topbar-dark {
-	padding: 18px;
 	background-image: unset;
 }
 
@@ -171,7 +170,6 @@ onMounted( updateProgress );
 	font-weight: bold;
 	color: #202122;
 	text-align: center;
-	padding: 20px;
 }
 
 @media ( prefers-color-scheme: dark ) {
