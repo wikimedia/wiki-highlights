@@ -18,7 +18,23 @@ shuffleArray( data.articles );
 const categories = groupBy( data.articles, 'category' );
 
 const getArticle = function ( title ) {
-	return data.articles.find( ( a ) => a.title === title );
+	const article =  data.articles.find( ( a ) => a.title === title );
+	article.read = true;
+	return article;
 };
 
-export { categories, getArticle };
+const getArticlesExcept = function( category, total ) {
+	if ( total === 0 ) return [];
+
+	const articles = [];
+	let index = 0;
+	while( articles.length < total ) {
+		if ( data.articles[ index ].category !== category && !data.articles[ index ].read ) {
+			articles.push( data.articles[ index ] );
+		}
+		index++;
+	}
+
+	return articles;
+}
+export { categories, getArticle, getArticlesExcept };
