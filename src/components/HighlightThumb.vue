@@ -5,7 +5,7 @@
 	>
 		<div
 			class="wiki-highlight-thumb-image"
-			:style="{ backgroundImage: 'url(' + thumb( image ) + ')' }"
+			:style="{ backgroundImage: 'url(' + image + ')' }"
 			:alt="title"
 		/>
 		<div class="wiki-highlight-thumb-text">
@@ -38,10 +38,6 @@ function goToHighlight() {
 			url = 'articles/';
 	}
 	router.push( url + props.title );
-}
-
-function thumb( url ) {
-	return url.replace( '/640px-', '/320px-' );
 }
 </script>
 
