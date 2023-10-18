@@ -54,7 +54,7 @@ function goToHighlight() {
 	padding: 4px 10px 10px;
 }
 
-.wiki-highlight-thumb-text h2 {
+.wiki-highlight-thumb-text > h2 {
 	color: #202122; /* @todo dark schema */
 	font-weight: bold;
 	font-size: 1.1em;

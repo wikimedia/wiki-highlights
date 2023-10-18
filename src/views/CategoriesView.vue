@@ -43,7 +43,7 @@ defineProps( {
 	margin-bottom: 16px;
 }
 
-.wiki-highlight-category h2 {
+.wiki-highlight-category > h2 {
 	font-size: 1.1em;
 	font-weight: bold;
 	color: #72777d;
