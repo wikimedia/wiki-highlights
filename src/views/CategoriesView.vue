@@ -3,9 +3,10 @@
 		<div
 			v-for="( articles, category ) in categories"
 			:key="category"
+			class="wiki-highlight-category"
 		>
 			<h2>{{ category }}</h2>
-			<div class="wiki-hightlight-thumb-container">
+			<div class="wiki-highlight-thumb-container">
 				<HighlightThumb
 					v-for="article in articles"
 					:key="article.title"
@@ -35,14 +36,39 @@ defineProps( {
 
 <style>
 .wiki-highlight-categories {
-	padding: 10px 0 10px 20px;
+	padding: 10px 0 10px 16px;
+}
+
+.wiki-highlight-category {
+	margin-bottom: 16px;
 }
 
 .wiki-highlight-categories-license {
+	font-size: 0.8em;
+	margin-top: 4px;
+	color: #54595d; /* dark schema, background color */
 	margin-right: 10px;
 }
 
-.wiki-hightlight-thumb-container {
+.wiki-highlight-categories-license a {
+	color: #36c; /* dark schema */
+}
+
+.wiki-highlight-thumb-category {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #72777d; /* dark schema */
+	letter-spacing: 0.03em;
+}
+
+.wiki-highlight-thumb-category h2 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #72777d;
+	letter-spacing: 0.03em;
+}
+
+.wiki-highlight-thumb-container {
 	display: flex;
 	flex-wrap: wrap;
 }
