@@ -21,10 +21,7 @@
 				:title="index === 0 ? data.article.title : ''"
 				:text="highlight.text"
 			/>
-			<div
-				v-if="index === 0"
-				class="wiki-highlight-view-swipe"
-			>
+			<div class="wiki-highlight-view-swipe">
 				Swipe up for more
 			</div>
 		</div>
