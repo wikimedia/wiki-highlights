@@ -4,19 +4,21 @@
 		class="wiki-highlight-view"
 		@scroll="updateProgress"
 	>
-		<div class="wiki-highlight-view-topbar">
+		<div
+			class="wiki-highlight-view-topbar"
+			:class="progress >= 100 ? 'wiki-highlight-view-topbar-dark' : ''">
 			<RouterLink to="/highlights">
 				<span class="wiki-highlight-view-topbar-icon" />
 			</RouterLink>
 		</div>
 		<div
-			v-for="( highlight, index ) in article.highlights"
+			v-for="( highlight, index ) in data.article.highlights"
 			:key="highlight.image"
 			class="wiki-highlight-view-card"
 		>
 			<HighlightCard
 				:image="highlight.image"
-				:title="index === 0 ? article.title : ''"
+				:title="index === 0 ? data.article.title : ''"
 				:text="highlight.text"
 			/>
 			<div
@@ -26,6 +28,24 @@
 				Swipe up for more
 			</div>
 		</div>
+		<div class="wiki-highlight-view-card">
+			<div class="wiki-highlight-view-card-discover-header">
+				Discover more
+			</div>
+			<div class="wiki-hightlight-thumb-container wiki-highlight-thumb-discover">
+				<HighlightThumb
+					v-for="relatedArticle in data.allRelatedArticles"
+					:key="relatedArticle.title"
+					:image="relatedArticle.highlights[0].image"
+					:title="relatedArticle.title"
+					:text="relatedArticle.highlights[0].text"
+					source="self"
+				/>
+			</div>
+			<RouterLink to="/highlights" class="wiki-highlight-view-more">
+				See all Wikihighlights
+			</RouterLink>
+		</div>
 		<ProgressBar
 			:progress="progress"
 			class="wiki-highlight-view-progressbar"
@@ -34,11 +54,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { RouterLink } from 'vue-router';
 import HighlightCard from '../components/HighlightCard.vue';
+import HighlightThumb from '../components/HighlightThumb.vue';
 import ProgressBar from '../components/ProgressBar.vue';
-import { getArticle } from '../data.js';
+import { getArticle, categories, getArticlesExcept } from '../data.js';
 
 const props = defineProps( {
 	title: {
@@ -47,14 +68,25 @@ const props = defineProps( {
 	}
 } );
 
-const article = getArticle( props.title );
+const data = computed( () => {
+	const article = getArticle( props.title );
+	const category = article.category;
+	const otherSameCatArticles = categories[ category ].filter( ( c ) =>
+		c.title !== props.title && !c.read
+	);
+	const allRelatedArticles = otherSameCatArticles.concat(
+		...getArticlesExcept( category, 4 - otherSameCatArticles.length )
+	);
+	const step = 100 / article.highlights.length;
 
-const step = 100 / article.highlights.length;
+	return { article, allRelatedArticles, step };
+} );
+
 const progress = ref( 0 );
 const highlightViewRef = ref( null );
 function updateProgress() {
 	const element = highlightViewRef.value;
-	progress.value = step + Math.ceil( element.scrollTop / element.scrollHeight * 100 );
+	progress.value = data.value.step + Math.ceil( element.scrollTop / element.scrollHeight * 100 );
 }
 onMounted( updateProgress );
 </script>
@@ -82,6 +114,10 @@ onMounted( updateProgress );
 	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0.8 ), rgba( 0, 0, 0, 0 ) );
 }
 
+.wiki-highlight-view-topbar-dark {
+	background-image: unset;
+}
+
 .wiki-highlight-view-topbar-icon {
 	display: inline-block;
 	padding: 10px;
@@ -93,7 +129,21 @@ onMounted( updateProgress );
 	background-repeat: no-repeat;
 }
 
+@media ( prefers-color-scheme: light ) {
+	.wiki-highlight-view-topbar-dark .wiki-highlight-view-topbar-icon {
+		background-image: url( ../assets/back-arrow-black.svg );
+	}
+}
+
 .wiki-highlight-view-swipe {
+	text-align: center;
+}
+
+.wiki-highlight-view-more {
+	display: block;
+	width: 100%;
+	color: #36c;
+	font-size: 1em;
 	text-align: center;
 }
 
@@ -102,5 +152,29 @@ onMounted( updateProgress );
 	bottom: 0;
 	width: 100%;
 	max-width: 550px;
+}
+
+.wiki-hightlight-thumb-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wiki-highlight-thumb-discover {
+	margin-left: 20px;
+	height: 90%;
+	place-content: start;
+}
+
+.wiki-highlight-view-card-discover-header {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #202122;
+	text-align: center;
+}
+
+@media ( prefers-color-scheme: dark ) {
+	.wiki-highlight-view-card-discover-header {
+		color: #fff;
+	}
 }
 </style>
