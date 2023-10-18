@@ -52,7 +52,7 @@ defineProps( {
 
 .wiki-highlight-categories-license {
 	font-size: 0.8em;
-	background-color: #F8F9FA;
+	background-color: #f8f9fa;
 	color: #54595d; /* dark schema */
 	padding: 16px;
 }
