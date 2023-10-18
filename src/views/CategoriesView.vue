@@ -43,6 +43,13 @@ defineProps( {
 	margin-bottom: 16px;
 }
 
+.wiki-highlight-category h2 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #72777d;
+	letter-spacing: 0.03em;
+}
+
 .wiki-highlight-categories-license {
 	font-size: 0.8em;
 	margin-top: 4px;
@@ -58,13 +65,6 @@ defineProps( {
 	font-size: 1.1em;
 	font-weight: bold;
 	color: #72777d; /* dark schema */
-	letter-spacing: 0.03em;
-}
-
-.wiki-highlight-thumb-category h2 {
-	font-size: 1.1em;
-	font-weight: bold;
-	color: #72777d;
 	letter-spacing: 0.03em;
 }
 
