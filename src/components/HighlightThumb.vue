@@ -35,7 +35,7 @@ function goToHighlight() {
 			break;
 		case 'article':
 		default:
-			url = 'articles/';
+			url = 'article/';
 	}
 	router.push( url + props.title );
 }
