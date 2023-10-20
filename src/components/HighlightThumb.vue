@@ -66,17 +66,32 @@ function goToHighlight() {
 }
 
 .wiki-highlight-thumb-text > h2 {
-	color: #202122; /* @todo dark schema */
+	color: #202122;
 	font-weight: bold;
 	font-size: 1.1em;
 }
 
 .wiki-highlight-thumb-text p {
 	font-size: 1.1em;
-	color: #54595d; /* @todo dark schema */
+	color: #54595d;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+}
+
+@media ( prefers-color-scheme: dark ) {
+	.wiki-highlight-thumb-text > h2 {
+		color: #eaecf0;
+	}
+
+	.wiki-highlight-thumb {
+		border-color: #72777d;
+		box-shadow: 0 1px 1px #fff3;
+	}
+
+	.wiki-highlight-thumb-text p {
+		color: #c8ccd1;
+	}
 }
 </style>

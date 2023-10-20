@@ -45,9 +45,15 @@ defineProps( {
 
 .wiki-highlight-category > h2 {
 	font-size: 1.1em;
-	font-weight: bold;
+	font-weight: 600;
 	color: #72777d;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.05em;
+}
+
+@media ( prefers-color-scheme: dark ) {
+	.wiki-highlight-category > h2 {
+		color: #eaecf0;
+	}
 }
 
 .wiki-highlight-categories-license {
