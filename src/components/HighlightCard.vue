@@ -2,7 +2,7 @@
 	<div class="wiki-highlight-card">
 		<div
 			class="wiki-highlight-card-image"
-			:style="{ backgroundImage: 'url(' + image + ')' }"
+			:style="{ backgroundImage: 'url(' + bigger( image ) + ')' }"
 			:alt="title"
 		/>
 		<div class="wiki-highlight-card-text">
@@ -18,6 +18,10 @@ defineProps( {
 	title: { type: String, default: null },
 	text: { type: String, required: true }
 } );
+
+function bigger( url ) {
+	return url.replace( '/320px-', '/640px-' );
+}
 </script>
 
 <style>
