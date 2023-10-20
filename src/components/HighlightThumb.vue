@@ -62,7 +62,11 @@ function goToHighlight() {
 }
 
 .wiki-highlight-thumb-text {
-	padding: 4px 10px 10px;
+	margin: 4px 10px 10px;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .wiki-highlight-thumb-text > h2 {
@@ -74,10 +78,6 @@ function goToHighlight() {
 .wiki-highlight-thumb-text p {
 	font-size: 1.1em;
 	color: #54595d;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
 }
 
 @media ( prefers-color-scheme: dark ) {
