@@ -99,7 +99,7 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-view > .wiki-highlight-view-card {
-	height: 100vh;
+	height: 100dvh;
 	padding-bottom: 50px;
 	scroll-snap-stop: always;
 	scroll-snap-align: start;
