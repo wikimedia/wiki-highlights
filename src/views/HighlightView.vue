@@ -166,7 +166,7 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-thumb {
-	max-height: 45%;
+	max-height: 40dvh;
 }
 
 .wiki-highlight-view-card-discover-header {
