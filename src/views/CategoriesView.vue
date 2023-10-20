@@ -5,7 +5,7 @@
 			:key="category"
 		>
 			<h2>{{ category }}</h2>
-			<div class="wiki-hightlight-thumb-container">
+			<div class="wiki-highlight-thumb-container">
 				<HighlightThumb
 					v-for="article in articles"
 					:key="article.title"
@@ -42,7 +42,7 @@ defineProps( {
 	margin-right: 10px;
 }
 
-.wiki-hightlight-thumb-container {
+.wiki-highlight-thumb-container {
 	display: flex;
 	flex-wrap: wrap;
 }
