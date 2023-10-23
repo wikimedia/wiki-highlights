@@ -61,13 +61,6 @@ defineProps( {
 	color: #36c;
 }
 
-.wiki-highlight-thumb-category {
-	font-size: 1.1em;
-	font-weight: bold;
-	color: #72777d;
-	letter-spacing: 0.03em;
-}
-
 .wiki-highlight-thumb-container {
 	display: flex;
 	flex-wrap: wrap;

@@ -32,7 +32,7 @@
 			<div class="wiki-highlight-view-card-discover-header">
 				Discover more
 			</div>
-			<div class="wiki-hightlight-thumb-container wiki-highlight-thumb-discover">
+			<div class="wiki-highlight-thumb-container wiki-highlight-thumb-discover">
 				<HighlightThumb
 					v-for="relatedArticle in data.allRelatedArticles"
 					:key="relatedArticle.title"
@@ -93,13 +93,13 @@ onMounted( updateProgress );
 
 <style>
 .wiki-highlight-view {
-	height: 100vh;
+	height: 100dvh;
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 }
 
 .wiki-highlight-view > .wiki-highlight-view-card {
-	height: 100vh;
+	height: 100dvh;
 	padding-bottom: 50px;
 	scroll-snap-stop: always;
 	scroll-snap-align: start;
@@ -154,15 +154,20 @@ onMounted( updateProgress );
 	max-width: 550px;
 }
 
-.wiki-hightlight-thumb-container {
+.wiki-highlight-thumb-container {
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .wiki-highlight-thumb-discover {
 	margin-left: 20px;
-	height: 90%;
+	margin-bottom: -36px;
+	height: 100%;
 	place-content: start;
+}
+
+.wiki-highlight-thumb {
+	max-height: 40dvh;
 }
 
 .wiki-highlight-view-card-discover-header {
