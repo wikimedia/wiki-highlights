@@ -93,7 +93,7 @@ onMounted( updateProgress );
 
 <style>
 .wiki-highlight-view {
-	height: 100vh;
+	height: 100dvh;
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 }
