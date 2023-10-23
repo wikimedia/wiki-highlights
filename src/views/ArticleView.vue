@@ -49,14 +49,6 @@
 						rel="nofollow"
 						href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>, unless otherwise noted.
 				</li>
-				<ul id="footer-places" class="footer-places hlist hlist-separated">
-					<li id="footer-places-privacy">
-						<a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a>
-					</li>
-					<li id="footer-places-terms-use">
-						<a href="https://mobile.test/wiki/Terms_of_Use">Terms of use</a>
-					</li>
-				</ul>
 			</ul>
 		</div>
 	</div>
