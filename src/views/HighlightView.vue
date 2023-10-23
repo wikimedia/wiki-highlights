@@ -177,4 +177,8 @@ onMounted( updateProgress );
 		color: #fff;
 	}
 }
+
+.wiki-highlight-thumb-discover .wiki-highlight-thumb {
+	height: 45%;
+}
 </style>
