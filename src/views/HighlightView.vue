@@ -161,7 +161,8 @@ onMounted( updateProgress );
 
 .wiki-highlight-thumb-discover {
 	margin-left: 20px;
-	height: 90dvh;
+	margin-bottom: -36px;
+	height: 100%;
 	place-content: start;
 }
 
