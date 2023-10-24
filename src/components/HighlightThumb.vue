@@ -77,8 +77,8 @@ function goToHighlight() {
 }
 
 .wiki-highlight-thumb-text p {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato',
-		'Helvetica','Arial',sans-serif;
+	/* stylelint-disable-next-line */
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
 	font-size: 1.1em;
 	color: #54595d;
 }
