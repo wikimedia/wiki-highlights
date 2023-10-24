@@ -67,6 +67,8 @@ function goToHighlight() {
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+	text-overflow: -o-ellipsis-lastline;
+	text-overflow: ellipsis;
 }
 
 .wiki-highlight-thumb-text > h2 {
