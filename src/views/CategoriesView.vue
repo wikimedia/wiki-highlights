@@ -49,6 +49,10 @@ defineProps( {
 	color: #000;
 	letter-spacing: 0.05em;
 	font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+	text-transform: lowercase;
+}
+
+.wiki-highlight-category > h2::first-letter {
 	text-transform: uppercase;
 }
 
