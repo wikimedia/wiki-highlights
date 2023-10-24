@@ -70,7 +70,7 @@ function goToHighlight() {
 }
 
 .wiki-highlight-thumb-text > h2 {
-	font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+	font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
 	color: #202122;
 	font-weight: bold;
 	font-size: 1.1em;

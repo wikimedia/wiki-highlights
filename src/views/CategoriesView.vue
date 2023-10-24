@@ -45,10 +45,10 @@ defineProps( {
 
 .wiki-highlight-category > h2 {
 	font-size: 1.4em;
-	font-weight: 400;
+	font-weight: normal;
 	color: #000;
 	letter-spacing: 0.05em;
-	font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+	font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
 	text-transform: uppercase;
 }
 
