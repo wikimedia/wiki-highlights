@@ -69,10 +69,6 @@ function goToHighlight() {
 	overflow: hidden;
 	text-overflow: -o-ellipsis-lastline;
 	text-overflow: ellipsis;
-
-	p {
-		display: inline;
-	}
 }
 
 .wiki-highlight-thumb-text > h2 {
@@ -82,6 +78,7 @@ function goToHighlight() {
 }
 
 .wiki-highlight-thumb-text p {
+	display: inline;
 	font-size: 1.1em;
 	color: #54595d;
 }
