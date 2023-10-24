@@ -70,7 +70,7 @@ function goToHighlight() {
 	text-overflow: -o-ellipsis-lastline;
 	text-overflow: ellipsis;
 
-	* {
+	p {
 		display: inline;
 	}
 }
