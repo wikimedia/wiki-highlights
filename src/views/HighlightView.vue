@@ -166,7 +166,7 @@ onMounted( updateProgress );
 	place-content: start;
 }
 
-.wiki-highlight-thumb {
+.wiki-highlight-thumb-discover .wiki-highlight-thumb {
 	max-height: 40dvh;
 }
 
