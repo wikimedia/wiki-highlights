@@ -69,6 +69,10 @@ function goToHighlight() {
 	overflow: hidden;
 	text-overflow: -o-ellipsis-lastline;
 	text-overflow: ellipsis;
+
+	* {
+		display: inline;
+	}
 }
 
 .wiki-highlight-thumb-text > h2 {
