@@ -44,10 +44,12 @@ defineProps( {
 }
 
 .wiki-highlight-category > h2 {
-	font-size: 1.1em;
-	font-weight: 600;
-	color: #72777d;
+	font-size: 1.4em;
+	font-weight: 400;
+	color: #000;
 	letter-spacing: 0.05em;
+	font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+	text-transform: uppercase;
 }
 
 .wiki-highlight-categories-license {

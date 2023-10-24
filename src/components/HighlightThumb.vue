@@ -62,7 +62,7 @@ function goToHighlight() {
 }
 
 .wiki-highlight-thumb-text {
-	margin: 4px 10px 10px;
+	margin: 8px;
 	display: -webkit-box;
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
@@ -70,12 +70,14 @@ function goToHighlight() {
 }
 
 .wiki-highlight-thumb-text > h2 {
+	font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
 	color: #202122;
 	font-weight: bold;
 	font-size: 1.1em;
 }
 
 .wiki-highlight-thumb-text p {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif';
 	font-size: 1.1em;
 	color: #54595d;
 }
