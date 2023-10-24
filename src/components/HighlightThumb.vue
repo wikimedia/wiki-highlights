@@ -81,8 +81,9 @@ function goToHighlight() {
 	font-size: 1.1em;
 }
 
-.wiki-highlight-thumb-text > h2:after {
-	content: '\A'; white-space:pre;
+.wiki-highlight-thumb-text > h2::after {
+	content: '\A';
+	white-space: pre;
 }
 
 .wiki-highlight-thumb-text p {
