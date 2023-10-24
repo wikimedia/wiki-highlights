@@ -45,9 +45,11 @@ function bigger( url ) {
 
 .wiki-highlight-card-text h2 {
 	font-weight: bold;
+	font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
 }
 
 .wiki-highlight-card-text p {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
 	font-size: 1.3em;
 }
 </style>
