@@ -93,14 +93,14 @@ onMounted( updateProgress );
 
 <style>
 .wiki-highlight-view {
-	height: 100vh;
+	height: calc( 100vh - 40px );
 	height: 100dvh;
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 }
 
 .wiki-highlight-view > .wiki-highlight-view-card {
-	height: 100vh;
+	height: calc( 100vh - 40px );
 	height: 100dvh;
 	padding-bottom: 50px;
 	scroll-snap-stop: always;
