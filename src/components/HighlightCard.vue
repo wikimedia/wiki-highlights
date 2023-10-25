@@ -39,7 +39,7 @@ function bigger( url ) {
 }
 
 .wiki-highlight-card-text {
-	padding: 8px;
+	padding: 20px 20px 40px;
 	font-family: serif;
 }
 

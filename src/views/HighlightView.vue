@@ -15,6 +15,7 @@
 			v-for="( highlight, index ) in data.article.highlights"
 			:key="highlight.image"
 			class="wiki-highlight-view-card"
+			:class="index === 0 ? 'wiki-highlight-view-card-first' : ''"
 		>
 			<HighlightCard
 				:image="highlight.image"
@@ -99,15 +100,20 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-view > .wiki-highlight-view-card {
+	position: relative;
 	height: 100dvh;
-	padding-bottom: 50px;
 	scroll-snap-stop: always;
 	scroll-snap-align: start;
+}
+
+.wiki-highlight-view > .wiki-highlight-view-card-first {
+	padding-bottom: 50px;
 }
 
 .wiki-highlight-view-topbar {
 	position: fixed;
 	top: 0;
+	z-index: 100;
 	max-width: 550px;
 	width: 100%;
 	height: 60px;
@@ -140,10 +146,12 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-view-more {
-	display: block;
+	position: absolute;
+	bottom: 40px;
 	width: 100%;
 	color: #36c;
 	font-size: 1em;
+	font-weight: 600;
 	text-align: center;
 }
 
@@ -171,10 +179,10 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-view-card-discover-header {
+	padding: 40px 20px 10px;
 	font-size: 1.5em;
 	font-weight: bold;
 	color: #202122;
-	text-align: center;
 }
 
 @media ( prefers-color-scheme: dark ) {
