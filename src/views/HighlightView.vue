@@ -168,7 +168,7 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-thumb-discover {
-	margin-left: 20px;
+	margin-left: 16px;
 	margin-bottom: -36px;
 	height: 100%;
 	place-content: start;
@@ -180,7 +180,7 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-view-card-discover-header {
-	padding: 40px 20px 10px;
+	padding: 40px 16px 10px;
 	font-size: 1.5em;
 	font-weight: bold;
 	color: #202122;
