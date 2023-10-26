@@ -175,7 +175,7 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-thumb-discover .wiki-highlight-thumb {
-	max-height: 40dvh;
+	max-height: calc( 40dvh - 40px ); /* 40px view-more bottom px */
 }
 
 .wiki-highlight-view-card-discover-header {
