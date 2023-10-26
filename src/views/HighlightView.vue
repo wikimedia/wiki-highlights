@@ -149,7 +149,7 @@ onMounted( updateProgress );
 	position: absolute;
 	bottom: 40px;
 	width: 100%;
-	color: #54595D;
+	color: #54595d;
 	text-decoration: underline;
 	font-size: 1em;
 	font-weight: 600;
