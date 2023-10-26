@@ -130,7 +130,7 @@ onMounted( updateProgress );
 	width: 45px;
 	height: 45px;
 	background-image: url( ../assets/back-arrow-white.svg );
-	background-size: 25px;
+	background-size: 24px;
 	background-position: center;
 	background-repeat: no-repeat;
 }
