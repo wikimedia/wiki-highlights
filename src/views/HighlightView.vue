@@ -126,7 +126,7 @@ onMounted( updateProgress );
 
 .wiki-highlight-view-topbar-icon {
 	display: inline-block;
-	padding: 10px;
+	margin: 12px;
 	width: 45px;
 	height: 45px;
 	background-image: url( ../assets/back-arrow-white.svg );
@@ -175,15 +175,16 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-thumb-discover .wiki-highlight-thumb {
-	/* 40px view-more bottom px, 86px discover-more padding px */
-	max-height: calc( 50dvh - 40px - 86px );
+	/* 40px view-more bottom px, 60px discover-more padding px */
+	max-height: calc( 50dvh - 40px - 60px );
 }
 
 .wiki-highlight-view-card-discover-header {
-	padding: 40px 16px 10px;
+	padding: 14px 10px;
 	font-size: 1.5em;
 	font-weight: bold;
 	color: #202122;
+	text-align: center;
 }
 
 @media ( prefers-color-scheme: dark ) {
