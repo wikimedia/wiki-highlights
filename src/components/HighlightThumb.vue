@@ -56,7 +56,7 @@ function goToHighlight() {
 }
 
 .wiki-highlight-thumb:active {
-    border-color: #3366CC;
+	border-color: #36c;
 }
 
 .wiki-highlight-thumb-image {
