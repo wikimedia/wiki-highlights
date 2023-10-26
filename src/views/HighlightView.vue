@@ -15,6 +15,7 @@
 			v-for="( highlight, index ) in data.article.highlights"
 			:key="highlight.image"
 			class="wiki-highlight-view-card"
+			:class="index === 0 ? 'wiki-highlight-view-card-first' : ''"
 		>
 			<HighlightCard
 				:image="highlight.image"
@@ -102,14 +103,19 @@ onMounted( updateProgress );
 .wiki-highlight-view > .wiki-highlight-view-card {
 	height: calc( 100vh - 110px );
 	height: 100dvh;
-	padding-bottom: 50px;
+	position: relative;
 	scroll-snap-stop: always;
 	scroll-snap-align: start;
+}
+
+.wiki-highlight-view > .wiki-highlight-view-card-first {
+	padding-bottom: 50px;
 }
 
 .wiki-highlight-view-topbar {
 	position: fixed;
 	top: 0;
+	z-index: 100;
 	max-width: 550px;
 	width: 100%;
 	height: 60px;
@@ -122,11 +128,11 @@ onMounted( updateProgress );
 
 .wiki-highlight-view-topbar-icon {
 	display: inline-block;
-	padding: 10px;
+	margin: 8px;
 	width: 45px;
 	height: 45px;
 	background-image: url( ../assets/back-arrow-white.svg );
-	background-size: 25px;
+	background-size: 24px;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -138,14 +144,20 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-view-swipe {
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
 	text-align: center;
 }
 
 .wiki-highlight-view-more {
-	display: block;
+	position: absolute;
+	bottom: 40px;
 	width: 100%;
-	color: #36c;
+	color: #54595d;
+	text-decoration: underline;
 	font-size: 1em;
+	font-weight: 600;
 	text-align: center;
 }
 
@@ -162,18 +174,21 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-thumb-discover {
-	margin-left: 20px;
+	margin-left: 16px;
 	margin-bottom: -36px;
 	height: 100%;
 	place-content: start;
 }
 
 .wiki-highlight-thumb-discover .wiki-highlight-thumb {
-	max-height: 40vh;
-	max-height: 40dvh;
+	/* 40px view-more bottom px, 60px discover-more padding px */
+	max-height: calc( 50vh - 40px - 60px );
+	max-height: calc( 50dvh - 40px - 60px );
 }
 
 .wiki-highlight-view-card-discover-header {
+	font-family: serif;
+	padding: 14px 10px;
 	font-size: 1.5em;
 	font-weight: bold;
 	color: #202122;

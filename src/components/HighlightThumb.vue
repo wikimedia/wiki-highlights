@@ -50,9 +50,13 @@ function goToHighlight() {
 	margin: 0 12px 12px 0;
 	overflow: hidden;
 	border-radius: 8px;
-	border: solid 1px #c8ccd1;
+	border: solid 1px #a2a9b1;
 	padding-bottom: 20px;
 	box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.2 );
+}
+
+.wiki-highlight-thumb:active {
+	border-color: #36c;
 }
 
 .wiki-highlight-thumb-image {
@@ -62,20 +66,33 @@ function goToHighlight() {
 }
 
 .wiki-highlight-thumb-text {
-	margin: 4px 10px 10px;
+	margin: 8px;
 	display: -webkit-box;
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+	text-overflow: -o-ellipsis-lastline;
+	text-overflow: ellipsis;
+
+	* {
+		display: inline;
+	}
 }
 
 .wiki-highlight-thumb-text > h2 {
+	font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
 	color: #202122;
 	font-weight: bold;
 	font-size: 1.1em;
 }
 
+.wiki-highlight-thumb-text > h2::after {
+	content: '\A';
+	white-space: pre;
+}
+
 .wiki-highlight-thumb-text p {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
 	font-size: 1.1em;
 	color: #54595d;
 }
