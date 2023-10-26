@@ -176,7 +176,7 @@ onMounted( updateProgress );
 
 .wiki-highlight-thumb-discover .wiki-highlight-thumb {
 	/* 40px view-more bottom px, 86px discover-more padding px */
-	max-height: calc( 50dvh - 40px - 86px);
+	max-height: calc( 50dvh - 40px - 86px );
 }
 
 .wiki-highlight-view-card-discover-header {
