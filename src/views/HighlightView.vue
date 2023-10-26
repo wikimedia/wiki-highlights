@@ -142,6 +142,9 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-view-swipe {
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
 	text-align: center;
 }
 
