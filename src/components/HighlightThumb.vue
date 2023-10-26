@@ -50,9 +50,13 @@ function goToHighlight() {
 	margin: 0 12px 12px 0;
 	overflow: hidden;
 	border-radius: 8px;
-	border: solid 1px #c8ccd1;
+	border: solid 1px #a2a9b1;
 	padding-bottom: 20px;
 	box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.2 );
+}
+
+.wiki-highlight-thumb:active {
+    border-color: #3366CC;
 }
 
 .wiki-highlight-thumb-image {
