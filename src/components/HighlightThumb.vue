@@ -67,6 +67,12 @@ function goToHighlight() {
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+	text-overflow: -o-ellipsis-lastline;
+	text-overflow: ellipsis;
+
+	* {
+		display: inline;
+	}
 }
 
 .wiki-highlight-thumb-text > h2 {
@@ -74,6 +80,11 @@ function goToHighlight() {
 	color: #202122;
 	font-weight: bold;
 	font-size: 1.1em;
+}
+
+.wiki-highlight-thumb-text > h2::after {
+	content: '\A';
+	white-space: pre;
 }
 
 .wiki-highlight-thumb-text p {
