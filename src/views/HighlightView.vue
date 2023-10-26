@@ -126,7 +126,7 @@ onMounted( updateProgress );
 
 .wiki-highlight-view-topbar-icon {
 	display: inline-block;
-	margin: 12px;
+	margin: 8px;
 	width: 45px;
 	height: 45px;
 	background-image: url( ../assets/back-arrow-white.svg );
@@ -180,6 +180,7 @@ onMounted( updateProgress );
 }
 
 .wiki-highlight-view-card-discover-header {
+	font-family: serif;
 	padding: 14px 10px;
 	font-size: 1.5em;
 	font-weight: bold;
