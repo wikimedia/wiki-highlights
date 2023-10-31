@@ -94,14 +94,16 @@ onMounted( updateProgress );
 
 <style>
 .wiki-highlight-view {
+	height: calc( 100vh - 110px );
 	height: 100dvh;
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 }
 
 .wiki-highlight-view > .wiki-highlight-view-card {
-	position: relative;
+	height: calc( 100vh - 110px );
 	height: 100dvh;
+	position: relative;
 	scroll-snap-stop: always;
 	scroll-snap-align: start;
 }
@@ -180,6 +182,7 @@ onMounted( updateProgress );
 
 .wiki-highlight-thumb-discover .wiki-highlight-thumb {
 	/* 40px view-more bottom px, 60px discover-more padding px */
+	max-height: calc( 50vh - 40px - 60px );
 	max-height: calc( 50dvh - 40px - 60px );
 }
 
