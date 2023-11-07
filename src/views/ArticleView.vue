@@ -205,7 +205,7 @@ header {
 	text-align: center;
 	background-color: var( --color-background );
 	border-bottom: solid 1px var( --color-border );
-	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.2 );
 	z-index: 2;
 }
 
