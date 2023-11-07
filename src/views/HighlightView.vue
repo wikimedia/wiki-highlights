@@ -7,9 +7,13 @@
 		<div
 			class="wiki-highlight-view-topbar"
 			:class="progress >= 100 ? 'wiki-highlight-view-topbar-dark' : ''">
-			<RouterLink to="/highlights">
+			<RouterLink class="wiki-highlight-view-topbar-left" to="/highlights">
 				<span class="wiki-highlight-view-topbar-icon" />
 			</RouterLink>
+			<div v-if="progress >= 100" class="wiki-highlight-view-topbar-center-header">
+				Discover more
+			</div>
+			<div class="wiki-highlight-view-topbar-right" />
 		</div>
 		<div
 			v-for="( highlight, index ) in data.article.highlights"
@@ -30,9 +34,6 @@
 			</div>
 		</div>
 		<div class="wiki-highlight-view-card">
-			<div class="wiki-highlight-view-card-discover-header">
-				Discover more
-			</div>
 			<div class="wiki-highlight-thumb-container wiki-highlight-thumb-discover">
 				<HighlightThumb
 					v-for="relatedArticle in data.allRelatedArticles"
@@ -120,6 +121,22 @@ onMounted( updateProgress );
 	width: 100%;
 	height: 60px;
 	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0.8 ), rgba( 0, 0, 0, 0 ) );
+	display: flex;
+    justify-content: space-between;
+}
+
+.wiki-highlight-view-topbar-left, .wiki-highlight-view-topbar-right {
+	width: 45px;
+	height: 60px;
+}
+
+.wiki-highlight-view-topbar-center-header {
+	font-family: serif;
+	padding: 14px 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #202122;
+	text-align: center;
 }
 
 .wiki-highlight-view-topbar-dark {
@@ -179,7 +196,7 @@ onMounted( updateProgress );
 	height: 100%;
 	place-content: start;
 	position: absolute;
-	margin-top: 60px;
+	top: 60px;
 }
 
 .wiki-highlight-thumb-discover .wiki-highlight-thumb {
@@ -188,21 +205,8 @@ onMounted( updateProgress );
 	max-height: calc( 50dvh - 40px - 60px );
 }
 
-.wiki-highlight-view-card-discover-header {
-	font-family: serif;
-	padding: 14px 10px;
-	font-size: 1.5em;
-	font-weight: bold;
-	color: #202122;
-	text-align: center;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 60px;
-}
-
 @media ( prefers-color-scheme: dark ) {
-	.wiki-highlight-view-card-discover-header {
+	.wiki-highlight-view-topbar-center-header {
 		color: #fff;
 	}
 }
