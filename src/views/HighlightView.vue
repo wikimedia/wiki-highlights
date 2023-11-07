@@ -197,7 +197,7 @@ onMounted( updateProgress );
 	height: 100%;
 	place-content: start;
 	position: absolute;
-	top: 60px;
+	top: 10%;
 }
 
 .wiki-highlight-thumb-discover .wiki-highlight-thumb {
