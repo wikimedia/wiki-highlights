@@ -122,10 +122,11 @@ onMounted( updateProgress );
 	height: 60px;
 	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0.8 ), rgba( 0, 0, 0, 0 ) );
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
-.wiki-highlight-view-topbar-left, .wiki-highlight-view-topbar-right {
+.wiki-highlight-view-topbar-left,
+.wiki-highlight-view-topbar-right {
 	width: 45px;
 	height: 60px;
 }
