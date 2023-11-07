@@ -178,6 +178,8 @@ onMounted( updateProgress );
 	margin-bottom: -36px;
 	height: 100%;
 	place-content: start;
+	position: absolute;
+	margin-top: 60px;
 }
 
 .wiki-highlight-thumb-discover .wiki-highlight-thumb {
@@ -193,6 +195,10 @@ onMounted( updateProgress );
 	font-weight: bold;
 	color: #202122;
 	text-align: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 60px;
 }
 
 @media ( prefers-color-scheme: dark ) {
