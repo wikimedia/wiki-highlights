@@ -198,16 +198,20 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	font-size: 2em;
+	padding: 8px 0;
+	font-family: serif;
+	font-weight: 800;
+	font-size: 1.5em;
 	text-align: center;
 	background-color: var( --color-background );
 	border-bottom: solid 1px var( --color-border );
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.20);
 	z-index: 2;
 }
 
 .navicon {
 	position: fixed;
-	top: 0;
+	top: 2px;
 	left: 0;
 	height: 45px;
 	width: 45px;
@@ -219,7 +223,7 @@ header {
 }
 
 .article {
-	margin: 3em 0;
+	margin: 3.5em 0;
 }
 
 .content :deep( a:not( [ href ] ) ) {
