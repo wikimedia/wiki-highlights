@@ -88,8 +88,12 @@ const transforms = {
 		}
 	},
 	'remove sections after fold': ( doc ) => {
+		const foldHr = doc.querySelector( '.pcs-fold-hr' );
 		for ( const section of doc.querySelectorAll( '.pcs-fold-hr ~ section' ) ) {
 			section.remove();
+		}
+		if ( foldHr ) {
+			foldHr.remove();
 		}
 	},
 	'remove "See also" "Notes" section': ( doc ) => {
@@ -198,16 +202,20 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	font-size: 2em;
+	padding: 8px 0;
+	font-family: serif;
+	font-weight: 800;
+	font-size: 1.5em;
 	text-align: center;
 	background-color: var( --color-background );
 	border-bottom: solid 1px var( --color-border );
+	box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.2 );
 	z-index: 2;
 }
 
 .navicon {
 	position: fixed;
-	top: 0;
+	top: 2px;
 	left: 0;
 	height: 45px;
 	width: 45px;
@@ -219,7 +227,7 @@ header {
 }
 
 .article {
-	margin: 3em 0;
+	margin: 3.5em 0;
 }
 
 .content :deep( a:not( [ href ] ) ) {
@@ -269,11 +277,6 @@ header {
 
 .content :deep( .collapsible h2::before ) {
 	transform: rotate( 180deg );
-}
-
-.content :deep( hr.pcs-fold-hr ) {
-	margin: 12px 0 16px;
-	width: 60px;
 }
 
 .footer {
