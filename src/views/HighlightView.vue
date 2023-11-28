@@ -184,6 +184,7 @@ onMounted( updateProgress );
 	bottom: 0;
 	width: 100%;
 	max-width: 550px;
+	overflow: hidden;
 }
 
 .wiki-highlight-thumb-container {
