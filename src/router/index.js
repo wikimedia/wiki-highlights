@@ -44,7 +44,6 @@ const router = createRouter( {
   ]
 } )
 
-const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 const makeSessionId = () => crypto.randomUUID().replace( /-/g, '' )
 let sessionId = makeSessionId()
 let sessionHandle = null
@@ -67,9 +66,8 @@ router.afterEach( ( to, from ) => {
       page_name: from.params.title || from.name,
       experiment_group: from.meta.experiment_group,
       session_id: getSessionId(),
-      total_length: now - time,
-      content_complete: hasScrolledToTheEnd(),
-      geolocation: timezone
+      time_length_ms: now - time,
+      page_bottom_was_visible: hasScrolledToTheEnd()
     } )
   }
 
@@ -78,8 +76,7 @@ router.afterEach( ( to, from ) => {
         event_type: 'pageLoad',
         page_name: to.params.title || to.name,
         experiment_group: to.meta.experiment_group,
-        session_id: getSessionId(),
-        geolocation: timezone
+        session_id: getSessionId()
     } )
   }
 
@@ -88,10 +85,13 @@ router.afterEach( ( to, from ) => {
 } )
 
 const send = ( event ) => {
-  // const intakeUrl = 'https://intake-logging.wikimedia.org/v1/events?hasty=true'
-  // event.$schema = 'todo'
-  // event.meta = { stream: 'todo' }
-  // navigator.sendBeacon( intakeUrl, JSON.stringify( event ) )
+  const intakeUrl = 'https://intake-logging.wikimedia.org/v1/events' //?hasty=true
+  event.$schema = '/analytics/mediawiki/wikistories_contribution_event/1.0.0'
+  event.meta = {
+    stream: 'mediawiki.wiki_highlights_experiment',
+    dt: new Date().toISOString()
+  }
+  navigator.sendBeacon( intakeUrl, JSON.stringify( event ) )
   console.log( event )
 }
 
