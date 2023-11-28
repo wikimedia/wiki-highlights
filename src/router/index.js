@@ -89,6 +89,7 @@ const send = ( event ) => {
   event.$schema = '/analytics/external/wiki_highlights_experiment/1.0.0'
   event.meta = {
     stream: 'inuka.wiki_highlights_experiment',
+    domain: 'wikimedia.github.io',
     dt: new Date().toISOString()
   }
   navigator.sendBeacon( intakeUrl, JSON.stringify( event ) )
