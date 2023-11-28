@@ -86,9 +86,9 @@ router.afterEach( ( to, from ) => {
 
 const send = ( event ) => {
   const intakeUrl = 'https://intake-logging.wikimedia.org/v1/events' //?hasty=true
-  event.$schema = '/analytics/mediawiki/wikistories_contribution_event/1.0.0'
+  event.$schema = '/analytics/external/wiki_highlights_experiment/1.0.0'
   event.meta = {
-    stream: 'mediawiki.wiki_highlights_experiment',
+    stream: 'inuka.wiki_highlights_experiment',
     dt: new Date().toISOString()
   }
   navigator.sendBeacon( intakeUrl, JSON.stringify( event ) )
