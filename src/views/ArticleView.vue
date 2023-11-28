@@ -1,24 +1,29 @@
 <template>
-	<div class="article">
+	<div
+		v-if="data.loaded"
+		class="article"
+	>
+		<header>{{ route.params.title }}</header>
+		<RouterLink to="/articles" class="navicon" />
 		<div
 			ref="contentRef"
 			class="content"
-			v-html="contentHtml" />
+			v-html="data.articleHtml" />
 		<div class="footer">
 			<!--
 				the footer element is copied from the wikipedia website
 				keeping the same classname and structure to maintain the same styling
 			-->
-			<div v-if="relatedArticles" id="mw-data-after-content">
+			<div id="mw-data-after-content">
 				<div class="read-more-container">
 					<h2>Related articles</h2>
 					<ul class="ext-related-articles-card-list">
 						<li
-							v-for="article in relatedArticles"
+							v-for="article in data.relatedArticles"
 							:key="article.title"
 							:title="article.title"
 							class="ext-related-articles-card">
-							<a :href="'#/article/' + article.title" @click="goTo( article.title )">
+							<RouterLink :to="'/article/' + article.title">
 								<div
 									class="ext-related-articles-card-thumb"
 									:style="{
@@ -33,7 +38,7 @@
 										{{ article.highlights[ 0 ].text }}
 									</p>
 								</div>
-							</a>
+							</RouterLink>
 						</li>
 					</ul>
 				</div>
@@ -44,27 +49,18 @@
 						rel="nofollow"
 						href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>, unless otherwise noted.
 				</li>
-				<ul id="footer-places" class="footer-places hlist hlist-separated">
-					<li id="footer-places-privacy">
-						<a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a>
-					</li>
-					<li id="footer-places-terms-use">
-						<a href="https://mobile.test/wiki/Terms_of_Use">Terms of use</a>
-					</li>
-				</ul>
 			</ul>
 		</div>
 	</div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import { useRoute } from 'vue-router';
+import { ref, onMounted, nextTick } from 'vue';
+import { useRoute, RouterLink } from 'vue-router';
 import { categories, getArticle } from '../data.js';
 const route = useRoute();
-const contentHtml = ref();
-const relatedArticles = ref( [] );
 const contentRef = ref();
+const data = ref( { loaded: false } );
 
 const transforms = {
 	'put styles in body': ( doc ) => {
@@ -79,7 +75,8 @@ const transforms = {
 			'.pcs-collapse-table-container',
 			'.pcs-edit-section-link-container',
 			'.hatnote',
-			"[ role='navigation' ]"
+			"[ role='navigation' ]",
+			'header'
 		].join( ',' );
 		for ( const n of doc.querySelectorAll( selector ) ) {
 			n.remove();
@@ -91,8 +88,12 @@ const transforms = {
 		}
 	},
 	'remove sections after fold': ( doc ) => {
+		const foldHr = doc.querySelector( '.pcs-fold-hr' );
 		for ( const section of doc.querySelectorAll( '.pcs-fold-hr ~ section' ) ) {
 			section.remove();
+		}
+		if ( foldHr ) {
+			foldHr.remove();
 		}
 	},
 	'remove "See also" "Notes" section': ( doc ) => {
@@ -159,9 +160,7 @@ const fetchArticle = function ( title ) {
 
 		return doc.body.outerHTML;
 	} ).then( ( html ) => {
-		contentHtml.value = html;
-	} ).then( () => {
-		addEvents( contentRef.value );
+		data.value.articleHtml = html;
 	} );
 
 };
@@ -179,8 +178,11 @@ const fetchRelatedArticle = function ( title ) {
 
 const goTo = function ( title ) {
 	fetchArticle( title ).then( () => {
-		window.scrollTo( 0, 0 );
-		relatedArticles.value = fetchRelatedArticle( title );
+		data.value.relatedArticles = fetchRelatedArticle( title );
+		data.value.loaded = true;
+		nextTick( () => {
+			addEvents( contentRef.value );
+		} );
 	} );
 };
 
@@ -195,8 +197,37 @@ onMounted( function () {
 </script>
 
 <style scoped>
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 8px 0;
+	font-family: serif;
+	font-weight: 800;
+	font-size: 1.5em;
+	text-align: center;
+	background-color: var( --color-background );
+	border-bottom: solid 1px var( --color-border );
+	box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.2 );
+	z-index: 2;
+}
+
+.navicon {
+	position: fixed;
+	top: 2px;
+	left: 0;
+	height: 45px;
+	width: 45px;
+	background-image: url( ../assets/back-arrow-black.svg );
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: 16px center;
+	z-index: 3;
+}
+
 .article {
-	margin: 2em 0;
+	margin: 3.5em 0;
 }
 
 .content :deep( a:not( [ href ] ) ) {
@@ -231,6 +262,10 @@ onMounted( function () {
 }
 
 @media ( prefers-color-scheme: dark ) {
+	.navicon {
+		background-image: url( ../assets/back-arrow-white.svg );
+	}
+
 	.content :deep( h2::before ) {
 		background-image: url( ../assets/collapse-light.svg );
 	}
@@ -242,11 +277,6 @@ onMounted( function () {
 
 .content :deep( .collapsible h2::before ) {
 	transform: rotate( 180deg );
-}
-
-.content :deep( hr.pcs-fold-hr ) {
-	margin: 12px 0 16px;
-	width: 60px;
 }
 
 .footer {
