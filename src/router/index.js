@@ -18,14 +18,14 @@ const router = createRouter( {
     {
       path: '/highlights',
       name: 'categories_highlights',
-      meta: { experiment_group: 'treatment' },
+      meta: { experiment_group: 'experiment' },
       component: CategoriesView,
       props: { source: 'highlights' }
     },
     {
       path: '/highlights/:title',
       name: 'highlights',
-      meta: { experiment_group: 'treatment' },
+      meta: { experiment_group: 'experiment' },
       props: true,
       component: HighlightView
     },
@@ -39,6 +39,7 @@ const router = createRouter( {
     {
       path: '/article/:title',
       name: 'article',
+      meta: { experiment_group: 'control' },
       component: ArticleView
     }
   ]
@@ -62,7 +63,7 @@ router.afterEach( ( to, from ) => {
 
   if ( from.name ) {
     send( {
-      event_type: 'pageUnload',
+      event_type: 'pageUnloaded',
       page_name: from.params.title || from.name,
       experiment_group: from.meta.experiment_group,
       session_id: getSessionId(),
@@ -73,7 +74,7 @@ router.afterEach( ( to, from ) => {
 
   if ( to.name ) {
     send( {
-        event_type: 'pageLoad',
+        event_type: 'pageLoaded',
         page_name: to.params.title || to.name,
         experiment_group: to.meta.experiment_group,
         session_id: getSessionId()
