@@ -11,7 +11,7 @@ app.use(router)
 
 app.mount('#app')
 
-window.onscroll = function( e ) {
+window.onscroll = function() {
 	if ( document.querySelector( '.wiki-highlight-view' ) ) {
 		// Special case: the highlight view is not scrollable.
 		// It has a container that is made scrollable for the
