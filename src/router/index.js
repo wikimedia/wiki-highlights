@@ -86,7 +86,7 @@ router.afterEach( ( to, from ) => {
 } )
 
 const send = ( event ) => {
-  const intakeUrl = 'https://intake-logging.wikimedia.org/v1/events' //?hasty=true
+  const intakeUrl = 'https://intake-analytics.wikimedia.org/v1/events?hasty=true'
   event.$schema = '/analytics/external/wiki_highlights_experiment/1.0.0'
   event.meta = {
     stream: 'inuka.wiki_highlights_experiment',
