@@ -94,7 +94,6 @@ const send = ( event ) => {
     dt: new Date().toISOString()
   }
   navigator.sendBeacon( intakeUrl, JSON.stringify( event ) )
-  console.log( event )
 }
 
 export default router
