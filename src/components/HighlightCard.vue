@@ -57,6 +57,7 @@ function bigger( url ) {
 	.wiki-highlight-card-text h2 {
 		color: #eaecf0;
 	}
+
 	.wiki-highlight-card-text p {
 		color: #c8ccd1;
 	}

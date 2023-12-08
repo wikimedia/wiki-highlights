@@ -215,6 +215,7 @@ onMounted( updateProgress );
 	.wiki-highlight-view-topbar-center-header {
 		color: #fff;
 	}
+
 	.wiki-highlight-view-more,
 	.wiki-highlight-view-swipe {
 		color: #c8ccd1;
