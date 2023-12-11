@@ -174,7 +174,7 @@ onMounted( updateProgress );
 
 .wiki-highlight-view-more {
 	position: absolute;
-	bottom: 40px;
+	bottom: 20px;
 	width: 100%;
 	color: #54595d;
 	text-decoration: underline;
@@ -202,7 +202,7 @@ onMounted( updateProgress );
 	height: 100%;
 	place-content: start;
 	position: absolute;
-	top: 13%;
+	top: 10%;
 }
 
 .wiki-highlight-thumb-discover .wiki-highlight-thumb {
@@ -214,6 +214,11 @@ onMounted( updateProgress );
 @media ( prefers-color-scheme: dark ) {
 	.wiki-highlight-view-topbar-center-header {
 		color: #fff;
+	}
+
+	.wiki-highlight-view-more,
+	.wiki-highlight-view-swipe {
+		color: #c8ccd1;
 	}
 }
 </style>
