@@ -44,9 +44,13 @@ const router = createRouter( {
 
 router.afterEach( logPageChanged )
 
-window.onbeforeunload = function() {
+var isOnIOS = navigator.userAgent.match( /iPad/i ) ||
+  navigator.userAgent.match( /iPhone/i ) ||
+  navigator.userAgent.match( /iPod/i );
+var eventName = isOnIOS ? 'pagehide' : 'beforeunload';
+window.addEventListener( eventName, function () {
   const from = router.currentRoute._value
   logPageChanged( null, from )
-}
+} );
 
 export default router
