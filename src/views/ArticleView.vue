@@ -375,7 +375,7 @@ header {
 
 @media ( prefers-color-scheme: dark ) {
 	a {
-		color: #6699FF;
+		color: #69F;
 	}
 
 	.navicon {
@@ -398,7 +398,7 @@ header {
 	}
 
 	.footer .ext-related-articles-card-list .ext-related-articles-card {
-		background-color: #27292D;
+		background-color: #27292d;
 	}
 
 	.footer .ext-related-articles-card-list .ext-related-articles-card-extract {
