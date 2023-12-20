@@ -82,7 +82,7 @@ defineProps( {
 		color: unset;
 
 		a {
-			color: #69F;
+			color: #69f;
 		}
 	}
 }

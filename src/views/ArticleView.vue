@@ -375,7 +375,7 @@ header {
 
 @media ( prefers-color-scheme: dark ) {
 	a {
-		color: #69F;
+		color: #69f;
 	}
 
 	.navicon {
