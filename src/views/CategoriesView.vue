@@ -80,6 +80,10 @@ defineProps( {
 	.wiki-highlight-categories-license {
 		background-color: unset;
 		color: unset;
+
+		a {
+			color: #69f;
+		}
 	}
 }
 </style>
