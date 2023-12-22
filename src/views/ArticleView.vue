@@ -393,6 +393,7 @@ header {
 	}
 
 	.content :deep( p ),
+	.content :deep( .thumbcaption ) ,
 	.content :deep( figcaption ) {
 		color: #c8ccd1;
 	}
